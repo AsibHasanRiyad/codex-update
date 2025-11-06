@@ -32,14 +32,14 @@ export default function Hero() {
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
               splitByWord={true}
-              fontSize="text-5xl md:text-7xl lg:text-8xl"
+              fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
               text="Crafting Next-Gen "
               delayPerItem={0.08}
             />
             <TextMaskReveal
               splitByWord={true}
-              fontSize="text-5xl md:text-7xl lg:text-8xl"
+              fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
               className="font-bold text-white ml-[10%] md:ml-[15%] uppercase leading-[0.9]"
               text="Digital Excellence"
               startDelay={0.4}

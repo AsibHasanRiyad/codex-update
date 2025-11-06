@@ -32,6 +32,7 @@ export default function Hero() {
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
               splitByWord={true}
+              startDelay={7.6}
               fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
               text="Crafting Next-Gen "
@@ -39,10 +40,10 @@ export default function Hero() {
             />
             <TextMaskReveal
               splitByWord={true}
+              startDelay={7.6}
               fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
               className="font-bold text-white ml-[10%] md:ml-[15%] uppercase leading-[0.9]"
               text="Digital Excellence"
-              startDelay={0.4}
               delayPerItem={0.08}
             />
           </div>
@@ -79,14 +80,14 @@ export default function Hero() {
                   fontSize="text-4xl md:text-5xl"
                   className="font-bold text-white mb-2 leading-none"
                   text="100+"
-                  startDelay={0.8}
+                  startDelay={8}
                 />
                 <TextMaskReveal
                   splitByWord={false}
                   fontSize="text-sm md:text-base"
                   className="text-white/70"
                   text="Projects Delivered"
-                  startDelay={1}
+                  startDelay={8.2}
                 />
               </div>
               <div>

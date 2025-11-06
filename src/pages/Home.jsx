@@ -1,5 +1,11 @@
+import Hero from "../components/home/Hero.component";
+
 const Home = () => {
-  return <div className="min-h-screen"></div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;

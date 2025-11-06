@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion";
-import skylarkLogo from "../../../assets/codex-white-logo.png";
+import codexLogo from "../../../assets/codex-white-logo.png";
 
 import {
   Dot,
@@ -16,6 +16,7 @@ import { TextMaskReveal } from "../../../hooks/TextMaskReveal";
 import CrossIcon from "./CrossIcon";
 import EmailInput from "./EmailInput";
 import { navLinks } from "../../../constants";
+import ColorBends from "../../ui/ColorBends";
 
 const NavbarContent = ({ active, handleToggle, setOpen }) => {
   return (
@@ -24,74 +25,27 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
       animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
       exit={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="fixed inset-0 bg-primary z-1000 "
+      className="fixed inset-0 h-screen bg-primary z-1000 "
     >
-      {/* Blob Group Container */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        {/* Blob 1 – Emerald tone */}
-        <motion.div
-          className="absolute bottom-[10%] right-[15%] w-[500px] h-[500px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle at center, rgba(16,185,129,0.15), rgba(16,185,129,0.05) 70%, transparent 100%)",
-            filter: "blur(120px)",
-          }}
-          animate={{
-            x: [0, 30, -20, 0],
-            y: [0, -20, 30, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        {/* Blob 2 – Blue tone */}
-        <motion.div
-          className="absolute bottom-[25%] right-[5%] w-[600px] h-[400px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle at center, rgba(59,130,246,0.18), rgba(59,130,246,0.05) 70%, transparent 100%)",
-            filter: "blur(140px)",
-          }}
-          animate={{
-            x: [0, -40, 20, 0],
-            y: [0, 20, -30, 0],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-
-        {/* Blob 3 – Cyan bridge tone */}
-        <motion.div
-          className="absolute bottom-[5%] right-[25%] w-[450px] h-[350px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle at center, rgba(6,182,212,0.12), rgba(6,182,212,0.05) 70%, transparent 100%)",
-            filter: "blur(100px)",
-          }}
-          animate={{
-            x: [0, 15, -25, 0],
-            y: [0, -15, 20, 0],
-          }}
-          transition={{
-            duration: 22,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      </div>
-
+      <ColorBends
+        colors={["#1E3A8A", "#0A7351", "#D9D9D9"]}
+        rotation={30}
+        speed={0.5}
+        scale={0.09}
+        frequency={2.3}
+        warpStrength={1.2}
+        mouseInfluence={0.2}
+        parallax={0}
+        noise={0.1}
+        transparent
+        className={"absolute top-0 h-full w-full"}
+      />
       {/* Top bar (Logo + Close Button) */}
       <div className=" border-b border-muted py-[30px] shadow-lg">
         <div className=" flex justify-between items-center px-4 md:px-8 lg:px-16">
           <img
             className="w-60"
-            src={skylarkLogo || "/placeholder.svg"}
+            src={codexLogo || "/placeholder.svg"}
             alt="CodexIT Logo"
           />
           <CrossIcon onClick={() => setOpen(false)} />

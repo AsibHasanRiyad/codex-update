@@ -5,6 +5,10 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 import CustomEase from "gsap/CustomEase";
 import { useLenis } from "lenis/react";
+import image1 from "../../assets/loader/1.jpg";
+import image2 from "../../assets/loader/2.avif";
+import image3 from "../../assets/loader/3.jpg";
+import image4 from "../../assets/loader/4.jpg";
 
 gsap.registerPlugin(useGSAP, SplitText, CustomEase);
 CustomEase.create("hop", "0.9, 0, 0.1, 1");
@@ -53,7 +57,7 @@ const Preloader = () => {
         ".preloader-images .img img"
       );
 
-      const tl = gsap.timeline({ delay: 0.25 });
+      const tl = gsap.timeline({ delay: 0 });
       tl.to(".progress-bar", {
         scaleX: 1,
         duration: 5,
@@ -150,39 +154,32 @@ const Preloader = () => {
   return (
     <>
       <div className="preloader" ref={preloaderRef}>
-        <div className="progress-bar bg-lochmara"></div>
+        <div className="progress-bar bg-emerald-600"></div>
 
         <div className="preloader-images">
           <div className="img">
-            <img
-              src="https://www.skylarksoft.com/wp-content/uploads/2021/02/mrketing-of-gormg-erp_pre.png"
-              alt=""
-            />
+            <img src={image1} alt="" />
+            <div className="bg-linear-to-t from-primary/70 via-primary/40 to-transparent rounded-xl absolute inset-0 z-10"></div>
           </div>
           <div className="img">
-            <img
-              src="https://www.skylarksoft.com/wp-content/uploads/2021/03/automate-your-garments-production.png"
-              alt=""
-            />
+            <img src={image2} alt="" />
+            <div className="bg-linear-to-t from-primary/70 via-primary/40 to-transparent rounded-xl absolute inset-0 z-10"></div>
           </div>
           <div className="img">
-            <img
-              src="https://www.skylarksoft.com/wp-content/uploads/2024/08/AQAI-dashboard-hitmap-600x300.png"
-              alt=""
-            />
+            <img src={image3} alt="" />
+            <div className="bg-linear-to-t from-primary/70 via-primary/40 to-transparent rounded-xl absolute inset-0 z-10"></div>
           </div>
           <div className="img">
-            <img
-              src="https://www.skylarksoft.com/wp-content/uploads/2023/02/Garments-Production-Tracking-Software-Realtime-CUTRACKER-Skylark-Soft-Limited-e1696149874459.jpg"
-              alt=""
-            />
+            <img src={image4} alt="" />
+            <div className="bg-linear-to-t from-primary/70 via-primary/40 to-transparent rounded-xl absolute inset-0 z-10"></div>
           </div>
+          {/* <div className=" bg-linear-to-t from-primary/70 via-primary/40 to-transparent rounded-xl absolute  w-full h-full inset-0"></div> */}
         </div>
       </div>
 
       <div className="preloader-header">
-        <h1 className=" text-6xl mt-16 lg:text-8xl md:text-7xl uppercase font-black">
-          Skylark Soft
+        <h1 className=" text-7xl font-spaceMono lg:text-9xl md:text-8xl uppercase font-black">
+          CODEX IT
         </h1>
       </div>
     </>

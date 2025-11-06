@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
-import skylarkLogoWhite from "../../assets/codex-white-logo.png";
+import codexLogoWhite from "../../assets/codex-white-logo.png";
 import footerBg from "../../assets/footer.mp4";
 export default function Footer() {
   return (
@@ -48,7 +48,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="md:col-span-1">
               <div className="mb-6">
-                <img src={skylarkLogoWhite} className="w-60 mb-4" />
+                <img src={codexLogoWhite} className="w-60 mb-4" />
                 <p className="text-gray-200 text-sm leading-relaxed">
                   We deliver innovative software solutions that empower
                   businesses to scale and succeed in the digital age.

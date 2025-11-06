@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 
-import skylarkLogoWhite from "../../../assets/codex-white-logo.png";
+import codexLogoWhite from "../../../assets/codex-white-logo.png";
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 
@@ -44,8 +44,8 @@ const Navbar = () => {
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
           <img
             className="w-60 pl-4 md:pl-8 lg:px-6 col-span-6 lg:col-span-2"
-            src={skylarkLogoWhite || "/placeholder.svg"}
-            alt="Skylark Logo"
+            src={codexLogoWhite || "/placeholder.svg"}
+            alt="Codex Logo"
           />
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">

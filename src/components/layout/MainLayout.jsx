@@ -8,11 +8,11 @@ import Footer from "./Footer";
 
 const MainLayout = () => {
   return (
-    <div className="bg-primary ">
+    <div className=" bg-primary font-spaceMono">
       <Preloader />
-      <Navbar />
       <SmoothScrollProvider>
         <ScrollToHashElement />
+        <Navbar />
         <Outlet />
         <Footer />
       </SmoothScrollProvider>

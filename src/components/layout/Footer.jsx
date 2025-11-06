@@ -188,7 +188,7 @@ export default function Footer() {
           {/* Bottom Section - Copyright */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
             <p className="text-gray-300/80 text-sm">
-              Copyright © 2025 Skylark Soft Ltd. All rights reserved.
+              Copyright © 2025 CodexIT. All rights reserved.
             </p>
             <a
               href="#"

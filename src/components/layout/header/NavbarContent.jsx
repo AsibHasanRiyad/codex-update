@@ -92,7 +92,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
           <img
             className="w-60"
             src={skylarkLogo || "/placeholder.svg"}
-            alt="Skylark Logo"
+            alt="CodexIT Logo"
           />
           <CrossIcon onClick={() => setOpen(false)} />
         </div>
@@ -229,7 +229,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             />
             <TextMaskReveal
               startDelay={0.1}
-              text="info@skylarksoft.com"
+              text="info@codexitbd.com"
               fontSize="text-base"
               className="text-muted"
               splitByWord={true}

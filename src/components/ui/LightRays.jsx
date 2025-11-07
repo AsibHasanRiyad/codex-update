@@ -101,7 +101,7 @@ const LightRays = ({
 
       const renderer = new Renderer({
         dpr: Math.min(window.devicePixelRatio, 2),
-        alpha: true,
+        alpha: false,
       });
       rendererRef.current = renderer;
 
@@ -411,7 +411,13 @@ void main() {
   return (
     <div
       ref={containerRef}
-      className={`light-rays-container ${className}`.trim()}
+      className={`light-rays-container  bg-primary z-10 w-screen ${className}`.trim()}
+      style={{
+        willChange: "transform",
+        transform: "translateZ(0)",
+        backfaceVisibility: "hidden",
+        // background: "transparent",
+      }}
     />
   );
 };

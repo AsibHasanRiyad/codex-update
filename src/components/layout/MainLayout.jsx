@@ -9,9 +9,9 @@ import Footer from "./Footer";
 const MainLayout = () => {
   return (
     <div className=" bg-primary font-spaceMono">
-      <Preloader />
       <SmoothScrollProvider>
         <ScrollToHashElement />
+        {/* <Preloader /> */}
         <Navbar />
         <Outlet />
         <Footer />

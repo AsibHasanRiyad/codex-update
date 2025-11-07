@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   Code,
   Smartphone,
@@ -5,9 +6,11 @@ import {
   ArrowRight,
   ArrowUpRight,
 } from "lucide-react";
+import { motion } from "framer-motion";
 import LightRays from "../ui/LightRays";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
-
+import movingSvg from "../../assets/Asterisk.svg";
+import arrow from "../../assets/Arrow.svg";
 export default function Hero() {
   const services = [
     "Web Development",
@@ -22,9 +25,21 @@ export default function Hero() {
   ];
 
   return (
-    <div className=" min-h-screen flex flex-col justify-between overflow-hidden bg-primary">
-      <LightRays className="absolute left-0 top-0" />
-
+    <div className=" relative w-screen min-h-screen flex flex-col justify-between overflow-hidden bg-primary">
+      <LightRays className="absolute h-screen bg-primary left-0 top-0" />
+      <div className="absolute right-[12%] top-[20%]">
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            duration: 12,
+            ease: "linear",
+          }}
+          className="  size-32"
+          src={movingSvg}
+          alt=""
+        />
+      </div>
       {/* Main content */}
       <div className="relative z-10 flex-1 flex items-center">
         <div className="container mx-auto px-4 md:px-8 pb-12 lg:pb-16 pt-24 lg:pt-32">
@@ -104,16 +119,18 @@ export default function Hero() {
       </div>
 
       {/* Services Marquee */}
-      <div className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-sm py-4 overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
+      <div className="relative z-100 border-t border-white/10 bg-white/5 backdrop-blur-sm py-4 overflow-hidden">
+        <div className="flex justify-between animate-marquee whitespace-nowrap">
           {/* First set of services */}
           {services.map((service, index) => (
             <span
               key={`first-${index}`}
-              className="inline-flex items-center mx-6 text-white/60 text-sm md:text-base font-medium uppercase tracking-wider hover:text-white transition-colors duration-300"
+              className="inline-flex cursor-pointer items-center mx-6 text-white/60 text-sm md:text-base font-medium uppercase tracking-wider hover:text-white transition-colors duration-300"
             >
               {service}
-              <span className="mx-6 text-emerald-600">•</span>
+              <div className=" ml-14 w-10">
+                <img className=" rotate-45 size-7" src={arrow} alt="" />
+              </div>
             </span>
           ))}
           {/* Duplicate for seamless loop */}
@@ -123,7 +140,9 @@ export default function Hero() {
               className="inline-flex items-center mx-6 text-white/60 text-sm md:text-base font-medium uppercase tracking-wider hover:text-white transition-colors duration-300"
             >
               {service}
-              <span className="mx-6 text-emerald-600">•</span>
+              <span className="mx-6 ">
+                <img src={arrow} alt="" />
+              </span>
             </span>
           ))}
         </div>

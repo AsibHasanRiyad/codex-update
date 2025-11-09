@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <div className=" relative w-screen min-h-screen flex flex-col justify-between overflow-hidden bg-primary">
       <LightRays className="absolute h-screen bg-primary left-0 top-0" />
-      <div className="absolute right-[12%] top-[20%]">
+      <div className="absolute right-[12%] z-20 top-[20%]">
         <motion.img
           animate={{ rotate: 360 }}
           transition={{

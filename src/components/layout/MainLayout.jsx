@@ -5,6 +5,10 @@ import Navbar from "./header/Navbar";
 import SmoothScrollProvider from "../../provider/SmoothScrollProvider";
 import ScrollToHashElement from "../../provider/ScrollToHashElement";
 import Footer from "./Footer";
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const MainLayout = () => {
   return (

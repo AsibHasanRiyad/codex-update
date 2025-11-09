@@ -19,7 +19,7 @@ const DevelopmentProject = () => {
   const slides = groupProjectsIntoSlides(developmentProjects, 6);
 
   return (
-    <div className="container relative mx-auto px-4 md:px-8 py-8 md:py-12">
+    <div className="container bg-primary relative mx-auto px-4 md:px-8 py-12 md:py-16 lg:py-20">
       <style>
         {`
           .development-swiper .swiper-pagination {

@@ -270,7 +270,6 @@ const HomeVideo = () => {
         ref={transitionTextRef}
         className="absolute inset-0 flex flex-col justify-center items-center opacity-0 z-30 px-6 bg-primary"
       >
-        {/* Noisy background image */}
         <img
           src="https://img.freepik.com/premium-vector/grain-stippled-gradient-faded-stochastic-dotwork-texture-random-grunge-noise-background-black-dots_497399-682.jpg?semt=ais_hybrid&w=740&q=80"
           alt="noise"

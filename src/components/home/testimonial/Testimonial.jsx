@@ -6,7 +6,7 @@ import Marquee from "./Marquee";
 const image1 =
   "https://images.unsplash.com/photo-1670008604236-f5f2b23722ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1441";
 const logo =
-  "https://images.unsplash.com/photo-1662057168154-89300791ad6e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2060";
+  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png";
 
 const testimonials = [
   {

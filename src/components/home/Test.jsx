@@ -131,8 +131,10 @@ const FactsSection = () => {
                 <div className="border rounded-2xl  border-white container mx-auto">
                   <div className="p-8 md:p-10 lg:p-24 flex flex-col md:flex-row items-start">
                     <div className="w-full md:w-3/5 z-10">
-                      <p>{service.subtitle}</p>
-                      <h1 className="text-black dark:text-white text-4xl md:text-5xl lg:text-8xl font-semibold text-start font-medium leading-tight">
+                      <p className=" text-gray-200 text-start">
+                        {service.subtitle}
+                      </p>
+                      <h1 className="text-black dark:text-white text-4xl md:text-5xl lg:text-8xl font-semibold text-start  leading-tight">
                         {service.title1}
                         <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">
                           {service.title2}
@@ -153,11 +155,11 @@ const FactsSection = () => {
                     </div>
 
                     {/* Image - hidden on mobile, visible on md and up */}
-                    <div className="hidden md:block md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center">
+                    <div className="hidden  md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center md:justify-between">
                       <img
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_BDOeBmoJgIDcVbz6Kf1h2fqpgvr5/uMrYbVYunzD2-lMHwTqpjV/public/purple-circle-wave-static.png"
                         alt="Purple Wave"
-                        className="w-fit h-fit max-h-min  md:object-contain p-28 md:object-left"
+                        className=" h-fit max-h-min w-full max-w-[500px]  md:object-contain  md:object-left"
                       />
                     </div>
                   </div>

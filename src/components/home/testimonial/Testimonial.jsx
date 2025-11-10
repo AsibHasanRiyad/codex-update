@@ -49,6 +49,126 @@ const testimonials = [
     rating: 5,
     image: image1,
   },
+  {
+    id: 1,
+    name: "Mark Ramirez",
+    logo: logo,
+    title: "Owner of Lotus Spa",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 2,
+    name: "Thomas Gala",
+    logo: logo,
+    title: "Founder, Earthish Wellness",
+    content:
+      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
+    rating: 4,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Sarah Johnson",
+    logo: logo,
+    title: "CEO, Harmony Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Steven Sunny",
+    logo: logo,
+    title: "CEO, Charles Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 1,
+    name: "Mark Ramirez",
+    logo: logo,
+    title: "Owner of Lotus Spa",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 2,
+    name: "Thomas Gala",
+    logo: logo,
+    title: "Founder, Earthish Wellness",
+    content:
+      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
+    rating: 4,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Sarah Johnson",
+    logo: logo,
+    title: "CEO, Harmony Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Steven Sunny",
+    logo: logo,
+    title: "CEO, Charles Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 1,
+    name: "Mark Ramirez",
+    logo: logo,
+    title: "Owner of Lotus Spa",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 2,
+    name: "Thomas Gala",
+    logo: logo,
+    title: "Founder, Earthish Wellness",
+    content:
+      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
+    rating: 4,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Sarah Johnson",
+    logo: logo,
+    title: "CEO, Harmony Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 3,
+    name: "Steven Sunny",
+    logo: logo,
+    title: "CEO, Charles Health",
+    content:
+      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+    rating: 5,
+    image: image1,
+  },
 ];
 
 function ClientFeedback() {
@@ -132,7 +252,7 @@ function ClientFeedback() {
           <Earth className="max-w-[500px] z-0 " />
         </div>
         <div className="relative z-2 sm:pt-28 pt-24">
-          <Marquee pauseOnHover className="[--duration:20s]">
+          <Marquee reverse={false} pauseOnHover className="[--duration:20s]">
             {testimonials?.map((testimonial) => (
               <>
                 <div
@@ -175,7 +295,7 @@ function ClientFeedback() {
               </>
             ))}
           </Marquee>
-          <Marquee pauseOnHover reverse className="[--duration:20s]">
+          <Marquee pauseOnHover reverse={true} className="[--duration:20s]">
             {testimonials?.map((testimonial) => (
               <>
                 <div

@@ -5,12 +5,14 @@ import Stats from "../components/home/Stats.section";
 import FactsSection from "../components/home/Test";
 import Test from "../components/home/Test";
 import ClientFeedback from "../components/home/testimonial/Testimonial";
+import BeamCircle from "../components/ui/BeamCircle";
 
 const Home = () => {
   return (
     <div>
-      <div className="relative h-full w-full">
+      <div className="relative overflow-hidden h-full w-full">
         <Hero />
+        <BeamCircle />
         <HomeVideo />
         <DevelopmentProject />
         <Stats />

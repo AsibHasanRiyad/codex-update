@@ -68,7 +68,7 @@ export default function Hero() {
             {/* Company Name */}
             <div className="md:col-span-2 flex items-start">
               <h2 className="text-white text-xl md:text-2xl font-semibold uppercase tracking-wide">
-                Cedex IT BD
+                Codex IT BD
               </h2>
             </div>
 

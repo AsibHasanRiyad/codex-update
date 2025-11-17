@@ -148,7 +148,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               text={`House: 1275, Level 3 & 4, Road: 11, Avenue: 2, Mirpur DOHS,
       Dhaka 1216`}
               fontSize="text-base"
-              className="text-muted leading-relaxed"
+              className="text-gray-300 leading-relaxed"
               splitByWord={false}
             />
           </div>
@@ -167,7 +167,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="House: 20/B, Road: 02, Hill View Housing Society, Chattogram 4209."
               fontSize="text-base"
-              className="text-muted leading-relaxed"
+              className="text-gray-300 leading-relaxed"
               splitByWord={false}
             />
           </div>
@@ -185,7 +185,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="info@codexitbd.com"
               fontSize="text-base"
-              className="text-muted"
+              className="text-gray-300"
               splitByWord={true}
             />
           </div>
@@ -203,7 +203,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="+88 096 78 375375"
               fontSize="text-base"
-              className="text-muted"
+              className="text-gray-300"
               splitByWord={true}
             />
           </div>

@@ -78,8 +78,17 @@ const FactsSection = () => {
         });
 
         // Horizontal scroll animation
+        const totalCards = facts.length;
+        
         gsap.to(facts, {
-          xPercent: -100 * (facts.length - 1),
+          x: () => {
+            const cardWidth = facts[0].offsetWidth;
+            const gap = 24; // gap-6 = 24px
+            const totalWidth = (cardWidth + gap) * totalCards;
+            const viewportWidth = window.innerWidth;
+            // Move the entire width minus what's visible (2 cards worth) plus extra margin
+            return -(totalWidth - viewportWidth + cardWidth);
+          },
           ease: "none",
           scrollTrigger: {
             trigger: factsContainerRef.current,
@@ -88,11 +97,17 @@ const FactsSection = () => {
             pinSpacing: true,
             scrub: 1,
             snap: {
-              snapTo: 1 / (facts.length - 1),
-              duration: 0.3,
+              snapTo: 1 / (totalCards - 2),
+              duration: 0.05,
               ease: "power1.inOut",
             },
-            end: () => `+=${window.innerWidth * (facts.length - 1)}`,
+            end: () => {
+              const cardWidth = facts[0].offsetWidth;
+              const gap = 32;
+              const totalCards = facts.length;
+              // Create enough scroll distance
+              return `+=${(cardWidth + gap) * totalCards * 2}`;
+            },
             anticipatePin: 1,
             invalidateOnRefresh: true,
           },
@@ -120,13 +135,15 @@ const FactsSection = () => {
           ref={factsContainerRef}
           className="overflow-hidden h-screen flex items-center relative"
         >
-          <div className="flex w-max factsContainer_sm">
+          <div className="flex w-max factsContainer_sm gap-6 px-6 first:pl-24">
             {servicesData.map((service, index) => (
               <section
                 key={index}
                 ref={(el) => (factsRef.current[index] = el)}
                 id="hero"
-                className="card my-8  w-screen relative overflow-hidden shadow-md"
+                className={`card my-8 w-[calc(50vw-12px)] shrink-0 relative overflow-hidden shadow-md ${
+                  index === servicesData.length - 1 ? "mr-[50vw]" : ""
+                }`}
               >
                 <div className="border rounded-2xl  border-white container mx-auto">
                   <div className="p-8 md:p-10 lg:p-24 flex flex-col md:flex-row items-start">
@@ -140,11 +157,11 @@ const FactsSection = () => {
                           {service.title2}
                         </span>
                       </h1>
-                      <p className="my-6 text-base md:text-2xl max-w-3xl  text-gray-700 text-start dark:text-gray-300">
+                      <p className="my-6 text-base md:text-2xl max-w-3xl  text-gray-700 text-start dark:text-gray-300 line-clamp-3">
                         {service.description}
                       </p>
                       <div className="flex flex-wrap items-center gap-4">
-                        {/* <ContactFormButton /> */}
+                         {/* <ContactFormButton /> */}
                         <a
                           href="#services"
                           className="btn-secondary text-black dark:text-white"

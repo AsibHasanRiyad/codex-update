@@ -79,7 +79,7 @@ const FactsSection = () => {
 
         // Horizontal scroll animation
         const totalCards = facts.length;
-        
+
         gsap.to(facts, {
           x: () => {
             const cardWidth = facts[0].offsetWidth;
@@ -141,7 +141,7 @@ const FactsSection = () => {
                 key={index}
                 ref={(el) => (factsRef.current[index] = el)}
                 id="hero"
-                className={`card my-8 w-[calc(50vw-12px)] shrink-0 relative overflow-hidden shadow-md ${
+                className={`card my-8 lg:w-[calc(50vw-12px)] shrink-0 relative overflow-hidden shadow-md ${
                   index === servicesData.length - 1 ? "mr-[50vw]" : ""
                 }`}
               >
@@ -157,11 +157,11 @@ const FactsSection = () => {
                           {service.title2}
                         </span>
                       </h1>
-                      <p className="my-6 text-base md:text-2xl max-w-3xl  text-gray-700 text-start dark:text-gray-300 line-clamp-3">
+                      <p className="my-6 text-base md:text-2xl max-w-lg md:max-w-3xl  text-gray-700 text-start dark:text-gray-300 line-clamp-3">
                         {service.description}
                       </p>
                       <div className="flex flex-wrap items-center gap-4">
-                         {/* <ContactFormButton /> */}
+                        {/* <ContactFormButton /> */}
                         <a
                           href="#services"
                           className="btn-secondary text-black dark:text-white"
@@ -172,11 +172,11 @@ const FactsSection = () => {
                     </div>
 
                     {/* Image - hidden on mobile, visible on md and up */}
-                    <div className="hidden  md:w-2/5 md:absolute md:right-0 md:top-0 md:bottom-0 md:flex md:items-center md:justify-between">
+                    <div className="   w-2/5 absolute right-0 top-0 bottom-0 flex items-center justify-between">
                       <img
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_BDOeBmoJgIDcVbz6Kf1h2fqpgvr5/uMrYbVYunzD2-lMHwTqpjV/public/purple-circle-wave-static.png"
                         alt="Purple Wave"
-                        className=" h-fit max-h-min w-full max-w-[500px]  md:object-contain  md:object-left"
+                        className=" h-fit max-h-min   w-52 lg:w-full md:max-w-[500px]  md:object-contain  md:object-left"
                       />
                     </div>
                   </div>

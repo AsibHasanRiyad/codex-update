@@ -185,7 +185,7 @@ const HomeVideo = () => {
   return (
     <div
       ref={containerRef}
-      className="video-container z-40   relative flex flex-col justify-center items-center w-screen h-screen overflow-hidden"
+      className="video-container z-40  hidden   relative md:flex flex-col justify-center items-center w-screen h-screen overflow-hidden"
     >
       {/* Noisy background image */}
       <img

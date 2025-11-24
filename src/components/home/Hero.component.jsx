@@ -25,9 +25,9 @@ export default function Hero() {
   ];
 
   return (
-    <div className=" relative w-screen min-h-screen flex flex-col justify-between overflow-hidden bg-primary">
-      <LightRays className="absolute h-screen bg-primary left-0 top-0" />
-      <div className="absolute right-[12%] z-20 top-[20%]">
+    <div className=" relative w-screen min-h-screen h-full flex flex-col justify-between overflow-hidden bg-primary">
+      <LightRays className="absolute min-h-screen bg-primary left-0 top-0" />
+      <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img
           animate={{ rotate: 360 }}
           transition={{
@@ -35,20 +35,20 @@ export default function Hero() {
             duration: 12,
             ease: "linear",
           }}
-          className="  size-32"
+          className=" size-24 md:size-40  lg:size-32"
           src={movingSvg}
           alt=""
         />
       </div>
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center">
+      <div className="relative z-40 flex-1 flex items-center">
         <div className="container mx-auto px-4 md:px-8 pb-12 lg:pb-16 pt-24 lg:pt-32">
           {/* Hero Title */}
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
               splitByWord={true}
               startDelay={7.6}
-              fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
+              fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
               text="Crafting Next-Gen "
               delayPerItem={0.08}
@@ -56,8 +56,8 @@ export default function Hero() {
             <TextMaskReveal
               splitByWord={true}
               startDelay={7.6}
-              fontSize="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
-              className="font-bold text-white ml-[10%] md:ml-[15%] uppercase leading-[0.9]"
+              fontSize="text-5xl text-7xl 2xl:text-8xl"
+              className="font-bold text-white  lg:ml-[15%] uppercase leading-[0.9]"
               text="Digital Excellence"
               delayPerItem={0.08}
             />
@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Bottom Grid */}
           <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-12">
             {/* Company Name */}
-            <div className="md:col-span-2 flex items-start">
+            <div className="md:col-span-2 flex md:hidden lg:flex items-start">
               <h2 className="text-white text-xl md:text-2xl font-semibold uppercase tracking-wide">
                 Codex IT BD
               </h2>
@@ -81,14 +81,14 @@ export default function Hero() {
                 business thrive in the digital age.
               </p>
 
-              <button className="group px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-emerald-600 hover:bg-blue-500/10 transition-all duration-300 flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 active:scale-95">
+              <button className="group hidden  px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-emerald-600 hover:bg-blue-500/10 transition-all duration-300 md:flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 active:scale-95">
                 KNOW MORE
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
 
             {/* Stats Card */}
-            <div className="md:col-span-4 bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 flex justify-between items-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 group cursor-pointer">
+            <div className="md:col-span-6 lg:col-span-4 bg-white/5 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 flex justify-between items-center hover:bg-white/10 hover:border-white/30 transition-all duration-300 group cursor-pointer">
               <div>
                 <TextMaskReveal
                   splitByWord={true}

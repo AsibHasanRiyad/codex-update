@@ -54,16 +54,16 @@ const Stats = () => {
   });
 
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative ">
       {/* Title Section */}
       <div
         ref={titleRef}
-        className="text-5xl my-16 lg:my-32 text-white text-center"
+        className="text-5xl px-4 md:px-8 my-16 lg:my-32 text-white text-center"
       >
         <TextMaskReveal
           splitByWord={true}
           className=" uppercase italic"
-          fontSize="text-8xl"
+          fontSize=" text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl"
           text="Committed to  results"
         />
       </div>
@@ -73,10 +73,10 @@ const Stats = () => {
         {/* Card 1 */}
         <div
           ref={card1Ref}
-          className="h-32 flex items-center justify-center bg-white"
+          className=" h-20 md:h-24 lg:h-32 flex items-center justify-center bg-white"
           style={{ transform: "rotate(3deg)" }}
         >
-          <h2 className="text-5xl font-bold text-black">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
             30+ Innovative team members
           </h2>
         </div>
@@ -84,10 +84,10 @@ const Stats = () => {
         {/* Card 2 */}
         <div
           ref={card2Ref}
-          className="h-32 flex items-center justify-center bg-emerald-500"
+          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-emerald-500"
           style={{ transform: "rotate(-3deg)" }}
         >
-          <h2 className="text-5xl font-bold text-white">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
             50+ Completed projects
           </h2>
         </div>
@@ -95,10 +95,10 @@ const Stats = () => {
         {/* Card 3 */}
         <div
           ref={card3Ref}
-          className="h-32 flex items-center justify-center bg-blue-400"
+          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-blue-400"
           style={{ transform: "rotate(3deg)" }}
         >
-          <h2 className="text-5xl font-bold text-white">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
             4 Years of experience
           </h2>
         </div>

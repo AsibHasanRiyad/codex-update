@@ -15,7 +15,7 @@ const MainLayout = () => {
     <div className=" bg-primary font-spaceMono">
       <SmoothScrollProvider>
         <ScrollToHashElement />
-        <Preloader />
+        {/* <Preloader /> */}
         <Navbar />
         <Outlet />
         <Footer />

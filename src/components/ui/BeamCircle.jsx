@@ -22,7 +22,10 @@ const defaultOrbits = [
     iconSize: 28,
     orbitThickness: 1.5,
     startAngle: 180,
-    endAngle: 300,
+
+    endAngleLg: 300, // desktop
+    endAngleMd: 260, // tablet
+    endAngleSm: 240, // mobile
   },
   {
     id: 2,
@@ -34,7 +37,10 @@ const defaultOrbits = [
     iconSize: 28,
     orbitThickness: 1.5,
     startAngle: 0,
-    endAngle: -110,
+
+    endAngleLg: -110,
+    endAngleMd: -80,
+    endAngleSm: -80,
   },
   {
     id: 3,
@@ -46,7 +52,10 @@ const defaultOrbits = [
     iconSize: 30,
     orbitThickness: 1.5,
     startAngle: 180,
-    endAngle: 310,
+
+    endAngleLg: 310,
+    endAngleMd: 260,
+    endAngleSm: 250,
   },
   {
     id: 4,
@@ -58,7 +67,10 @@ const defaultOrbits = [
     iconSize: 30,
     orbitThickness: 1.5,
     startAngle: 0,
-    endAngle: -125,
+
+    endAngleLg: -125,
+    endAngleMd: -90,
+    endAngleSm: -90,
   },
   {
     id: 5,
@@ -70,7 +82,10 @@ const defaultOrbits = [
     iconSize: 28,
     orbitThickness: 1.5,
     startAngle: 180,
-    endAngle: 280,
+
+    endAngleLg: 280,
+    endAngleMd: 240,
+    endAngleSm: 260,
   },
   {
     id: 6,
@@ -82,15 +97,34 @@ const defaultOrbits = [
     iconSize: 28,
     orbitThickness: 1.5,
     startAngle: 0,
-    endAngle: -135,
+
+    endAngleLg: -135,
+    endAngleMd: -95,
+    endAngleSm: -85,
   },
 ];
 
 const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
-  const orbitsData = useMemo(
-    () => customOrbits || defaultOrbits,
-    [customOrbits]
-  );
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const orbitsData = useMemo(() => {
+    return (customOrbits || defaultOrbits).map((orbit) => {
+      let endAngle = orbit.endAngleLg;
+
+      if (screenWidth < 640) {
+        endAngle = orbit.endAngleSm;
+      } else if (screenWidth < 1024) {
+        endAngle = orbit.endAngleMd;
+      }
+
+      return { ...orbit, endAngle };
+    });
+  }, [customOrbits, screenWidth]);
+
   const halfSize = size / 2;
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" }); // triggers once when in viewport
@@ -116,15 +150,17 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
           <TextMaskReveal
             className="uppercase"
             splitByWord
+            fontSize="text-4xl md:text-5xl lg:text-6xl"
             text="Innovate. Inspire."
           />
           <TextMaskReveal
-            className="uppercase -mt-7"
+            className="uppercase lg:-mt-7"
+            fontSize="text-3xl md:text-5xl lg:text-6xl"
             splitByWord
             text="Experiences that Move"
           />
         </div>
-        <p className="text-center max-w-7xl mx-auto text-3xl text-white">
+        <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-base md:text-lg mt-5 lg:text-3xl text-white">
           At CodexitBD, we create visually stunning, high-performance animated
           websites that blend creativity and technology. Our designs deliver
           seamless performance, sleek visuals, and immersive user experiences —
@@ -133,7 +169,7 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
       </div>
 
       {/* --- Orbit Section --- */}
-      <div className="absolute -bottom-1/3 transform -translate-x-1/2 left-1/2 p-4 bg-transparent">
+      <div className="absolute -bottom-[40%] lg:-bottom-1/3 transform -translate-x-1/2 left-1/2 p-4 bg-transparent">
         <div className="relative" style={{ width: size, height: size }}>
           {orbitsData.map((orbit) => {
             const orbitDiameter = size * orbit.radiusFactor;

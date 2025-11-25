@@ -2,7 +2,7 @@ import ReactLenis from "lenis/react";
 
 const SmoothScrollProvider = ({ children }) => {
   const lenisOptions = {
-    lerp: 0.05,
+    lerp: 0.25,
     duration: 2,
     touchSmooth: false,
     smooth: true,

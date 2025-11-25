@@ -11,6 +11,7 @@ export function TextMaskReveal({
   splitByWord = false,
   lineHeight = "leading-tight",
   startDelay = 0,
+  shouldAnimate = false,
 }) {
   const items = splitByWord ? text.split(" ") : text.split("\n");
 
@@ -26,15 +27,19 @@ export function TextMaskReveal({
     }),
   };
 
+  // inView still works, but used only when shouldAnimate = false
   const { ref, inView } = useInView({
     threshold,
     triggerOnce: true,
   });
 
+  // FINAL logic:
+  const trigger = shouldAnimate ? true : inView;
+
   return (
     <div
       ref={ref}
-      className={`${fontSize} ${lineHeight} font-bold  ${className}`}
+      className={`${fontSize} ${lineHeight} font-bold ${className}`}
     >
       {items.map((item, index) => (
         <div key={index} className="overflow-hidden inline-block">
@@ -42,11 +47,12 @@ export function TextMaskReveal({
             custom={index}
             variants={animation}
             initial="initial"
-            animate={inView ? "enter" : ""}
+            animate={trigger ? "enter" : ""}
             className="inline-block"
           >
             {item}
           </motion.span>
+
           {splitByWord && index < items.length - 1 && <span>&nbsp;</span>}
         </div>
       ))}

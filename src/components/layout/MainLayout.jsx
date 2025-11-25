@@ -7,17 +7,19 @@ import ScrollToHashElement from "../../provider/ScrollToHashElement";
 import Footer from "./Footer";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
+import { useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const MainLayout = () => {
+  const [preloaderDone, setPreloaderDone] = useState(false);
   return (
     <div className=" bg-primary font-spaceMono">
       <SmoothScrollProvider>
         <ScrollToHashElement />
-        {/* <Preloader /> */}
+        <Preloader onFinish={() => setPreloaderDone(true)} />
         <Navbar />
-        <Outlet />
+        <Outlet context={{ preloaderDone }} />
         <Footer />
       </SmoothScrollProvider>
     </div>

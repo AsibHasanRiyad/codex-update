@@ -11,6 +11,8 @@ import LightRays from "../ui/LightRays";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import movingSvg from "../../assets/Asterisk.svg";
 import arrow from "../../assets/Arrow.svg";
+import { useOutletContext } from "react-router-dom";
+import { useEffect, useState } from "react";
 export default function Hero() {
   const services = [
     "Web Development",
@@ -23,6 +25,17 @@ export default function Hero() {
     "Cyber Security",
     "IoT",
   ];
+  const { preloaderDone } = useOutletContext();
+
+  const [startAnim, setStartAnim] = useState(false);
+  console.log(preloaderDone);
+  useEffect(() => {
+    if (preloaderDone) {
+      setTimeout(() => setStartAnim(true));
+    }
+  }, [preloaderDone]);
+
+  const shouldAnimate = startAnim;
 
   return (
     <div className=" relative w-screen min-h-screen h-full flex flex-col justify-between overflow-hidden bg-primary">
@@ -46,6 +59,7 @@ export default function Hero() {
           {/* Hero Title */}
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
+              shouldAnimate={shouldAnimate}
               splitByWord={true}
               startDelay={7.6}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
@@ -54,6 +68,7 @@ export default function Hero() {
               delayPerItem={0.08}
             />
             <TextMaskReveal
+              shouldAnimate={shouldAnimate}
               splitByWord={true}
               startDelay={7.6}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
@@ -92,12 +107,14 @@ export default function Hero() {
               <div>
                 <TextMaskReveal
                   splitByWord={true}
+                  shouldAnimate={shouldAnimate}
                   fontSize="text-4xl md:text-5xl"
                   className="font-bold text-white mb-2 leading-none"
                   text="100+"
                   startDelay={8}
                 />
                 <TextMaskReveal
+                  shouldAnimate={shouldAnimate}
                   splitByWord={false}
                   fontSize="text-sm md:text-base"
                   className="text-white/70"

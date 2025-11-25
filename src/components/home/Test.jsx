@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import bg_video from "../../assets/video/card_bg.mp4";
 gsap.registerPlugin(ScrollTrigger);
 
 const servicesData = [
@@ -63,31 +63,18 @@ const FactsSection = () => {
   useEffect(() => {
     const facts = factsRef.current;
 
-    // Small delay to ensure other ScrollTriggers are set up first
     const timer = setTimeout(() => {
       const ctx = gsap.context(() => {
-        // Title animation
-        gsap.to(mainContainerRef.current.querySelector("h2"), {
-          scale: 1,
-          scrollTrigger: {
-            trigger: mainContainerRef.current,
-            start: "top center",
-            end: "center center",
-            scrub: true,
-          },
-        });
-
-        // Horizontal scroll animation
+        // Horizontal scroll animation with faster scrub
         const totalCards = facts.length;
 
         gsap.to(facts, {
           x: () => {
             const cardWidth = facts[0].offsetWidth;
-            const gap = 24; // gap-6 = 24px
+            const gap = 24;
             const totalWidth = (cardWidth + gap) * totalCards;
             const viewportWidth = window.innerWidth;
-            // Move the entire width minus what's visible (2 cards worth) plus extra margin
-            return -(totalWidth - viewportWidth + cardWidth);
+            return -(totalWidth - viewportWidth + gap);
           },
           ease: "none",
           scrollTrigger: {
@@ -95,23 +82,23 @@ const FactsSection = () => {
             start: "center center",
             pin: true,
             pinSpacing: true,
-            scrub: 1,
+            scrub: 0.3, // Changed from 1 to 0.3 for faster response
             snap: {
-              snapTo: 1 / (totalCards - 2),
-              duration: 0.05,
-              ease: "power1.inOut",
+              snapTo: 1 / (totalCards - 1), // Snap to each card
+              duration: { min: 0.2, max: 0.4 }, // Faster snap
+              ease: "power2.inOut",
             },
             end: () => {
               const cardWidth = facts[0].offsetWidth;
-              const gap = 32;
-              const totalCards = facts.length;
-              // Create enough scroll distance
-              return `+=${(cardWidth + gap) * totalCards * 2}`;
+              const gap = 24;
+              // Reduced multiplier for less scroll distance
+              return `+=${(cardWidth + gap) * totalCards * 0.8}`;
             },
             anticipatePin: 1,
             invalidateOnRefresh: true,
           },
         });
+
         ScrollTrigger.refresh();
       }, mainContainerRef);
 
@@ -145,9 +132,20 @@ const FactsSection = () => {
                   index === servicesData.length - 1 ? "mr-[50vw]" : ""
                 }`}
               >
-                <div className="border rounded-2xl  border-white container mx-auto">
+                <div className=" absolute inset-0 w-full h-full">
+                  <video
+                    playsInline
+                    muted
+                    autoPlay
+                    loop
+                    className=" w-full rounded-2xl h-full object-cover"
+                    src={bg_video}
+                  ></video>
+                </div>
+                <div className=" absolute inset-0 rounded-2xl w-full h-full bg-black/90"></div>
+                <div className=" rounded-2xl   container mx-auto">
                   <div className="p-8 md:p-10 lg:p-24 flex flex-col md:flex-row items-start">
-                    <div className="w-full md:w-3/5 z-10">
+                    <div className="w-full  z-10">
                       <p className=" text-gray-200 text-start">
                         {service.subtitle}
                       </p>
@@ -172,13 +170,13 @@ const FactsSection = () => {
                     </div>
 
                     {/* Image - hidden on mobile, visible on md and up */}
-                    <div className="   w-2/5 absolute right-0 top-0 bottom-0 flex items-center justify-between">
+                    {/* <div className="   w-2/5 absolute right-0 top-0 bottom-0 flex items-center justify-between">
                       <img
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_BDOeBmoJgIDcVbz6Kf1h2fqpgvr5/uMrYbVYunzD2-lMHwTqpjV/public/purple-circle-wave-static.png"
                         alt="Purple Wave"
                         className=" h-fit max-h-min   w-52 lg:w-full md:max-w-[500px]  md:object-contain  md:object-left"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </section>

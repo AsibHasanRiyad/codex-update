@@ -7,6 +7,7 @@ import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 import codexLogoWhite from "../../../assets/codex-white-logo.png";
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -42,11 +43,13 @@ const Navbar = () => {
         className="fixed top-0 left-0 right-0  bg-transparent border-b border-muted backdrop-blur-3xl px-4 md:px-8 z-1000 "
       >
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
-          <img
-            className="w-60 pl-4 md:pl-8 lg:px-6 col-span-6 lg:col-span-2"
-            src={codexLogoWhite || "/placeholder.svg"}
-            alt="Codex Logo"
-          />
+          <Link className="col-span-6 lg:col-span-2" to={"/"}>
+            <img
+              className="w-60 pl-4 md:pl-8  lg:px-6 "
+              src={codexLogoWhite || "/placeholder.svg"}
+              alt="Codex Logo"
+            />
+          </Link>
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">
               <span>Contact</span> <div className=" w-5 bg-strong h-0.5"></div>{" "}

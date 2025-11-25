@@ -58,32 +58,38 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
         <div className=" col-span-9 md:col-span-12 lg:col-span-6">
           <ul className="space-y-6">
             {navLinks.map((nav) => (
-              <div
+              <li
                 key={nav.name}
                 className="relative group pb-3 transition-all duration-300"
               >
-                {/* Animated bottom border */}
                 <span className="absolute left-0 bottom-0 w-full h-px bg-linear-to-r from-emerald-600 via-emerald-400 to-transparent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></span>
 
-                {/* Parent link */}
                 <div
                   className={`flex justify-between items-center cursor-pointer text-3xl md:text-4xl lg:text-5xl font-black uppercase transition-all duration-75 ease-in-out ${
                     active === nav.name
                       ? "text-emerald-600 drop-shadow-lg"
                       : "text-strong hover:text-emerald-600"
                   }`}
-                  onClick={() => (nav.children ? handleToggle(nav.name) : null)}
+                  onClick={() => nav.children && handleToggle(nav.name)}
                 >
-                  <Link
-                    to={nav.link}
-                    className="hover:drop-shadow-md transition-all"
-                  >
-                    <TextMaskReveal
-                      startDelay={0.1}
-                      fontSize="text-3xl md:text-4xl lg:text-5xl"
-                      text={nav.name}
-                    />
-                  </Link>
+                  {nav.link && !nav.children ? (
+                    <Link to={nav.link} onClick={() => setOpen(false)}>
+                      <TextMaskReveal
+                        startDelay={0.1}
+                        fontSize="text-3xl md:text-4xl lg:text-5xl"
+                        text={nav.name}
+                      />
+                    </Link>
+                  ) : (
+                    <div className="hover:drop-shadow-md transition-all">
+                      <TextMaskReveal
+                        startDelay={0.1}
+                        fontSize="text-3xl md:text-4xl lg:text-5xl"
+                        text={nav.name}
+                      />
+                    </div>
+                  )}
+
                   {nav.children && (
                     <Plus
                       className={`transition-all duration-500 ${
@@ -93,7 +99,6 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                   )}
                 </div>
 
-                {/* Children dropdown */}
                 <AnimatePresence>
                   {active === nav.name && nav.children && (
                     <motion.div
@@ -106,22 +111,28 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                       <ul className="pl-4 pt-5 space-y-3 text-lg md:text-xl lg:text-2xl text-strong">
                         {nav.children.map((child) => (
                           <li
-                            key={child}
+                            key={child.name}
                             className="hover:text-strong uppercase flex justify-start items-center gap-2 cursor-pointer transition-all duration-500 hover:translate-x-2"
                           >
-                            <Dot className="text-lochmara" />
-                            <TextMaskReveal
-                              startDelay={0.1}
-                              fontSize="text-lg md:text-xl lg:text-2xl"
-                              text={child}
-                            />
+                            <Link
+                              to={child.link}
+                              onClick={() => setOpen(false)}
+                              className="flex items-center gap-2"
+                            >
+                              <Dot className="text-lochmara" />
+                              <TextMaskReveal
+                                startDelay={0.1}
+                                fontSize="text-lg md:text-xl lg:text-2xl"
+                                text={child.name}
+                              />
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </li>
             ))}
           </ul>
         </div>

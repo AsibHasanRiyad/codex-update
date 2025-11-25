@@ -26,9 +26,7 @@ export default function Hero() {
     "IoT",
   ];
   const { preloaderDone } = useOutletContext();
-
   const [startAnim, setStartAnim] = useState(false);
-  console.log(preloaderDone);
   useEffect(() => {
     if (preloaderDone) {
       setTimeout(() => setStartAnim(true));
@@ -61,7 +59,6 @@ export default function Hero() {
             <TextMaskReveal
               shouldAnimate={shouldAnimate}
               splitByWord={true}
-              startDelay={6.8}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
               text="Crafting Next-Gen "
@@ -70,7 +67,6 @@ export default function Hero() {
             <TextMaskReveal
               shouldAnimate={shouldAnimate}
               splitByWord={true}
-              startDelay={7.0}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white  lg:ml-[15%] uppercase leading-[0.9]"
               text="Digital Excellence"
@@ -111,7 +107,6 @@ export default function Hero() {
                   fontSize="text-4xl md:text-5xl"
                   className="font-bold text-white mb-2 leading-none"
                   text="100+"
-                  startDelay={7.2}
                 />
                 <TextMaskReveal
                   shouldAnimate={shouldAnimate}
@@ -119,7 +114,6 @@ export default function Hero() {
                   fontSize="text-sm md:text-base"
                   className="text-white/70"
                   text="Projects Delivered"
-                  startDelay={7.4}
                 />
               </div>
               <div>

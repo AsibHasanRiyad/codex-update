@@ -2,13 +2,36 @@ export const navLinks = [
   { name: "Home", link: "/", children: null },
   {
     name: "About",
-    link: "#",
-    children: ["Our Story", "Team", "Mission"],
+    link: "/about-us",
   },
   {
     name: "Services",
-    link: "#",
-    children: ["Web Development", "App Development", "UI/UX Design"],
+    children: [
+      {
+        name: "Web Development",
+        link: "/services/web-development",
+      },
+      {
+        name: "Mobile Apps",
+        link: "/services/mobile-apps",
+      },
+      {
+        name: "Cloud Services",
+        link: "/services/cloud-services",
+      },
+      {
+        name: "Digital Marketing",
+        link: "/services/digital-marketing",
+      },
+      {
+        name: "UI/UX Design",
+        link: "/services/ui-ux-design",
+      },
+      {
+        name: "Smart IoT",
+        link: "/services/smart-iot",
+      },
+    ],
   },
   {
     name: "Blog",

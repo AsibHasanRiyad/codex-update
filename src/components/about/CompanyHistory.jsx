@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CompanyTimeline } from "./CompanyTimeline";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import image from "../../assets/person.png";
-gsap.registerPlugin(ScrollTrigger);
 
 const CompanyHistory = () => {
   const sectionRef = useRef(null);

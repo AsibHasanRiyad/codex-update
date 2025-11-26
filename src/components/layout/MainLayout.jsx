@@ -17,7 +17,7 @@ const MainLayout = () => {
     <div className=" bg-primary font-spaceMono">
       <SmoothScrollProvider>
         <ScrollToHashElement />
-        <Preloader onFinish={() => setPreloaderDone(true)} />
+        {/* <Preloader onFinish={() => setPreloaderDone(true)} /> */}
         <Navbar />
         <Outlet context={{ preloaderDone }} />
         <Footer />

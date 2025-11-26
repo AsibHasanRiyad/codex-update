@@ -33,10 +33,10 @@ export const navLinks = [
       },
     ],
   },
-  {
-    name: "Blog",
-    link: "#",
-    children: ["Latest Posts", "Company News", "Tips & Guides"],
-  },
+  // {
+  //   name: "Blog",
+  //   link: "#",
+  //   children: ["Latest Posts", "Company News", "Tips & Guides"],
+  // },
   { name: "Contact", link: "/contact", children: null },
 ];

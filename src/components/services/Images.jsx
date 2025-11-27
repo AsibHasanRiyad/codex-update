@@ -78,7 +78,7 @@ const Images = () => {
             <img
               src={image}
               alt={item.title}
-              className="w-full h-120 object-cover aspect-square transition-transform duration-700 group-hover:scale-110"
+              className="w-full h-96 lg:h-120 object-cover aspect-square transition-transform duration-700 group-hover:scale-110"
             />
 
             {/* Overlay Content */}

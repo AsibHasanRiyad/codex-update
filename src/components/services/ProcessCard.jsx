@@ -16,7 +16,7 @@ const ProcessCard = ({ step, title, description, services }) => {
         <div className=" relative">
           <img
             src={arrow}
-            className=" size-9  rounded-full border-gray-700 border p-2.5 rotate-45 mt-1"
+            className=" size-7 lg:size-9  rounded-full border-gray-700 border p-0.5 lg:p-2.5 rotate-45 mt-1"
             alt=""
           />
           <div className=" absolute rounded-full border border-gray-500 -top-1 left-0.5 w-full h-full inset-0 "></div>

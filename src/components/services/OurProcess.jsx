@@ -108,7 +108,7 @@ const OurProcess = () => {
     <div className="container mx-auto text-white px-4 md:px-8">
       <div
         ref={processSectionRef}
-        className="  gap-12 md:gap-16 lg:gap-20 grid grid-cols-2"
+        className="  gap-12 md:gap-16 lg:gap-20 grid lg:grid-cols-2"
       >
         <div ref={processTitleRef}>
           <h1 className=" text-xl md:text-2xl lg:text-3xl font-semibold text-gray-300">
@@ -152,23 +152,23 @@ const OurProcess = () => {
           ))}
         </div>
       </div>
-      <div className=" relative grid grid-cols-3 gap-12 md:gap-16 lg:gap-20 mt-40 border p-8 rounded-2xl max-w-6xl mx-auto border-gray-700 mb-12 md:mb-16 lg:mb-20">
+      <div className=" relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20 mt-40 border p-8 rounded-2xl max-w-6xl mx-auto border-gray-700 mb-12 md:mb-16 lg:mb-20">
         <div className=" absolute rounded-2xl border border-gray-500 -top-2.5 left-2.5 w-full h-full inset-0 "></div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-2xl md:text-3xl lg:text-4xl font-bold">1000+</p>
-          <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold">
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">1000+</p>
+          <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
             Website Delivered
           </h3>
         </div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-2xl md:text-3xl lg:text-4xl font-bold">10000+</p>
-          <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold">
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">10000+</p>
+          <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
             Happy Client
           </h3>
         </div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-2xl md:text-3xl lg:text-4xl font-bold">10+</p>
-          <h3 className=" text-lg md:text-xl lg:text-2xl font-semibold">
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">10+</p>
+          <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
             Country Served
           </h3>
         </div>

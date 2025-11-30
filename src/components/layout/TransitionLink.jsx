@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import { usePageTransition } from "./PageTransition";
 
 export function TransitionLink({ to, children, className, onClick }) {
   const { handleNavigation } = usePageTransition();
 
   return (
-    <a
-      href={to}
+    <Link
+      to={to}
       className={className}
       onClick={(e) => {
         e.preventDefault();
@@ -14,6 +15,6 @@ export function TransitionLink({ to, children, className, onClick }) {
       }}
     >
       {children}
-    </a>
+    </Link>
   );
 }

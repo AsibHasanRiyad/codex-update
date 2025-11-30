@@ -40,7 +40,7 @@ const Navbar = () => {
       <motion.div
         animate={{ y: hidden ? -100 : 0 }}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 right-0  bg-transparent border-b border-muted backdrop-blur-3xl px-4 md:px-8 z-1000 "
+        className="fixed top-0 left-0 right-0  bg-transparent border-b border-muted backdrop-blur-3xl px-4 md:px-8 z-999 "
       >
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
           <Link className="col-span-6 lg:col-span-2" to={"/"}>

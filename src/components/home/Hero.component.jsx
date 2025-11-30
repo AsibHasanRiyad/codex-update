@@ -25,15 +25,6 @@ export default function Hero() {
     "Cyber Security",
     "IoT",
   ];
-  const { preloaderDone } = useOutletContext();
-  const [startAnim, setStartAnim] = useState(false);
-  useEffect(() => {
-    if (preloaderDone) {
-      setTimeout(() => setStartAnim(true));
-    }
-  }, [preloaderDone]);
-
-  const shouldAnimate = startAnim;
 
   return (
     <div className=" relative w-screen h-screen  flex flex-col justify-between overflow-hidden bg-primary">
@@ -58,7 +49,6 @@ export default function Hero() {
           {/* Hero Title */}
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
-              shouldAnimate={shouldAnimate}
               splitByWord={true}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
@@ -66,7 +56,6 @@ export default function Hero() {
               delayPerItem={0.08}
             />
             <TextMaskReveal
-              shouldAnimate={shouldAnimate}
               splitByWord={true}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white  lg:ml-[15%] uppercase leading-[0.9]"
@@ -104,13 +93,11 @@ export default function Hero() {
               <div>
                 <TextMaskReveal
                   splitByWord={true}
-                  shouldAnimate={shouldAnimate}
                   fontSize="text-4xl md:text-5xl"
                   className="font-bold text-white mb-2 leading-none"
                   text="100+"
                 />
                 <TextMaskReveal
-                  shouldAnimate={shouldAnimate}
                   splitByWord={false}
                   fontSize="text-sm md:text-base"
                   className="text-white/70"

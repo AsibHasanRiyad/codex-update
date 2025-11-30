@@ -5,19 +5,18 @@ import Navbar from "./header/Navbar";
 import SmoothScrollProvider from "../../provider/SmoothScrollProvider";
 import ScrollToHashElement from "../../provider/ScrollToHashElement";
 import Footer from "./Footer";
-import { useState } from "react";
+
 import PageTransition from "./PageTransition";
 
 const MainLayout = () => {
-  const [preloaderDone, setPreloaderDone] = useState(false);
   return (
     <div className=" bg-primary font-spaceMono">
       <PageTransition>
         <SmoothScrollProvider>
           <ScrollToHashElement />
-          {/* <Preloader onFinish={() => setPreloaderDone(true)} /> */}
+          <Preloader />
           <Navbar />
-          <Outlet context={{ preloaderDone }} />
+          <Outlet />
           <Footer />
         </SmoothScrollProvider>
       </PageTransition>

@@ -156,7 +156,7 @@ export default function PageTransition({ children, color = "bg-primary" }) {
     <>
       {/* Transition Layer - Hidden on first load */}
       <div
-        className={`fixed inset-0 z-[100] flex flex-col pointer-events-none`}
+        className={`fixed inset-0 z-[1000] flex flex-col pointer-events-none`}
       >
         <div className="flex-1 flex">
           {[...Array(5)].map((_, i) => (

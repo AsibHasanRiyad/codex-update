@@ -13,7 +13,7 @@ import image4 from "../../assets/loader/4.jpg";
 gsap.registerPlugin(useGSAP, SplitText, CustomEase);
 CustomEase.create("hop", "0.9, 0, 0.1, 1");
 export let isInitialLoad = true;
-const Preloader = ({ onFinish }) => {
+const Preloader = () => {
   const preloaderRef = useRef();
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
@@ -133,7 +133,6 @@ const Preloader = ({ onFinish }) => {
           ease: "hop",
           onStart: () => {
             gsap.set(".preloader", { pointerEvents: "none" });
-            onFinish?.();
           },
           onComplete: () => {
             setTimeout(() => {

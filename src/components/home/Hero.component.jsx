@@ -36,8 +36,9 @@ export default function Hero() {
   const shouldAnimate = startAnim;
 
   return (
-    <div className=" relative w-screen min-h-screen h-full flex flex-col justify-between overflow-hidden bg-primary">
-      <LightRays className="absolute min-h-screen bg-primary left-0 top-0" />
+    <div className=" relative w-screen h-screen  flex flex-col justify-between overflow-hidden bg-primary">
+      <LightRays />
+
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img
           animate={{ rotate: 360 }}

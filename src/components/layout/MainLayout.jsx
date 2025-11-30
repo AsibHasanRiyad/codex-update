@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 import { useState } from "react";
+import PageTransition from "./PageTransition";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -15,13 +16,15 @@ const MainLayout = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);
   return (
     <div className=" bg-primary font-spaceMono">
-      <SmoothScrollProvider>
-        <ScrollToHashElement />
-        <Preloader onFinish={() => setPreloaderDone(true)} />
-        <Navbar />
-        <Outlet context={{ preloaderDone }} />
-        <Footer />
-      </SmoothScrollProvider>
+      <PageTransition>
+        <SmoothScrollProvider>
+          <ScrollToHashElement />
+          {/* <Preloader onFinish={() => setPreloaderDone(true)} /> */}
+          <Navbar />
+          <Outlet context={{ preloaderDone }} />
+          <Footer />
+        </SmoothScrollProvider>
+      </PageTransition>
     </div>
   );
 };

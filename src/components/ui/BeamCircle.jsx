@@ -127,7 +127,7 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
 
   const halfSize = size / 2;
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" }); // triggers once when in viewport
+  const isInView = useInView(ref, { once: true, margin: "50px" }); // triggers once when in viewport
 
   const [animate, setAnimate] = useState(false);
 

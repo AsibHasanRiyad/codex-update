@@ -5,12 +5,8 @@ import Navbar from "./header/Navbar";
 import SmoothScrollProvider from "../../provider/SmoothScrollProvider";
 import ScrollToHashElement from "../../provider/ScrollToHashElement";
 import Footer from "./Footer";
-import gsap from "gsap";
-import { ScrollTrigger, SplitText } from "gsap/all";
 import { useState } from "react";
 import PageTransition from "./PageTransition";
-
-gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const MainLayout = () => {
   const [preloaderDone, setPreloaderDone] = useState(false);

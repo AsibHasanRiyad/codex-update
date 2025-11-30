@@ -40,16 +40,16 @@ const Navbar = () => {
       <motion.div
         animate={{ y: hidden ? -100 : 0 }}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 right-0  bg-transparent border-b border-muted backdrop-blur-3xl px-4 md:px-8 z-999 "
+        className="fixed top-0 left-0 right-0  bg-transparent border-b border-muted backdrop-blur-3xl px-4 md:px-8 z-990 "
       >
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
-          <Link className="col-span-6 lg:col-span-2" to={"/"}>
+          <a className="col-span-6 lg:col-span-2" href={"/"}>
             <img
               className="w-60 pl-4 md:pl-8  lg:px-6 "
               src={codexLogoWhite || "/placeholder.svg"}
               alt="Codex Logo"
             />
-          </Link>
+          </a>
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">
               <span>Contact</span> <div className=" w-5 bg-strong h-0.5"></div>{" "}

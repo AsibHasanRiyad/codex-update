@@ -17,7 +17,6 @@ import CrossIcon from "./CrossIcon";
 import EmailInput from "./EmailInput";
 import { navLinks } from "../../../constants";
 import ColorBends from "../../ui/ColorBends";
-import { TransitionLink } from "../TransitionLink";
 
 const NavbarContent = ({ active, handleToggle, setOpen }) => {
   return (
@@ -74,16 +73,13 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                   onClick={() => nav.children && handleToggle(nav.name)}
                 >
                   {nav.link && !nav.children ? (
-                    <TransitionLink
-                      to={nav.link}
-                      onClick={() => setOpen(false)}
-                    >
+                    <a href={nav.link} onClick={() => setOpen(false)}>
                       <TextMaskReveal
                         startDelay={0.1}
                         fontSize="text-3xl md:text-4xl lg:text-5xl"
                         text={nav.name}
                       />
-                    </TransitionLink>
+                    </a>
                   ) : (
                     <div className="hover:drop-shadow-md transition-all">
                       <TextMaskReveal
@@ -118,8 +114,8 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                             key={child.name}
                             className="hover:text-strong uppercase flex justify-start items-center gap-2 cursor-pointer transition-all duration-500 hover:translate-x-2"
                           >
-                            <TransitionLink
-                              to={child.link}
+                            <a
+                              href={child.link}
                               onClick={() => setOpen(false)}
                               className="flex items-center gap-2"
                             >
@@ -129,7 +125,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                                 fontSize="text-lg md:text-xl lg:text-2xl"
                                 text={child.name}
                               />
-                            </TransitionLink>
+                            </a>
                           </li>
                         ))}
                       </ul>

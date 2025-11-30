@@ -1,26 +1,23 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 @theme {
-  --font-spaceMono: "Noto Sans", sans-serif;
+  /* --font-spaceMono: "Noto Sans", sans-serif; */
 
   --color-primary: #121212;
   --color-strong: #ffffff;
   --color-muted: #5a5a5a;
-  --animate-scroll: scroll var(--animation-duration, 40s)
-    var(--animation-direction, forwards) linear infinite;
+  /* --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite; */
 
-  @keyframes scroll {
+  /* @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
-  }
+  } */
 }
 
-/* marquee */
-@import "tailwindcss";
-
-@theme inline {
+/* @theme inline {
   --animate-border: border 4s linear infinite;
   --animate-infinite-scroll: infinite-scroll 25s linear infinite;
   --animate-marquee: marquee var(--duration) linear infinite;
@@ -61,4 +58,4 @@
       transform: translateY(0);
     }
   }
-}
+} */

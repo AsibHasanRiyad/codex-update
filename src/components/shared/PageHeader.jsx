@@ -2,11 +2,10 @@
 import movingSvg from "../../assets/Asterisk.svg";
 import { motion } from "framer-motion";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
-import LightRays from "../ui/LightRays";
+
 const PageHeader = () => {
   return (
     <div className=" relative w-screen  h-full flex flex-col py-20 justify-between overflow-hidden bg-primary">
-      <LightRays className="absolute min-h-screen bg-primary left-0 top-0" />{" "}
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img
           animate={{ rotate: 360 }}

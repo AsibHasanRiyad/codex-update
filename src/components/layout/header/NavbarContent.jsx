@@ -28,7 +28,8 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
       className="fixed inset-0 h-screen bg-primary z-1000 "
     >
       <ColorBends
-        colors={["#1E3A8A", "#0A7351", "#D9D9D9"]}
+        // colors={["#1E3A8A", "#0A7351", "#D9D9D9"]}
+        colors={["#1E3A8A", "#D9D9D9"]}
         rotation={30}
         speed={0.5}
         scale={0.09}

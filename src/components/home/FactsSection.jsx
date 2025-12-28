@@ -150,7 +150,7 @@ const FactsSection = () => {
                       <p className=" text-gray-200 text-start">
                         {service.subtitle}
                       </p>
-                      <h1 className="text-black dark:text-white text-4xl md:text-5xl lg:text-8xl font-semibold text-start  leading-tight">
+                      <h1 className="text-gray-200 dark:text-white text-4xl md:text-5xl lg:text-8xl font-semibold text-start  leading-tight">
                         {service.title1}
                         <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">
                           {service.title2}

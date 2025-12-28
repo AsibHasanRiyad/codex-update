@@ -13,6 +13,7 @@ import movingSvg from "../../assets/Asterisk.svg";
 import arrow from "../../assets/Arrow.svg";
 import { useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
+import ColorBends from "../ui/ColorBends";
 export default function Hero() {
   const services = [
     "Web Development",
@@ -28,7 +29,20 @@ export default function Hero() {
 
   return (
     <div className=" relative w-screen h-screen  flex flex-col justify-between overflow-hidden bg-primary">
-      <LightRays />
+      {/* <LightRays /> */}
+      <ColorBends
+        colors={["#1E3A8A", "#D9D9D9"]}
+        rotation={0}
+        speed={0.09}
+        scale={0.5}
+        frequency={1.5}
+        warpStrength={1.01}
+        mouseInfluence={0}
+        parallax={0}
+        noise={0.2}
+        transparent
+        className={"absolute top-0 h-full w-full"}
+      />
 
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img

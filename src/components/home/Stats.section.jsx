@@ -95,7 +95,7 @@ const Stats = () => {
         {/* Card 3 */}
         <div
           ref={card3Ref}
-          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-blue-400"
+          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-2c"
           style={{ transform: "rotate(3deg)" }}
         >
           <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion";
 import codexLogo from "../../../assets/codex-white-logo.png";
+import creativeLogo from "../../../assets/2c-logo.svg"
 
 import {
   Dot,
@@ -46,8 +47,8 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
         <div className=" flex justify-between items-center px-4 md:px-8 lg:px-16">
           <img
             className="w-60"
-            src={codexLogo || "/placeholder.svg"}
-            alt="CodexIT Logo"
+            src={creativeLogo || "/placeholder.svg"}
+            alt="2 Creative Logo"
           />
           <CrossIcon onClick={() => setOpen(false)} />
         </div>
@@ -195,7 +196,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             />
             <TextMaskReveal
               startDelay={0.1}
-              text="info@codexitbd.com"
+              text="info@2creative.com"
               fontSize="text-base"
               className="text-gray-300"
               splitByWord={true}

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 
 import codexLogoWhite from "../../../assets/codex-white-logo.png";
+import creativeLogo from "../../../assets/2c-logo.svg"
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 import { Link } from "react-router-dom";
@@ -46,14 +47,14 @@ const Navbar = () => {
           <a className="col-span-6 lg:col-span-2" href={"/"}>
             <img
               className="w-60 pl-4 md:pl-8  lg:px-6 "
-              src={codexLogoWhite || "/placeholder.svg"}
-              alt="Codex Logo"
+              src={creativeLogo || "/placeholder.svg"}
+              alt="2 Creative Logo"
             />
           </a>
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">
               <span>Contact</span> <div className=" w-5 bg-strong h-0.5"></div>{" "}
-              <span>support@codexitbd.com</span>
+              <span>support@2creative.com</span>
             </div>
             <div className="flex justify-start items-center gap-3 ">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, idx) => (

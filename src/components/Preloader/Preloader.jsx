@@ -179,7 +179,7 @@ const Preloader = () => {
 
       <div className="preloader-header">
         <h1 className=" text-7xl font-spaceMono lg:text-9xl md:text-8xl uppercase font-black">
-          CODEX IT
+          2 CREATIVE
         </h1>
       </div>
     </>

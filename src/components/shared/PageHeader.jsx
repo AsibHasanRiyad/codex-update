@@ -28,7 +28,7 @@ const PageHeader = () => {
               splitByWord={true}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
-              text="About Codex IT"
+              text="About 2 Creative"
               delayPerItem={0.08}
             />
             <TextMaskReveal

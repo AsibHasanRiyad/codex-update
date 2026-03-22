@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
 import codexLogoWhite from "../../assets/codex-white-logo.png";
+import creativeLogo from "../../assets/2c-logo.svg"
 import footerBg from "../../assets/footer.mp4";
 export default function Footer() {
   return (
@@ -48,7 +49,7 @@ export default function Footer() {
             {/* Company Info */}
             <div className="md:col-span-1">
               <div className="mb-6">
-                <img src={codexLogoWhite} className="w-60 mb-4" />
+                <img src={creativeLogo} className="w-60 mb-4" />
                 <p className="text-gray-200 text-sm leading-relaxed">
                   We deliver innovative software solutions that empower
                   businesses to scale and succeed in the digital age.
@@ -188,7 +189,7 @@ export default function Footer() {
           {/* Bottom Section - Copyright */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
             <p className="text-gray-300/80 text-sm">
-              Copyright © 2025 CodexIT. All rights reserved.
+              Copyright © 2025 2 Creative. All rights reserved.
             </p>
             <a
               href="#"

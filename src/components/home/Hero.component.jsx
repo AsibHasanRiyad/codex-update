@@ -83,7 +83,7 @@ export default function Hero() {
             {/* Company Name */}
             <div className="md:col-span-2 flex md:hidden lg:flex items-start">
               <h2 className="text-white text-xl md:text-2xl font-semibold uppercase tracking-wide">
-                Codex IT BD
+                2 Creative
               </h2>
             </div>
 

@@ -161,7 +161,7 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
           />
         </div>
         <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-base md:text-lg mt-5 lg:text-3xl text-white">
-          At CodexitBD, we create visually stunning, high-performance animated
+          At 2 Creative, we create visually stunning, high-performance animated
           websites that blend creativity and technology. Our designs deliver
           seamless performance, sleek visuals, and immersive user experiences —
           helping your brand stand out in the digital world.

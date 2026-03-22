@@ -1,4 +1,4 @@
-name: Deploy Beta Codex Site
+name: Deploy Beta 2 Creative Site
 
 on:
   push:

@@ -511,7 +511,7 @@ export const servicesData = [
       {
         step: 4,
         title: "Visual Design & Prototyping",
-        description:
+        description:  
           "We craft stunning high-fidelity designs and interactive prototypes that reflect your brand with precision and elegance.",
         services: [
           "Hi-Fi Mockups",

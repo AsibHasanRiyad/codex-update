@@ -58,7 +58,7 @@ const Stats = () => {
       {/* Title Section */}
       <div
         ref={titleRef}
-        className="text-5xl px-4 md:px-8 my-16 lg:my-32 text-white text-center"
+        className="text-5xl px-4 md:px-8 my-16 lg:my-32 text-[white] text-center"
       >
         <TextMaskReveal
           splitByWord={true}
@@ -73,10 +73,10 @@ const Stats = () => {
         {/* Card 1 */}
         <div
           ref={card1Ref}
-          className=" h-20 md:h-24 lg:h-32 flex items-center justify-center bg-white"
+          className=" h-20 md:h-24 lg:h-32 flex items-center justify-center bg-2c"
           style={{ transform: "rotate(3deg)" }}
         >
-          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-white">
             30+ Innovative team members
           </h2>
         </div>
@@ -84,10 +84,10 @@ const Stats = () => {
         {/* Card 2 */}
         <div
           ref={card2Ref}
-          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-[#F47920]"
+          className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-white"
           style={{ transform: "rotate(-3deg)" }}
         >
-          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-2c">
             50+ Completed projects
           </h2>
         </div>
@@ -98,7 +98,7 @@ const Stats = () => {
           className="h-20 md:h-24 lg:h-32 flex items-center justify-center bg-2c"
           style={{ transform: "rotate(3deg)" }}
         >
-          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-black">
+          <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-white">
             4 Years of experience
           </h2>
         </div>

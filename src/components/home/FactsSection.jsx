@@ -160,7 +160,7 @@ const FactsSection = () => {
                       </p>
                       <h1 className="text-gray-200 dark:text-white text-4xl md:text-5xl lg:text-8xl font-semibold text-start  leading-tight">
                         {service.title1}
-                        <span className="block text-[#7A7FEE] dark:text-[#7A7FEE]">
+                        <span className="block text-[#F47920] dark:text-[#F47920]">
                           {service.title2}
                         </span>
                       </h1>

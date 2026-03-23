@@ -3,6 +3,7 @@ import PageHeader from "../components/shared/PageHeader";
 import AboutHero from "../components/about/AboutHero";
 import CompanyHistory from "../components/about/CompanyHistory";
 import { useSEO } from "../hooks/useSEO";
+import { buildCanonicalUrl } from "../constants/seo";
 
 const About = () => {
   useSEO({
@@ -14,7 +15,7 @@ const About = () => {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       name: "About 2 Creative",
-      url: `${window.location.origin}/about-us`,
+      url: buildCanonicalUrl("/about-us"),
       description:
         "Company history and mission of 2 Creative digital solutions agency.",
     },

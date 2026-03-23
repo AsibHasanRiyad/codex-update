@@ -14,6 +14,7 @@ import {
 import PageHeader from "../components/shared/PageHeader";
 import { TextMaskReveal } from "../hooks/TextMaskReveal";
 import { useSEO } from "../hooks/useSEO";
+import { buildCanonicalUrl } from "../constants/seo";
 
 export default function Contact() {
   useSEO({
@@ -25,7 +26,7 @@ export default function Contact() {
       "@context": "https://schema.org",
       "@type": "ContactPage",
       name: "Contact 2 Creative",
-      url: `${window.location.origin}/contact`,
+      url: buildCanonicalUrl("/contact"),
       description:
         "Get in touch with 2 Creative at Elegant center, Al Jamiah Street, Al Malaz, Riyadh.",
     },

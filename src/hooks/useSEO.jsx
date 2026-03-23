@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { SITE_NAME, buildCanonicalUrl } from "../constants/seo";
 
 function upsertMeta(selector, attrs) {
   let node = document.head.querySelector(selector);
@@ -28,8 +29,7 @@ function upsertLink(selector, attrs) {
 
 export function useSEO({ title, description, pathname, schema }) {
   useEffect(() => {
-    const siteName = "2 Creative";
-    const pageTitle = title ? `${title} | ${siteName}` : siteName;
+    const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
     const cleanDescription =
       description ||
       "2 Creative delivers digital solutions including web development, mobile apps, cloud services, digital marketing, UI/UX, interior design, and IoT.";
@@ -46,9 +46,8 @@ export function useSEO({ title, description, pathname, schema }) {
       content: "index, follow, max-image-preview:large",
     });
 
-    const origin = window.location.origin;
     const canonicalPath = pathname || window.location.pathname;
-    const canonicalUrl = `${origin}${canonicalPath}`;
+    const canonicalUrl = buildCanonicalUrl(canonicalPath);
 
     upsertLink('link[rel="canonical"]', {
       rel: "canonical",
@@ -73,7 +72,7 @@ export function useSEO({ title, description, pathname, schema }) {
     });
     upsertMeta('meta[property="og:site_name"]', {
       property: "og:site_name",
-      content: siteName,
+      content: SITE_NAME,
     });
 
     upsertMeta('meta[name="twitter:card"]', {

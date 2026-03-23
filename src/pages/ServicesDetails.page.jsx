@@ -6,6 +6,7 @@ import OurProcess from "../components/services/OurProcess";
 import ServicesImage from "../components/services/ServicesImage";
 import PageHeader from "../components/shared/PageHeader";
 import { useSEO } from "../hooks/useSEO";
+import { buildCanonicalUrl } from "../constants/seo";
 
 const ServicesDetails = () => {
   const { slug } = useParams();
@@ -23,7 +24,7 @@ const ServicesDetails = () => {
         "@type": "Organization",
         name: "2 Creative",
       },
-      url: `${window.location.origin}/services/${service.slug}`,
+      url: buildCanonicalUrl(`/services/${service.slug}`),
       description: service.header.subtitle,
       areaServed: "Riyadh",
     },

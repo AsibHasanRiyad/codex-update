@@ -6,6 +6,7 @@ import FactsSection from "../components/home/FactsSection";
 import ClientFeedback from "../components/home/testimonial/Testimonial";
 import BeamCircle from "../components/ui/BeamCircle";
 import { useSEO } from "../hooks/useSEO";
+import { buildCanonicalUrl } from "../constants/seo";
 
 const Home = () => {
   useSEO({
@@ -17,7 +18,7 @@ const Home = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "2 Creative Home",
-      url: `${window.location.origin}/`,
+      url: buildCanonicalUrl("/"),
       description:
         "Digital solutions company offering web, app, cloud, design, marketing, and IoT services.",
     },

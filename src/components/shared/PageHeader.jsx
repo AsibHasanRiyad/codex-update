@@ -8,7 +8,7 @@ const PageHeader = ({
   subtitle = "We are a client-oriented digital solutions provider, dedicated to understanding your unique needs and delivering practical, innovative solutions that drive real business growth.",
 }) => {
   return (
-    <div className=" relative w-screen  h-full flex flex-col py-20 justify-between overflow-hidden bg-primary">
+    <div className=" relative w-screen  h-full flex flex-col justify-between overflow-hidden bg-primary">
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img
           animate={{ rotate: 360 }}
@@ -24,7 +24,7 @@ const PageHeader = ({
       </div>
       {/* Main content */}
       <div className="relative z-40 flex-1 flex items-center">
-        <div className="container mx-auto px-4 md:px-8 pb-12 lg:pb-16 pt-24 lg:pt-32">
+        <div className="container mx-auto px-4 md:px-8 pt-24 lg:pt-32">
           {/* Hero Title */}
           <div className="mb-8 md:mb-12">
             <TextMaskReveal

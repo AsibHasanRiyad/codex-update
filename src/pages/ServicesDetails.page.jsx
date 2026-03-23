@@ -47,7 +47,7 @@ const ServicesDetails = () => {
         sectionTitle={service.projectsSectionTitle}
         projects={service.projects}
       />
-      <ClientFeedback />
+      {/* <ClientFeedback /> */}
     </div>
   );
 };

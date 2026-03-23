@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
-import codexLogoWhite from "../../assets/codex-white-logo.png";
-import creativeLogo from "../../assets/2c-logo.png"
+import creativeLogo from "../../assets/2c-logo.png";
 import footerBg from "../../assets/footer.mp4";
+import { navLinks } from "../../constants";
+
 export default function Footer() {
+  const companyLinks = navLinks.filter((item) => item.link && !item.children);
+  const serviceLinks = navLinks.find((item) => item.name === "Services")?.children || [];
+
   return (
     <div
       className="relative h-[750px] md:h-[700px] lg:h-[650px]"
@@ -35,13 +40,13 @@ export default function Footer() {
                 LET'S CONNECT
               </h2>
             </div>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300 whitespace-nowrap"
             >
               <span>Contact Us</span>
               <ArrowUpRight size={18} />
-            </a>
+            </Link>
           </div>
 
           {/* Middle Section - Links & Info */}
@@ -83,79 +88,35 @@ export default function Footer() {
                 COMPANY
               </h4>
               <ul className="space-y-3">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Our Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Our Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Careers
-                  </a>
-                </li>
+                {companyLinks.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      to={item.link}
+                      className="text-gray-200 hover:text-white transition-colors text-sm"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
-            {/* Useful Links */}
+            {/* Services Links */}
             <div>
               <h4 className="text-sm font-semibold tracking-wider text-white mb-6">
-                USEFUL LINKS
+                SERVICES
               </h4>
               <ul className="space-y-3">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Blog Grid
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Blog Standard
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Blog Details
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-200 hover:text-white transition-colors text-sm"
-                  >
-                    Contact Us
-                  </a>
-                </li>
+                {serviceLinks.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      to={item.link}
+                      className="text-gray-200 hover:text-white transition-colors text-sm"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -191,12 +152,12 @@ export default function Footer() {
             <p className="text-gray-300/80 text-sm">
               Copyright © 2025 2 Creative. All rights reserved.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="text-gray-300/80  hover:text-white transition-colors text-sm"
             >
-              Terms & Conditions
-            </a>
+              Contact & Support
+            </Link>
           </div>
         </div>
       </div>

@@ -54,16 +54,16 @@ export default function AboutHero() {
 
           <TextMaskReveal
             splitByWord
-            text="Our Legacy of Innovation"
+            text="A Creative Partner For Modern Growth"
             className="text-gray-100 uppercase text-5xl lg:text-6xl font-bold leading-tight"
           />
 
           <p className="text-gray-300 font-medium md:text-lg text-justify -mt-5">
-            Since our inception,Skylark Soft Limited has been a driving force in
-            revolutionizing the textile and apparel industry through innovative{" "}
-            ERP solutions. From humble beginnings to becoming a global
-            technology leader, our commitment has always been to deliver
-            excellence, efficiency, and empowerment to our clients worldwide.
+            2 Creative was built to help ambitious brands turn ideas into
+            measurable business growth. We combine strategy, design, and
+            technology to deliver high-performance websites, mobile apps, cloud
+            systems, digital marketing campaigns, interior concepts, and smart
+            IoT experiences tailored to modern business needs.
           </p>
 
           {/* Rotating Shape */}
@@ -98,7 +98,7 @@ export default function AboutHero() {
           >
             <motion.img
               src={person}
-              alt="textile machinery"
+              alt="2 Creative team and digital innovation"
               className="size-[70%] object-contain"
             />
           </motion.div>
@@ -107,13 +107,15 @@ export default function AboutHero() {
             <TextMaskReveal
               splitByWord
               className="text-3xl text-gray-100 uppercase md:text-4xl lg:text-5xl"
-              text="Our History"
+              text="Why Businesses Choose Us"
             />
 
             <p className="text-gray-300 font-medium text-justify mt-4">
-              Today, with our flagship productgoRMG ERP , we help manage over$8
-              billion in annual production — streamlining operations for
-              hundreds of clients across continents.
+              Today, 2 Creative partners with growth-focused companies that need
+              more than execution. Our team builds digital products, brand
+              experiences, and operational systems designed to improve
+              visibility, increase efficiency, and create long-term competitive
+              advantage.
             </p>
 
             {/* Stats */}
@@ -128,10 +130,11 @@ export default function AboutHero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  98%
+                  360&deg;
                 </motion.div>
                 <div className="text-gray-300 font-medium text-sm">
-                  Client Retention & Satisfaction
+                  Digital, design, and innovation support under one creative
+                  partner
                 </div>
               </motion.div>
 
@@ -142,10 +145,10 @@ export default function AboutHero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 1 }}
                 >
-                  125+
+                  7+
                 </motion.div>
                 <div className="text-gray-300 font-medium text-sm">
-                  Projects Delivered Across 24 Countries
+                  Core service categories built for modern business growth
                 </div>
               </motion.div>
             </motion.div>

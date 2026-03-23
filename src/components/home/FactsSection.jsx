@@ -1,68 +1,25 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import bg_video from "../../assets/video/card_bg.mp4";
+import { servicesData as serviceDetails } from "../../data/services";
 gsap.registerPlugin(ScrollTrigger);
 
-const servicesData = [
-  {
-    title1: "Web",
-    title2: "Development",
-    subtitle: "Modern, fast & scalable",
-    description:
-      "We craft high-performance websites, dashboards, and full-scale web apps using the latest technologies—optimized for speed, security, and growth.",
-    image: "image",
-  },
-  {
-    title1: "Mobile",
-    title2: "Apps",
-    subtitle: "iOS & Android",
-    description:
-      "Beautiful, responsive, and blazing-fast mobile experiences, built using native and cross-platform frameworks tailored to your product.",
-    image: "image",
-  },
-  {
-    title1: "Cloud",
-    title2: "Services",
-    subtitle: "Secure, scalable & automated",
-    description:
-      "Cloud infrastructure, APIs, automation, CI/CD, and microservices designed to scale effortlessly and run reliably across AWS, GCP, and Azure.",
-    image: "image",
-  },
-  {
-    title1: "Digital",
-    title2: "Marketing",
-    subtitle: "Data-driven growth",
-    description:
-      "SEO, ads, content, and marketing funnels engineered to boost visibility and drive conversions using modern analytics and optimization tools.",
-    image: "image",
-  },
-  {
-    title1: "UX/UI",
-    title2: "Design",
-    subtitle: "Beautiful, intuitive experiences",
-    description:
-      "Stunning interfaces built with user psychology, clarity, and conversion in mind—designed to elevate your brand and simplify interactions.",
-    image: "image",
-  },
-  {
-    title1: "Interior",
-    title2: "Design",
-    subtitle: "Spaces with purpose & style",
-    description:
-      "We design functional and aesthetic interiors for homes, offices, and commercial spaces, balancing creativity, comfort, and brand identity.",
-    image: "image",
-  },
-  {
-    title1: "Smart",
-    title2: "IoT",
-    subtitle: "Connected, intelligent systems",
-    description:
-      "IoT devices, sensor ecosystems, and monitoring dashboards that connect the physical and digital worlds with real-time data and automation.",
-    image: "image",
-  },
-];
+const serviceCards = serviceDetails.map((service) => {
+  const words = service.header.title.split(" ");
+  const title1 = words[0] || service.header.title;
+  const title2 = words.slice(1).join(" ") || service.header.title;
+
+  return {
+    slug: service.slug,
+    title1,
+    title2,
+    subtitle: service.processTagline,
+    description: service.header.subtitle,
+  };
+});
 
 const FactsSection = () => {
   const factsRef = useRef([]);
@@ -132,13 +89,13 @@ const FactsSection = () => {
           className="overflow-hidden h-screen flex items-center relative"
         >
           <div className="flex w-max factsContainer_sm gap-6 px-6 first:pl-24">
-            {servicesData.map((service, index) => (
+            {serviceCards.map((service, index) => (
               <section
                 key={index}
                 ref={(el) => (factsRef.current[index] = el)}
                 id="hero"
                 className={`card my-8 lg:w-[calc(50vw-12px)] shrink-0 relative overflow-hidden shadow-md ${
-                  index === servicesData.length - 1 ? "mr-[50vw]" : ""
+                  index === serviceCards.length - 1 ? "mr-[50vw]" : ""
                 }`}
               >
                 <div className=" absolute inset-0 w-full h-full">
@@ -168,13 +125,12 @@ const FactsSection = () => {
                         {service.description}
                       </p>
                       <div className="flex flex-wrap items-center gap-4">
-                        {/* <ContactFormButton /> */}
-                        <a
-                          href="#services"
+                        <Link
+                          to={`/services/${service.slug}`}
                           className="btn-secondary text-black dark:text-white"
                         >
                           Learn more
-                        </a>
+                        </Link>
                       </div>
                     </div>
 

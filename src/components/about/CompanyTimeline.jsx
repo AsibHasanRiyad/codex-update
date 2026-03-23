@@ -12,9 +12,9 @@ export function CompanyTimeline() {
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            This year, we welcomed our first client in South Africa—a key
-            milestone in our global expansion and a testament to our
-            international impact.
+            2 Creative expanded its service portfolio to support modern brands
+            with web development, mobile apps, cloud services, UI/UX design,
+            digital marketing, interior design, and smart IoT solutions.
           </p>
         </div>
       ),
@@ -29,9 +29,9 @@ export function CompanyTimeline() {
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Our team grew to over 60 members, significantly enhancing our
-            operational capacity and our ability to take on larger, more complex
-            projects.
+            Our delivery capabilities matured through deeper collaboration
+            across strategy, design, development, and growth disciplines,
+            enabling us to serve more ambitious and complex projects.
           </p>
         </div>
       ),
@@ -46,9 +46,9 @@ export function CompanyTimeline() {
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            We earned our ISO Certification, a key achievement that reinforced
-            our dedication to quality, security, and operational excellence in
-            everything we do.
+            We strengthened our internal processes, design systems, and quality
+            standards to deliver more consistent user experiences and more
+            reliable digital products for clients.
           </p>
         </div>
       ),
@@ -59,13 +59,13 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center uppercase gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider text-xl md:text-2xl lg:text-3xl font-adventure">
-              Going Global
+              Broadening Our Reach
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            A monumental step forward by establishing itself as a
-            Europe-Bangladesh joint venture company, broadening our horizons and
-            integrating international best practices into our core operations.
+            We began supporting a wider mix of international-facing brands and
+            adopted a more scalable delivery model focused on performance,
+            design clarity, and long-term business value.
           </p>
         </div>
       ),
@@ -80,9 +80,9 @@ export function CompanyTimeline() {
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Expanded to over 35 members, a direct reflection of our growing
-            client base and our commitment to building a passionate, talented
-            workforce.
+            With growing demand for creative and technical execution, we
+            expanded our capabilities and refined our service approach around
+            strategy, delivery, and measurable outcomes.
           </p>
         </div>
       ),
@@ -93,14 +93,13 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              Formal Recognition & BASIS Membership
+              Stronger Industry Presence
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Officially registered with RJSC, solidifying our legal foundation
-            and opening doors for greater growth. Joined BASIS, reinforcing our
-            commitment to Bangladesh’s expanding IT sector and the local tech
-            ecosystem.
+            This phase marked stronger market positioning, deeper client trust,
+            and a clearer commitment to building a recognizable creative and
+            technology brand around lasting business partnerships.
           </p>
         </div>
       ),
@@ -111,12 +110,13 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              Our Story Begins
+              The Foundation Of 2 Creative
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Skylark Soft launched with a passionate 5-member team, dedicated to
-            crafting specialized software solutions for the garments industry.
+            2 Creative began with a simple vision: build meaningful digital and
+            design solutions that help businesses communicate better, operate
+            smarter, and grow faster in a competitive market.
           </p>
         </div>
       ),

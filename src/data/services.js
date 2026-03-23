@@ -117,7 +117,7 @@ export const servicesData = [
   {
     slug: "mobile-apps",
     header: {
-      title: "Mobile App Development",
+      title: "Mobile Applications",
       subtitle:
         "We design and build powerful, intuitive mobile experiences for iOS and Android. Our apps are engineered for performance, retention, and seamless cross-platform delivery.",
     },
@@ -462,7 +462,7 @@ export const servicesData = [
   {
     slug: "ui-ux-design",
     header: {
-      title: "UI / UX Design",
+      title: "UI/UX Design",
       subtitle:
         "We create interfaces people love to use. From early-stage research to polished design systems, our UX process puts your users first and your brand at the center of every interaction.",
     },

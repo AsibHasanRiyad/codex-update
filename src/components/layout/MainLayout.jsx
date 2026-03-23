@@ -19,9 +19,11 @@ const MainLayout = () => {
       <SmoothScrollProvider>
         <ScrollToHashElement />
         <Navbar />
-        <Suspense fallback={<Preloader2 />}>
-          <Outlet />
-        </Suspense>
+        <main id="main-content" role="main">
+          <Suspense fallback={<Preloader2 />}>
+            <Outlet />
+          </Suspense>
+        </main>
         <Footer />
       </SmoothScrollProvider>
     </div>

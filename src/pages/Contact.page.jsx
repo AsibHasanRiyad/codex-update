@@ -13,8 +13,24 @@ import {
 } from "lucide-react";
 import PageHeader from "../components/shared/PageHeader";
 import { TextMaskReveal } from "../hooks/TextMaskReveal";
+import { useSEO } from "../hooks/useSEO";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact",
+    description:
+      "Contact 2 Creative in Riyadh for web development, mobile apps, cloud services, interior design, and digital growth solutions.",
+    pathname: "/contact",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      name: "Contact 2 Creative",
+      url: `${window.location.origin}/contact`,
+      description:
+        "Get in touch with 2 Creative at Elegant center, Al Jamiah Street, Al Malaz, Riyadh.",
+    },
+  });
+
   // Dummy Data
   const phone_one = "+966 50 418 3004";
   const phone_two = "+966 50 418 3004";
@@ -66,7 +82,7 @@ export default function Contact() {
       icon: MapPin,
       label: "Address",
       value: location,
-      secondary: "Dhaka, Bangladesh",
+      secondary: "Riyadh, Saudi Arabia",
     },
   ];
 
@@ -78,6 +94,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
+      <h1 className="sr-only">Contact 2 Creative</h1>
       <PageHeader />
 
       <section className="py-24 px-4">
@@ -155,7 +172,7 @@ export default function Contact() {
                       animate={{ opacity: 1, y: 0 }}
                       className="flex items-center gap-3 p-4 bg-green-500/10 border border-green-500/30 text-green-400 mb-6 rounded-lg"
                     >
-                      <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 shrink-0" />
                       <p className="text-sm">{formState.message}</p>
                     </motion.div>
                   )}
@@ -165,7 +182,7 @@ export default function Contact() {
                       animate={{ opacity: 1, y: 0 }}
                       className="flex items-center gap-3 p-4 bg-red-500/10 border border-red-500/30 text-red-400 mb-6 rounded-lg"
                     >
-                      <XCircle className="w-5 h-5 flex-shrink-0" />
+                      <XCircle className="w-5 h-5 shrink-0" />
                       <p className="text-sm">{formState.message}</p>
                     </motion.div>
                   )}

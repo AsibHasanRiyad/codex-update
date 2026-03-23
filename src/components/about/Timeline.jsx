@@ -39,7 +39,7 @@ export const Timeline = ({ data }) => {
             {/* Left Side */}
             <div className="sticky flex flex-col min-w-min md:min-w-60 md:flex-row z-40 items-center top-40 self-center md:self-start max-w-xs lg:max-w-sm md:w-fit">
               {/* Outer circle gradient */}
-              <div className="h-6 md:h-10 absolute bg-blue-600/40 left-5 md:left-3 w-6 md:w-10 rounded-full  flex items-center justify-center shadow-md">
+              <div className="h-6 md:h-10 absolute bg-[#F47920]/40 left-5 md:left-3 w-6 md:w-10 rounded-full  flex items-center justify-center shadow-md">
                 {/* Inner dot */}
                 <div className="md:h-4 h-3 w-3 md:w-4 rounded-full bg-white  p-1 md:p-2" />
               </div>
@@ -51,10 +51,10 @@ export const Timeline = ({ data }) => {
 
             {/* Right Side */}
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-xl md:text-2xl mb-0 md:mb-4 text-left font-bold text-blue-800">
+              <h3 className="md:hidden block text-xl md:text-2xl mb-0 md:mb-4 text-left font-bold text-[#C85E13]">
                 {item.title}
               </h3>
-              <div className="text-blue-900">{item.content}</div>
+              <div className="text-[#8C3F0A]">{item.content}</div>
             </div>
           </motion.div>
         ))}
@@ -66,7 +66,7 @@ export const Timeline = ({ data }) => {
           }}
           className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] 
           bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] 
-          from-transparent via-blue-500 to-transparent 
+          from-transparent via-[#F47920] to-transparent 
           [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
         >
           <motion.div
@@ -75,8 +75,8 @@ export const Timeline = ({ data }) => {
               opacity: opacityTransform,
             }}
             className="absolute inset-x-0 top-0 w-[2px] 
-            bg-gradient-to-t from-blue-600 via-blue-400 to-blue-200 
-            rounded-full shadow-[0_0_8px_rgba(30,115,190,0.4)]"
+            bg-gradient-to-t from-[#C85E13] via-[#F47920] to-[#F8A15F] 
+            rounded-full shadow-[0_0_8px_rgba(244,121,32,0.45)]"
           />
         </div>
       </div>

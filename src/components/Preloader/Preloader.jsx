@@ -154,7 +154,7 @@ const Preloader = () => {
   return (
     <>
       <div className="preloader" ref={preloaderRef}>
-        <div className="progress-bar bg-emerald-600"></div>
+        <div className="progress-bar bg-[#F47920]"></div>
 
         <div className="preloader-images">
           <div className="img">

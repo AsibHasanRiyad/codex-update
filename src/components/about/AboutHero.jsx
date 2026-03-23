@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import movingSvg from "../../assets/Asterisk.svg";
-import person from "../../assets/person.png";
+import person from "../../assets/person2.png";
 export default function AboutHero() {
   const container = {
     hidden: { opacity: 0 },

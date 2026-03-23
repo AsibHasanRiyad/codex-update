@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CompanyTimeline } from "./CompanyTimeline";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
-import image from "../../assets/person.png";
+import image from "../../assets/person2.png";
 
 const CompanyHistory = () => {
   const sectionRef = useRef(null);

@@ -64,13 +64,13 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                 key={nav.name}
                 className="relative group pb-3 transition-all duration-300"
               >
-                <span className="absolute left-0 bottom-0 w-full h-px bg-linear-to-r from-emerald-600 via-emerald-400 to-transparent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></span>
+                <span className="absolute left-0 bottom-0 w-full h-px bg-linear-to-r from-[#F47920] via-[#F8A15F] to-transparent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></span>
 
                 <div
                   className={`flex justify-between items-center cursor-pointer text-3xl md:text-4xl lg:text-5xl font-black uppercase transition-all duration-75 ease-in-out ${
                     active === nav.name
-                      ? "text-emerald-600 drop-shadow-lg"
-                      : "text-strong hover:text-emerald-600"
+                      ? "text-[#F47920] drop-shadow-lg"
+                      : "text-strong hover:text-[#F47920]"
                   }`}
                   onClick={() => nav.children && handleToggle(nav.name)}
                 >
@@ -121,7 +121,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
                               onClick={() => setOpen(false)}
                               className="flex items-center gap-2"
                             >
-                              <Dot className="text-lochmara" />
+                              <Dot className="text-[#F47920]" />
                               <TextMaskReveal
                                 startDelay={0.1}
                                 fontSize="text-lg md:text-xl lg:text-2xl"
@@ -152,7 +152,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="Riyadh Office (HQ):"
               fontSize="text-xl"
-              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-lochmara"
+              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-[#F47920]"
               splitByWord={false}
             />
 
@@ -171,7 +171,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="Email:"
               fontSize="text-xl"
-              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-lochmara"
+              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-[#F47920]"
               splitByWord={false}
             />
             <TextMaskReveal
@@ -189,7 +189,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               startDelay={0.1}
               text="Contact:"
               fontSize="text-xl"
-              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-lochmara"
+              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-[#F47920]"
               splitByWord={false}
             />
             <TextMaskReveal
@@ -218,7 +218,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             {[Facebook, Instagram, Twitter, Linkedin].map((Icon, idx) => (
               <motion.div
                 key={idx}
-                className="bg-linear-to-br from-lochmara to-lochmara-700 w-fit h-fit p-3 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className="bg-linear-to-br from-[#F47920] to-[#C85E13] w-fit h-fit p-3 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
               >
                 <Icon size={20} />
               </motion.div>

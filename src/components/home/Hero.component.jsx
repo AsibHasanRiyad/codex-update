@@ -97,7 +97,7 @@ export default function Hero() {
                 business thrive in the digital age.
               </p>
 
-              <button className="group hidden  px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-emerald-600 hover:bg-blue-500/10 transition-all duration-300 md:flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 active:scale-95">
+              <button className="group hidden  px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-[#F47920] hover:bg-[#F47920]/10 transition-all duration-300 md:flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-[#F47920]/25 hover:scale-105 active:scale-95">
                 KNOW MORE
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
@@ -121,7 +121,7 @@ export default function Hero() {
               </div>
               <div>
                 <button
-                  className="h-12 w-12 md:h-14 md:w-14 flex justify-center items-center bg-white rounded-full hover:bg-emerald-600 hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-45 shadow-lg"
+                  className="h-12 w-12 md:h-14 md:w-14 flex justify-center items-center bg-white rounded-full hover:bg-[#F47920] hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-45 shadow-lg"
                   aria-label="View projects"
                 >
                   <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6" />

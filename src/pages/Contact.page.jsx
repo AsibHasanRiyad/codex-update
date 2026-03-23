@@ -16,12 +16,12 @@ import { TextMaskReveal } from "../hooks/TextMaskReveal";
 
 export default function Contact() {
   // Dummy Data
-  const phone_one = "01700000000";
-  const phone_two = "01800000000";
-  const email_one = "example@gmail.com";
-  const email_two = "info@example.com";
-  const business_hour = "Mon - Fri: 10am - 6pm";
-  const location = "Gulshan, Dhaka";
+  const phone_one = "+966 50 418 3004";
+  const phone_two = "+966 50 418 3004";
+  const email_one = "info@2creative.com";
+  const email_two = "info@2creative.com";
+  const business_hour = "Sat - Thu: 10am - 6pm";
+  const location = "Elegant center, Al Jamiah Street, Al Malaz, Riyadh";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -241,7 +241,7 @@ export default function Contact() {
               className="h-96 md:h-full min-h-[500px] rounded-lg overflow-hidden border border-gray-500 bg-card/40 backdrop-blur-sm shadow-xl"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9033652888277!2d90.41234!3d23.81061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7215c03e66b%3A0x4c12c4e0e7c8e5d!2sGulshan!5e0!3m2!1sen!2sbd!4v1234567890"
+                src="https://maps.app.goo.gl/YCaEKRoGhM4vcxTRA?g_st=com.google.maps.preview.copy"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

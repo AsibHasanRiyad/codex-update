@@ -29,7 +29,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
       className="fixed inset-0 h-screen bg-primary z-1000 "
     >
       <ColorBends
-        // colors={["#1E3A8A", "#0A7351", "#D9D9D9"]}
+        // colors={["#1E3A8A", "#f47920", "#D9D9D9"]}
         colors={["#1E3A8A", "#D9D9D9"]}
         rotation={30}
         speed={0.5}
@@ -146,11 +146,11 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
 
         {/* Contact Section */}
         <div className="col-span-4 hidden lg:block -ml-[18%] space-y-6 relative">
-          {/* ✅ Dhaka Office */}
+          {/* ✅ Riyadh Office */}
           <div className="space-y-2 group">
             <TextMaskReveal
               startDelay={0.1}
-              text="Dhaka Office (HQ):"
+              text="Riyadh Office (HQ):"
               fontSize="text-xl"
               className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-lochmara"
               splitByWord={false}
@@ -158,27 +158,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
 
             <TextMaskReveal
               startDelay={0.1}
-              text={`House: 1275, Level 3 & 4, Road: 11, Avenue: 2, Mirpur DOHS,
-      Dhaka 1216`}
-              fontSize="text-base"
-              className="text-gray-300 leading-relaxed"
-              splitByWord={false}
-            />
-          </div>
-
-          {/* ✅ Chattogram Office */}
-          <div className="space-y-2 group">
-            <TextMaskReveal
-              startDelay={0.1}
-              text="Chattogram Office:"
-              fontSize="text-xl"
-              className="uppercase font-semibold text-strong transition-all duration-300 group-hover:text-lochmara"
-              splitByWord={false}
-            />
-
-            <TextMaskReveal
-              startDelay={0.1}
-              text="House: 20/B, Road: 02, Hill View Housing Society, Chattogram 4209."
+              text="Elegant center, Al Jamiah Street, Al Malaz, Riyadh"
               fontSize="text-base"
               className="text-gray-300 leading-relaxed"
               splitByWord={false}
@@ -214,7 +194,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             />
             <TextMaskReveal
               startDelay={0.1}
-              text="+88 096 78 375375"
+              text="+966 50 418 3004"
               fontSize="text-base"
               className="text-gray-300"
               splitByWord={true}

@@ -28,6 +28,10 @@ export const navLinks = [
         link: "/services/ui-ux-design",
       },
       {
+        name: "Interior Design",
+        link: "/services/interior-design",
+      },
+      {
         name: "Smart IoT",
         link: "/services/smart-iot",
       },

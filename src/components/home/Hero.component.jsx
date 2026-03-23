@@ -22,6 +22,7 @@ export default function Hero() {
     "Cloud Services",
     "Digital Marketing",
     "UX/UI Design",
+    "Interior Design",
     "DevOps",
     "Cyber Security",
     "IoT",

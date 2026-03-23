@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
 import codexLogoWhite from "../../assets/codex-white-logo.png";
-import creativeLogo from "../../assets/2c-logo.svg"
+import creativeLogo from "../../assets/2c-logo.png"
 import footerBg from "../../assets/footer.mp4";
 export default function Footer() {
   return (
@@ -168,18 +168,18 @@ export default function Footer() {
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Call Us</p>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+966504183004"
                     className="text-white hover:text-gray-300 transition-colors font-medium"
                   >
-                    +1 (234) 567-890
+                    +966 50 418 3004
                   </a>
                 </li>
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Location</p>
                   <p className="text-white text-sm">
-                    123 Tech Street,
+                    Elegant center, Al Jamiah Street,
                     <br />
-                    San Francisco, CA 94105, USA
+                    Al Malaz, Riyadh
                   </p>
                 </li>
               </ul>

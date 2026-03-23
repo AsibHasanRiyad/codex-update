@@ -47,6 +47,14 @@ const servicesData = [
     image: "image",
   },
   {
+    title1: "Interior",
+    title2: "Design",
+    subtitle: "Spaces with purpose & style",
+    description:
+      "We design functional and aesthetic interiors for homes, offices, and commercial spaces, balancing creativity, comfort, and brand identity.",
+    image: "image",
+  },
+  {
     title1: "Smart",
     title2: "IoT",
     subtitle: "Connected, intelligent systems",

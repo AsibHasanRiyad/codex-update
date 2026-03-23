@@ -3,7 +3,10 @@ import movingSvg from "../../assets/Asterisk.svg";
 import { motion } from "framer-motion";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 
-const PageHeader = () => {
+const PageHeader = ({
+  title = "About 2 Creative",
+  subtitle = "We are a client-oriented digital solutions provider, dedicated to understanding your unique needs and delivering practical, innovative solutions that drive real business growth.",
+}) => {
   return (
     <div className=" relative w-screen  h-full flex flex-col py-20 justify-between overflow-hidden bg-primary">
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
@@ -28,14 +31,14 @@ const PageHeader = () => {
               splitByWord={true}
               fontSize="text-5xl text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
-              text="About 2 Creative"
+              text={title}
               delayPerItem={0.08}
             />
             <TextMaskReveal
               splitByWord={true}
               fontSize="text-xl text-2xl 2xl:text-3xl"
               className="font-normal text-white   leading-[0.9]"
-              text="We are a client-oriented digital solutions provider in Bangladesh, dedicated to understanding your unique needs and delivering practical, innovative solutions that drive real business growth."
+              text={subtitle}
               delayPerItem={0.08}
             />
           </div>

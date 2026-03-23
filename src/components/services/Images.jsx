@@ -21,7 +21,7 @@ const cardData = [
   { title: "Forest Walk", desc: "Reconnect with the wild." },
 ];
 
-const Images = () => {
+const Images = ({ projects = cardData, sectionTitle = "Development Projects" }) => {
   const cardsRef = useRef([]);
 
   useEffect(() => {
@@ -65,10 +65,10 @@ const Images = () => {
         className="uppercase text-white text-center pb-12 md:pb-16 lg:pb-20"
         splitByWord
         fontSize="text-4xl md:text-5xl lg:text-6xl"
-        text="Development Projects"
+        text={sectionTitle}
       />
       <div className="grid grid-cols-1  md:grid-cols-2 gap-10 ">
-        {cardData.map((item, i) => (
+        {projects.map((item, i) => (
           <div
             key={i}
             ref={(el) => (cardsRef.current[i] = el)}
@@ -76,7 +76,7 @@ const Images = () => {
           >
             {/* Image */}
             <img
-              src={image}
+              src={item.image || image}
               alt={item.title}
               className="w-full h-96 lg:h-120 object-cover aspect-square transition-transform duration-700 group-hover:scale-110"
             />

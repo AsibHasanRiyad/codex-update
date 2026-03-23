@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 
 import codexLogoWhite from "../../../assets/codex-white-logo.png";
-import creativeLogo from "../../../assets/2c-logo.svg"
+import creativeLogo from "../../../assets/2c-logo.png"
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 import { Link } from "react-router-dom";

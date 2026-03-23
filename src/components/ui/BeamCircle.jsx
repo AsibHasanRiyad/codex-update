@@ -4,6 +4,7 @@ import {
   Smartphone,
   BrainCircuit,
   Cloud,
+  Home,
   Palette,
   Code,
   Megaphone,
@@ -101,6 +102,21 @@ const defaultOrbits = [
     endAngleLg: -135,
     endAngleMd: -95,
     endAngleSm: -85,
+  },
+  {
+    id: 7,
+    label: "Interior Design",
+    icon: <Home className="text-primary" />,
+    radiusFactor: 4.9,
+    speed: 20,
+    orbitColor: "gray",
+    iconSize: 28,
+    orbitThickness: 1.5,
+    startAngle: 180,
+
+    endAngleLg: 300,
+    endAngleMd: 250,
+    endAngleSm: 235,
   },
 ];
 

@@ -75,7 +75,11 @@ export const processData = [
   },
 ];
 
-const OurProcess = () => {
+const OurProcess = ({
+  processSteps = processData,
+  tagline = "Smart strategy & performance",
+  intro = "We combine strategic thinking with execution excellence to deliver outcomes that move the needle for your business.",
+}) => {
   const processSectionRef = useRef(null);
   const processTitleRef = useRef(null);
   const processDetailsRef = useRef(null);
@@ -118,14 +122,11 @@ const OurProcess = () => {
             className="uppercase text-gray-100 text-start "
             splitByWord
             fontSize="text-4xl md:text-5xl lg:text-6xl"
-            text="Smart strategy & performance"
+            text={tagline}
           />
 
           <p className=" text-base md:text-lg  text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            labore accusantium et cum iste aperiam pariatur reiciendis, natus
-            nulla alias obcaecati porro expedita enim incidunt, impedit ea,
-            consequuntur possimus explicabo.
+            {intro}
           </p>
           {/* Torus Image (CENTER + ROTATE XY) */}
           <div className="w-full flex justify-center">
@@ -147,7 +148,7 @@ const OurProcess = () => {
           className=" space-y-12 md:space-y-16 lg:space-y-20"
           ref={processDetailsRef}
         >
-          {processData.map((item, i) => (
+          {processSteps.map((item, i) => (
             <ProcessCard key={i} {...item} />
           ))}
         </div>

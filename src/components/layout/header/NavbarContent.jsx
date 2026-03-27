@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion";
 import codexLogo from "../../../assets/codex-white-logo.png";
-import creativeLogo from "../../../assets/2c-logo.svg"
+import creativeLogo from "../../../assets/2c-logo.png"
 
 import {
   Dot,

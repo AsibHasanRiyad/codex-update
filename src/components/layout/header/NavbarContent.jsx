@@ -21,7 +21,7 @@ import ColorBends from "../../ui/ColorBends";
 
 const NavbarContent = ({ active, handleToggle, setOpen }) => {
   return (
-    <motion.div
+    <motion.div  
       initial={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" }}
       animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
       exit={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" }}

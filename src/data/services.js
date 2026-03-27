@@ -803,4 +803,234 @@ export const servicesData = [
       },
     ],
   },
+
+  {
+    slug: "3d-modeling",
+    header: {
+      title: "3D Modeling",
+      subtitle:
+        "We create photorealistic 3D models, visualizations, and animations that bring your ideas to life. From product design to architectural walkthroughs, our artists deliver precision-crafted visuals that captivate and convert.",
+    },
+    heroImage:
+      "https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=1400&q=80",
+    processTagline: "Concept to photorealistic reality",
+    processIntro:
+      "Our 3D modeling process blends artistic vision with technical rigor — ensuring every deliverable is accurate, visually stunning, and purpose-built for your medium and audience.",
+    processSteps: [
+      {
+        step: 1,
+        title: "Brief & Reference",
+        description:
+          "We begin by understanding your creative goals, target audience, and intended use — collecting reference materials and technical specifications to guide the project.",
+        services: [
+          "Project Brief",
+          "Reference Collection",
+          "Technical Spec Review",
+          "Style Definition",
+        ],
+      },
+      {
+        step: 2,
+        title: "Concept & Blocking",
+        description:
+          "Our artists develop initial concept sketches and low-poly block-outs for layout, proportions, and composition approval before full modeling begins.",
+        services: [
+          "Concept Sketching",
+          "Block-out Modeling",
+          "Proportion Review",
+          "Client Sign-off",
+        ],
+      },
+      {
+        step: 3,
+        title: "High-Detail Modeling",
+        description:
+          "We build precise, production-ready 3D models with clean topology, accurate geometry, and all surface detail optimized for your target platform.",
+        services: [
+          "High-Poly Modeling",
+          "Topology Optimization",
+          "UV Unwrapping",
+          "Surface Detail",
+        ],
+      },
+      {
+        step: 4,
+        title: "Texturing & Lighting",
+        description:
+          "Physically based textures, materials, and lighting setups are applied to achieve photorealism and ensure accurate representation of surfaces and environments.",
+        services: [
+          "PBR Texturing",
+          "Material Setup",
+          "HDRI Lighting",
+          "Environment Design",
+        ],
+      },
+      {
+        step: 5,
+        title: "Rendering & Delivery",
+        description:
+          "Final renders and animations are produced at full resolution and delivered in your required formats — ready for print, web, film, or real-time engines.",
+        services: [
+          "High-Res Rendering",
+          "Animation Output",
+          "Format Export",
+          "Revision & Delivery",
+        ],
+      },
+    ],
+    projectsSectionTitle: "3D Projects",
+    projects: [
+      {
+        title: "Product Visualization",
+        desc: "Photorealistic 3D renders of consumer electronics for a global launch campaign.",
+        image:
+          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      },
+      {
+        title: "Architectural Visualization",
+        desc: "Full exterior and interior 3D walkthrough for a luxury residential development.",
+        image:
+          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+      },
+      {
+        title: "Character Modeling",
+        desc: "High-detail character models with rigging and facial expressions for a mobile game.",
+        image:
+          "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=800&q=80",
+      },
+      {
+        title: "Animation & VFX",
+        desc: "3D animation sequence and VFX compositing for a broadcast commercial.",
+        image:
+          "https://images.unsplash.com/photo-1626544827763-d516dce335e2?w=800&q=80",
+      },
+      {
+        title: "Game Asset Library",
+        desc: "Full environment and prop asset pack created for a cross-platform RPG title.",
+        image:
+          "https://images.unsplash.com/photo-1535223289429-462dc4d3c9e2?w=800&q=80",
+      },
+      {
+        title: "Medical 3D Illustration",
+        desc: "Anatomically precise 3D models used in a medical training and education platform.",
+        image:
+          "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+      },
+    ],
+  },
+
+  {
+    slug: "event-management",
+    header: {
+      title: "Event Management",
+      subtitle:
+        "We design, plan, and execute extraordinary events — from high-profile corporate conferences to spectacular brand activations. Every detail is meticulously managed so your event leaves a lasting impression.",
+    },
+    heroImage:
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80",
+    processTagline: "Every detail. Every moment. Perfected.",
+    processIntro:
+      "Memorable events are built on precision planning and creative vision. Our end-to-end process ensures everything — from the first brief to the final handshake — is flawlessly delivered.",
+    processSteps: [
+      {
+        step: 1,
+        title: "Discovery & Brief",
+        description:
+          "We start by understanding your event objectives, target audience, budget, and desired experience — turning your vision into a structured creative brief.",
+        services: [
+          "Event Objectives",
+          "Audience Profiling",
+          "Budget Framework",
+          "Creative Brief",
+        ],
+      },
+      {
+        step: 2,
+        title: "Concept & Planning",
+        description:
+          "Our team develops the event theme, experience flow, and full production plan — covering venue, timeline, entertainment, and every logistical element.",
+        services: [
+          "Theme Development",
+          "Run-of-Show Planning",
+          "Vendor Shortlisting",
+          "Risk Assessment",
+        ],
+      },
+      {
+        step: 3,
+        title: "Creative Design",
+        description:
+          "We design the full event aesthetic — stage sets, branding, décor, lighting mood, and all visual touchpoints that shape the atmosphere and guest experience.",
+        services: [
+          "Stage & Set Design",
+          "Event Branding",
+          "Lighting Design",
+          "Décor & Styling",
+        ],
+      },
+      {
+        step: 4,
+        title: "Vendor & Logistics",
+        description:
+          "We procure and coordinate all vendors, equipment, catering, AV, and talent — managing every contract and timeline to ensure seamless execution.",
+        services: [
+          "Vendor Management",
+          "AV & Production",
+          "Catering Coordination",
+          "Talent & Entertainment",
+        ],
+      },
+      {
+        step: 5,
+        title: "Execution & Wrap-up",
+        description:
+          "Our on-site team manages every moment of the event in real time, followed by a thorough post-event debrief, reporting, and guest feedback analysis.",
+        services: [
+          "On-site Management",
+          "Live Coordination",
+          "Post-Event Report",
+          "Guest Feedback",
+        ],
+      },
+    ],
+    projectsSectionTitle: "Event Projects",
+    projects: [
+      {
+        title: "Annual Corporate Summit",
+        desc: "1,200-attendee leadership summit with keynotes, panels, and gala dinner.",
+        image:
+          "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
+      },
+      {
+        title: "Product Launch Event",
+        desc: "High-impact brand activation and product reveal for a regional tech launch.",
+        image:
+          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+      },
+      {
+        title: "Awards Gala Night",
+        desc: "Black-tie awards ceremony with bespoke staging and live entertainment.",
+        image:
+          "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+      },
+      {
+        title: "Music Festival",
+        desc: "3-day open-air music festival with full production and crowd management.",
+        image:
+          "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
+      },
+      {
+        title: "Luxury Wedding",
+        desc: "End-to-end wedding production with floral design, catering, and live band.",
+        image:
+          "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+      },
+      {
+        title: "Trade Exhibition",
+        desc: "Multi-brand trade show with custom booth design and visitor experience zones.",
+        image:
+          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+      },
+    ],
+  },
 ];

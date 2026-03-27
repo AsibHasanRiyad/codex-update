@@ -26,7 +26,9 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
       animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}
       exit={{ clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="fixed inset-0 h-screen bg-primary z-1000 "
+      className="fixed inset-0 h-screen bg-primary z-1000 flex flex-col overflow-hidden"
+      onWheel={(e) => e.stopPropagation()}
+      onTouchMove={(e) => e.stopPropagation()}
     >
       <ColorBends
         // colors={["#1E3A8A", "#f47920", "#D9D9D9"]}
@@ -43,7 +45,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
         className={"absolute top-0 h-full w-full"}
       />
       {/* Top bar (Logo + Close Button) */}
-      <div className=" border-b border-muted py-[30px] shadow-lg">
+      <div className="shrink-0 border-b border-muted py-[30px] shadow-lg">
         <div className=" flex justify-between items-center px-4 md:px-8 lg:px-16">
           <img
             className="w-60"
@@ -55,9 +57,10 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
       </div>
 
       {/* Main content */}
-      <div className="grid container pt-16 mx-auto px-4 md:px-8 grid-cols-12 gap-12 h-full">
+      <div className="flex-1 min-h-0 overflow-hidden">
+      <div className="grid container pt-16 mx-auto px-4 md:px-8 grid-cols-12 gap-12 h-full items-start">
         {/* Navigation */}
-        <div className=" col-span-9 md:col-span-12 lg:col-span-6">
+        <div className=" col-span-9 md:col-span-12 lg:col-span-6 overflow-y-auto h-full pr-2">
           <ul className="space-y-6">
             {navLinks.map((nav) => (
               <li
@@ -225,6 +228,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </motion.div>
   );

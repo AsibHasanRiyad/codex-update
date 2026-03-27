@@ -35,6 +35,14 @@ export const navLinks = [
         name: "Smart IoT",
         link: "/services/smart-iot",
       },
+      {
+        name: "3D Modeling",
+        link: "/services/3d-modeling",
+      },
+      {
+        name: "Event Management",
+        link: "/services/event-management",
+      },
     ],
   },
   // {

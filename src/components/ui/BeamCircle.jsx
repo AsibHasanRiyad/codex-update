@@ -26,7 +26,7 @@ const defaultOrbits = [
 
     endAngleLg: 300, // desktop
     endAngleMd: 260, // tablet
-    endAngleSm: 240, // mobile
+    endAngleSm: 250, // mobile
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const defaultOrbits = [
 
     endAngleLg: -110,
     endAngleMd: -80,
-    endAngleSm: -80,
+    endAngleSm: -90,
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ const defaultOrbits = [
 
     endAngleLg: 310,
     endAngleMd: 260,
-    endAngleSm: 250,
+    endAngleSm: 260,
   },
   {
     id: 4,
@@ -116,7 +116,7 @@ const defaultOrbits = [
 
     endAngleLg: 300,
     endAngleMd: 250,
-    endAngleSm: 235,
+    endAngleSm: 265,
   },
 ];
 
@@ -171,12 +171,12 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
           />
           <TextMaskReveal
             className="uppercase lg:-mt-7"
-            fontSize="text-3xl md:text-5xl lg:text-6xl"
+            fontSize="text-2xl md:text-5xl lg:text-6xl"
             splitByWord
             text="Experiences that Move"
           />
         </div>
-        <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-base md:text-lg mt-5 lg:text-3xl text-white">
+        <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-sm md:text-lg mt-5 lg:text-3xl text-white">
           At 2 Creative, we create visually stunning, high-performance animated
           websites that blend creativity and technology. Our designs deliver
           seamless performance, sleek visuals, and immersive user experiences —

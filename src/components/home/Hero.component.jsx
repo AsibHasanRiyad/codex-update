@@ -29,7 +29,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className=" relative w-screen h-screen  flex flex-col justify-between overflow-hidden bg-primary">
+    <div className=" relative w-screen min-h-screen  flex flex-col justify-between overflow-hidden bg-primary">
       {/* <LightRays /> */}
       <ColorBends
         colors={["#1E3A8A", "#D9D9D9"]}
@@ -65,14 +65,14 @@ export default function Hero() {
           <div className="mb-8 md:mb-12">
             <TextMaskReveal
               splitByWord={true}
-              fontSize="text-5xl text-7xl 2xl:text-8xl"
+              fontSize="text-5xl md:text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
               text="Crafting Next-Gen "
               delayPerItem={0.08}
             />
             <TextMaskReveal
               splitByWord={true}
-              fontSize="text-5xl text-7xl 2xl:text-8xl"
+              fontSize="text-5xl md:text-7xl 2xl:text-8xl"
               className="font-bold text-white  lg:ml-[15%] uppercase leading-[0.9]"
               text="Digital Excellence"
               delayPerItem={0.08}

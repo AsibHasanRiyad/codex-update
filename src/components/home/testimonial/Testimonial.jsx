@@ -177,12 +177,12 @@ function ClientFeedback() {
       <section className="relative -mt-0  h-full min-h-screen   py-14 bg-primary text-white">
         <div>
           <div>
-            <h1 className=" text-center text-4xl text-white">
+            <h1 className=" text-center text-4xl  text-white">
               A dynamic partner helping <br />
               businesses achieve sustainable growth
             </h1>
           </div>
-          <div class="flex items-center justify-between max-2xl:w-full max-md:mt-5 md:gap-5">
+          <div class=" flex items-center justify-between max-2xl:w-full  max-md:mt-5 md:gap-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="440"
@@ -245,7 +245,7 @@ function ClientFeedback() {
         </div>
         <div className="absolute bottom-0 left-0 z-2 right-0 top-0  mask-[radial-gradient(ellipse_40%_50%_at_50%_0%,#000_60%,transparent_110%)]"></div>
 
-        <div className="absolute top-48 flex justify-center w-full">
+        <div className="absolute top-80 md:top-48 flex justify-center w-full">
           <div className="absolute h-fit w-fit ">
             <AnimatedDots />
           </div>

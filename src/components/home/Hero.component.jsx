@@ -11,6 +11,7 @@ import LightRays from "../ui/LightRays";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import movingSvg from "../../assets/Asterisk.svg";
 import arrow from "../../assets/Arrow.svg";
+import heroVideo from "../../assets/hero_video.mp4";
 import { useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ColorBends from "../ui/ColorBends";
@@ -31,7 +32,16 @@ export default function Hero() {
   return (
     <div className=" relative w-screen min-h-screen  flex flex-col justify-between overflow-hidden bg-primary">
       {/* <LightRays /> */}
-      <ColorBends
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src={heroVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+
+      {/* <ColorBends
         colors={["#f47920", "#D9D9D9"]}
         rotation={0}
         speed={0.09}
@@ -43,7 +53,7 @@ export default function Hero() {
         noise={0.2}
         transparent
         className={"absolute top-0 h-full w-full"}
-      />
+      /> */}
 
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">
         <motion.img

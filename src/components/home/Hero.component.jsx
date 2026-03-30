@@ -32,7 +32,7 @@ export default function Hero() {
     <div className=" relative w-screen min-h-screen  flex flex-col justify-between overflow-hidden bg-primary">
       {/* <LightRays /> */}
       <ColorBends
-        colors={["#1E3A8A", "#D9D9D9"]}
+        colors={["#f47920", "#D9D9D9"]}
         rotation={0}
         speed={0.09}
         scale={0.5}

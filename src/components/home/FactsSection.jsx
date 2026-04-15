@@ -97,9 +97,7 @@ const FactsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 viewport={{ once: true, margin: "-50px" }}
-                className={`${
-                  isTall ? "row-span-2" : "row-span-1"
-                }`}
+                className={`${isTall ? "row-span-2" : "row-span-1"}`}
               >
                 <Link
                   to={`/services/${service.slug}`}

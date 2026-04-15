@@ -54,7 +54,7 @@ const Preloader = () => {
 
       const preloaderImages = gsap.utils.toArray(".preloader-images .img");
       const preloaderImagesInner = gsap.utils.toArray(
-        ".preloader-images .img img"
+        ".preloader-images .img img",
       );
 
       const tl = gsap.timeline({ delay: 0 });
@@ -78,7 +78,7 @@ const Preloader = () => {
             ease: "hop",
             delay: idx * 0.75,
           },
-          "-=5"
+          "-=5",
         );
       });
       preloaderImagesInner.forEach((preloaderImageInner, index) => {
@@ -90,7 +90,7 @@ const Preloader = () => {
             ease: "hop",
             delay: index * 0.75,
           },
-          "-=5.25"
+          "-=5.25",
         );
       });
       tl.to(
@@ -101,7 +101,7 @@ const Preloader = () => {
           ease: "hop",
           stagger: 0.025,
         },
-        "-=5"
+        "-=5",
       );
 
       tl.to(
@@ -111,7 +111,7 @@ const Preloader = () => {
           duration: 1,
           ease: "hop",
         },
-        "-=1.5"
+        "-=1.5",
       );
 
       tl.to(
@@ -122,7 +122,7 @@ const Preloader = () => {
           ease: "hop",
           stagger: 0.025,
         },
-        "-=2.5"
+        "-=2.5",
       );
 
       tl.to(
@@ -141,7 +141,7 @@ const Preloader = () => {
             }, 100);
           },
         },
-        "-=0.5"
+        "-=0.5",
       );
     };
     initializeAnimation();
@@ -154,7 +154,7 @@ const Preloader = () => {
   return (
     <>
       <div className="preloader" ref={preloaderRef}>
-        <div className="progress-bar bg-[#F47920]"></div>
+        <div className="progress-bar bg-2c"></div>
 
         <div className="preloader-images">
           <div className="img">
@@ -179,7 +179,7 @@ const Preloader = () => {
 
       <div className="preloader-header">
         <h1 className=" text-7xl font-spaceMono lg:text-9xl md:text-8xl uppercase font-black">
-          2 CREATIVE
+          DEVOLA
         </h1>
       </div>
     </>

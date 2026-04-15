@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 
 const PageHeader = ({
-  title = "About 2 Creative",
+  title = "About Devola",
   subtitle = "We are a client-oriented digital solutions provider, dedicated to understanding your unique needs and delivering practical, innovative solutions that drive real business growth.",
 }) => {
   return (

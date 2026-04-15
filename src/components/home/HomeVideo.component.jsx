@@ -81,22 +81,22 @@ const HomeVideo = () => {
         .to(
           eyebrow,
           { y: -100, opacity: 0, ease: "power2.in", duration: 0.2 },
-          0
+          0,
         )
         .to(
           heading,
           { y: -100, opacity: 0, ease: "power2.in", duration: 0.2 },
-          0.08
+          0.08,
         )
         .to(
           paragraph,
           { y: -100, opacity: 0, ease: "power2.in", duration: 0.2 },
-          0.16
+          0.16,
         )
         .to(
           scrollIndicator,
           { y: -100, opacity: 0, ease: "power2.in", duration: 0.2 },
-          0.24
+          0.24,
         )
         // Phase 2: Move video & overlay to center
         .to(
@@ -110,7 +110,7 @@ const HomeVideo = () => {
             border: 0,
             rotate: 0,
           },
-          0
+          0,
         )
         .to(
           imageOverlay,
@@ -121,7 +121,7 @@ const HomeVideo = () => {
             duration: 0.8,
             borderRadius: 15,
           },
-          0
+          0,
         )
         // Phase 3: Scrub video frame-by-frame based on scroll (slower)
         .to(
@@ -131,19 +131,19 @@ const HomeVideo = () => {
             ease: "none",
             duration: 1.5, // Increased from 0.4 to make video play slower
           },
-          0.8 // Start later, after video reaches center
+          0.8, // Start later, after video reaches center
         )
         // Phase 3b: Scale up while video is playing + fade container to black
         .to(video, { scale: 2.5, ease: "power2.inOut", duration: 0.8 }, 0.8)
         .to(
           imageOverlay,
           { scale: 2.5, ease: "power2.inOut", duration: 0.8 },
-          0.8
+          0.8,
         )
         .to(
           container,
           { backgroundColor: "#000000", ease: "power2.inOut", duration: 0.8 },
-          0.8
+          0.8,
         )
         // Phase 4: Continue scaling smoothly to full zoom
         .to(video, { scale: 20, ease: "power2.inOut", duration: 1 }, ">0")
@@ -152,7 +152,7 @@ const HomeVideo = () => {
         .to(
           [video, overlay, imageOverlay],
           { opacity: 0, ease: "power2.inOut", duration: 0.2 },
-          ">0"
+          ">0",
         )
         // Phase 6: Reveal transition text
         .to(transitionText, { opacity: 1, duration: 0.5 }, ">0")
@@ -166,7 +166,7 @@ const HomeVideo = () => {
             ease: "back.out(1.7)",
             duration: 1.2,
           },
-          "<"
+          "<",
         );
     };
 
@@ -212,13 +212,13 @@ const HomeVideo = () => {
           >
             <TextMaskReveal
               splitByWord
-              text="Crafting Digital"
+              text="Building Digital"
               className="text-strong bg-clip-text bg-linear-to-tr from-strong to-muted"
             />
 
             <TextMaskReveal
               splitByWord
-              text="Excellence"
+              text="Solutions"
               className="text-strong"
             />
           </div>
@@ -227,8 +227,8 @@ const HomeVideo = () => {
             ref={paragraphRef}
             className="text-base max-w-2xl 2xl:max-w-3xl md:text-xl lg:text-2xl text-strong/70 leading-relaxed  font-light"
           >
-            We transform visionary ideas into extraordinary digital experiences
-            through innovative development and cutting-edge design solutions.
+            We transform business challenges into powerful digital solutions
+            through innovative development and reliable infrastructure services.
           </p>
 
           <div
@@ -290,7 +290,7 @@ const HomeVideo = () => {
           </h2>
 
           <p className="text-lg md:text-2xl lg:text-3xl text-white/50 font-light tracking-wide max-w-2xl mx-auto">
-            Discover the innovation we've created
+            Discover the solutions we've delivered
           </p>
 
           <div className="flex flex-col items-center gap-6 mt-16">

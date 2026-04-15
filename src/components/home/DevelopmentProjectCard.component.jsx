@@ -23,7 +23,7 @@ const DevelopmentProjectCard = ({
       gsap.set(arrowRef.current, { x: -20, opacity: 0 });
       gsap.set(nameRef.current, { x: -30 });
     },
-    { scope: cardRef }
+    { scope: cardRef },
   );
 
   const handleEnter = () => {
@@ -84,7 +84,7 @@ const DevelopmentProjectCard = ({
           initial={{ y: "100%" }}
           animate={{ y: isHovered ? 0 : "100%" }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="absolute inset-0 bg-[#F47920] text-white flex flex-col justify-between p-6 rounded-xl"
+          className="absolute inset-0 bg-2c text-white flex flex-col justify-between p-6 rounded-xl"
         >
           {/* Top: Company Logo */}
           <div className="flex justify-start items-start">

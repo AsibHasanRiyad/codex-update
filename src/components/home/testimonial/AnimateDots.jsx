@@ -204,7 +204,7 @@ const AnimatedDots = ({ dotArr = CxCyVlaue, className }) => {
     const animationInterval = setInterval(() => {
       // Reset all dots
       setDots((prevDots) =>
-        prevDots.map((dot) => ({ ...dot, isActive: false }))
+        prevDots.map((dot) => ({ ...dot, isActive: false })),
       );
 
       // Activate the current group
@@ -244,7 +244,7 @@ const AnimatedDots = ({ dotArr = CxCyVlaue, className }) => {
             ry="0.857924"
             initial={{ fill: "#22222A" }}
             animate={{
-              fill: dot.isActive ? "#4169E1" : "#22222A",
+              fill: dot.isActive ? "#43A047" : "#22222A",
               scale: dot.isActive ? 1.5 : 1,
             }}
             transition={{

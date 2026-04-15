@@ -2,10 +2,10 @@ import React, { useMemo, useRef, useEffect, useState } from "react";
 import {
   Sun,
   Smartphone,
-  BrainCircuit,
+  Server,
   Cloud,
-  Home,
-  Palette,
+  Globe,
+  ShoppingCart,
   Code,
   Megaphone,
 } from "lucide-react";
@@ -30,7 +30,7 @@ const defaultOrbits = [
   },
   {
     id: 2,
-    label: "Mobile Apps",
+    label: "Custom Software",
     icon: <Smartphone className="text-primary" />,
     radiusFactor: 2.9,
     speed: 10,
@@ -45,8 +45,8 @@ const defaultOrbits = [
   },
   {
     id: 3,
-    label: "AI Solutions",
-    icon: <BrainCircuit className="text-primary" />,
+    label: "Ecommerce",
+    icon: <ShoppingCart className="text-primary" />,
     radiusFactor: 3.3,
     speed: 12,
     orbitColor: "gray",
@@ -60,7 +60,7 @@ const defaultOrbits = [
   },
   {
     id: 4,
-    label: "Cloud Services",
+    label: "Cloud Hosting",
     icon: <Cloud className="text-primary" />,
     radiusFactor: 3.7,
     speed: 14,
@@ -90,8 +90,8 @@ const defaultOrbits = [
   },
   {
     id: 6,
-    label: "UX/UI Design",
-    icon: <Palette className="text-primary" />,
+    label: "Domain & Hosting",
+    icon: <Globe className="text-primary" />,
     radiusFactor: 4.5,
     speed: 18,
     orbitColor: "gray",
@@ -105,8 +105,8 @@ const defaultOrbits = [
   },
   {
     id: 7,
-    label: "Interior Design",
-    icon: <Home className="text-primary" />,
+    label: "IT Infrastructure",
+    icon: <Server className="text-primary" />,
     radiusFactor: 4.9,
     speed: 20,
     orbitColor: "gray",
@@ -167,20 +167,20 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
             className="uppercase"
             splitByWord
             fontSize="text-4xl md:text-5xl lg:text-6xl"
-            text="Innovate. Inspire."
+            text="Develop. Deploy."
           />
           <TextMaskReveal
             className="uppercase lg:-mt-7"
             fontSize="text-2xl md:text-5xl lg:text-6xl"
             splitByWord
-            text="Experiences that Move"
+            text="Solutions that Scale"
           />
         </div>
         <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-sm md:text-lg mt-5 lg:text-3xl text-white">
-          At 2 Creative, we create visually stunning, high-performance animated
-          websites that blend creativity and technology. Our designs deliver
-          seamless performance, sleek visuals, and immersive user experiences —
-          helping your brand stand out in the digital world.
+          At Devola, we build high-performance digital solutions, custom
+          software, and reliable IT infrastructure that power real business
+          growth — from concept to deployment, helping your brand thrive in the
+          digital landscape.
         </p>
       </div>
 

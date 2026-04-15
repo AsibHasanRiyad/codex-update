@@ -32,7 +32,7 @@ export function useSEO({ title, description, pathname, schema }) {
     const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
     const cleanDescription =
       description ||
-      "2 Creative delivers digital solutions including web development, mobile apps, cloud services, digital marketing, UI/UX, interior design, and IoT.";
+      "Devola delivers digital solutions including web development, custom software, ecommerce, mobile apps, cloud hosting, VPS, and IT infrastructure.";
 
     document.title = pageTitle;
 

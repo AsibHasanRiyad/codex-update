@@ -54,16 +54,16 @@ export default function AboutHero() {
 
           <TextMaskReveal
             splitByWord
-            text="A Creative Partner For Modern Growth"
+            text="A Digital Partner For Modern Growth"
             className="text-gray-100 uppercase text-5xl lg:text-6xl font-bold leading-tight"
           />
 
           <p className="text-gray-300 font-medium md:text-lg text-justify -mt-5">
-            2 Creative was built to help ambitious brands turn ideas into
-            measurable business growth. We combine strategy, design, and
-            technology to deliver high-performance websites, mobile apps, cloud
-            systems, digital marketing campaigns, interior concepts, and smart
-            IoT experiences tailored to modern business needs.
+            Devola was built to help ambitious businesses turn ideas into
+            measurable growth. We combine strategy, technology, and reliable
+            infrastructure to deliver custom software, web solutions, mobile
+            apps, ecommerce platforms, cloud hosting, and complete IT
+            infrastructure tailored to modern business needs.
           </p>
 
           {/* Rotating Shape */}
@@ -98,7 +98,7 @@ export default function AboutHero() {
           >
             <motion.img
               src={person}
-              alt="2 Creative team and digital innovation"
+              alt="Devola team and digital innovation"
               className="size-[70%] object-contain"
             />
           </motion.div>
@@ -111,10 +111,10 @@ export default function AboutHero() {
             />
 
             <p className="text-gray-300 font-medium text-justify mt-4">
-              Today, 2 Creative partners with growth-focused companies that need
-              more than execution. Our team builds digital products, brand
-              experiences, and operational systems designed to improve
-              visibility, increase efficiency, and create long-term competitive
+              Today, Devola partners with growth-focused companies that need
+              more than execution. Our team builds digital products, custom
+              software, and infrastructure systems designed to improve
+              operations, increase efficiency, and create long-term competitive
               advantage.
             </p>
 
@@ -130,11 +130,10 @@ export default function AboutHero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  360&deg;
+                  60+
                 </motion.div>
                 <div className="text-gray-300 font-medium text-sm">
-                  Digital, design, and innovation support under one creative
-                  partner
+                  Projects delivered across software, web, and IT infrastructure
                 </div>
               </motion.div>
 
@@ -145,7 +144,7 @@ export default function AboutHero() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 1 }}
                 >
-                  7+
+                  10+
                 </motion.div>
                 <div className="text-gray-300 font-medium text-sm">
                   Core service categories built for modern business growth

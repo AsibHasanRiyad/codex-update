@@ -1,106 +1,98 @@
 export const developmentProjects = [
   {
-    image: "https://hasthemes.com/blog/wp-content/uploads/2022/05/decoral.jpg",
-    siteName: "Decoral",
-    shortDesc: "Modern e-commerce site for home decor",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    siteName: "Synergy HRM",
+    shortDesc: "Intelligent HR & Project Management",
     description:
-      "A responsive online store with elegant design and smooth UX for all devices.",
-    siteLink: "https://example.com/decoral",
+      "Fully integrated Human Resource and Project Management solution with attendance, payroll, recruitment, and project lifecycle oversight.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://assets.justinmind.com/wp-content/uploads/2020/02/free-website-mockups-legal.png",
-    siteName: "Aparajito",
-    shortDesc: "Event management platform",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    siteName: "WorkPulse",
+    shortDesc: "Employee Activity & HRM Platform",
     description:
-      "Manage events, registrations, and ticketing with ease and reliability.",
-    siteLink: "https://example.com/aparajito",
+      "Unified workforce management combining real-time activity monitoring with automated attendance and leave management.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://goodmockups.com/wp-content/uploads/2018/10/Free-Responsive-Website-Showcase-Mockup-PSD.jpg",
-    siteName: "JMI Apollo",
-    shortDesc: "Educational platform for students",
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+    siteName: "EduCore",
+    shortDesc: "Complete School Management System",
     description:
-      "A platform to access learning resources, assignments, and online classes.",
-    siteLink: "https://example.com/jmi-apollo",
+      "End-to-end school management platform covering enrollment, attendance, exams, fees, library, and parent-teacher communication.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://img.freepik.com/free-psd/fashion-sale-landing-page-template_23-2149528740.jpg",
-    siteName: "Globe Work Wear",
-    shortDesc: "Corporate workwear e-commerce",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=800&q=80",
+    siteName: "SkyBook",
+    shortDesc: "Aviation Ticket Booking Platform",
     description:
-      "High-quality uniforms and workwear with seamless online shopping experience.",
-    siteLink: "https://example.com/globe-workwear",
+      "Comprehensive aviation ticket booking platform with real-time airline APIs and secure payment gateway integration.",
+    siteLink: "#",
   },
   {
-    image: "https://hasthemes.com/blog/wp-content/uploads/2022/05/decoral.jpg",
-    siteName: "Tech Solutions",
-    shortDesc: "Business automation platform",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    siteName: "ShopFlex",
+    shortDesc: "Multi-Branch E-Commerce with POS",
     description:
-      "Streamline your business operations with our comprehensive automation tools.",
-    siteLink: "https://example.com/tech-solutions",
+      "Secure, SEO-friendly platform combining e-commerce and POS capabilities for multi-branch retail operations.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://assets.justinmind.com/wp-content/uploads/2020/02/free-website-mockups-legal.png",
-    siteName: "Creative Studio",
-    shortDesc: "Digital design portfolio",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    siteName: "GaragePro",
+    shortDesc: "Multi-Warehouse Garage POS",
     description:
-      "Showcase your creative work with a stunning portfolio website.",
-    siteLink: "https://example.com/creative-studio",
+      "Advanced POS system for automotive service centers with barcode support, multilingual UI, and centralized warehouse management.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://goodmockups.com/wp-content/uploads/2018/10/Free-Responsive-Website-Showcase-Mockup-PSD.jpg",
-    siteName: "Health Plus",
-    shortDesc: "Healthcare booking system",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+    siteName: "DentalCare Pro",
+    shortDesc: "Dental Clinic Management System",
     description:
-      "Book appointments and manage health records with our intuitive platform.",
-    siteLink: "https://example.com/health-plus",
+      "Specialized dental clinic management with appointment scheduling, patient records, and operational reporting.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://img.freepik.com/free-psd/fashion-sale-landing-page-template_23-2149528740.jpg",
-    siteName: "Travel Hub",
-    shortDesc: "Travel booking platform",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    siteName: "SuiteSync",
+    shortDesc: "Hotel Operations Management",
     description:
-      "Discover and book amazing travel experiences around the world.",
-    siteLink: "https://example.com/travel-hub",
+      "Comprehensive hotel management system for room booking, guest profiles, invoicing, and financial tracking.",
+    siteLink: "#",
   },
   {
-    image: "https://hasthemes.com/blog/wp-content/uploads/2022/05/decoral.jpg",
-    siteName: "Food Delivery",
-    shortDesc: "Online food ordering system",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    siteName: "BOF Network",
+    shortDesc: "Active Directory Domain Services",
     description:
-      "Order your favorite meals from local restaurants with fast delivery.",
-    siteLink: "https://example.com/food-delivery",
+      "Linux-based ADDS deployment for centralized workstation management across nearly 1,000 devices.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://assets.justinmind.com/wp-content/uploads/2020/02/free-website-mockups-legal.png",
-    siteName: "Fitness App",
-    shortDesc: "Personal training platform",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+    siteName: "AFIP Wi-Fi",
+    shortDesc: "Enterprise Wi-Fi Deployment",
     description:
-      "Track your workouts and achieve your fitness goals with expert guidance.",
-    siteLink: "https://example.com/fitness-app",
+      "163 access points under WLC with Mesh technology for seamless connectivity across all floors.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://goodmockups.com/wp-content/uploads/2018/10/Free-Responsive-Website-Showcase-Mockup-PSD.jpg",
-    siteName: "Real Estate",
-    shortDesc: "Property listing portal",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+    siteName: "DTCA Fiber",
+    shortDesc: "Fiber Network Implementation",
     description:
-      "Find your dream home with our comprehensive real estate platform.",
-    siteLink: "https://example.com/real-estate",
+      "Fiber network with IP planning and core configuration across multiple strategic locations in Dhaka.",
+    siteLink: "#",
   },
   {
-    image:
-      "https://img.freepik.com/free-psd/fashion-sale-landing-page-template_23-2149528740.jpg",
-    siteName: "Music Streaming",
-    shortDesc: "Audio streaming service",
-    description: "Listen to millions of songs and podcasts on demand.",
-    siteLink: "https://example.com/music-streaming",
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+    siteName: "BIFCL Zimbra",
+    shortDesc: "Mail Server Implementation",
+    description:
+      "Zimbra mail server for 200 users with spam reduction and user-friendly administration interface.",
+    siteLink: "#",
   },
 ];

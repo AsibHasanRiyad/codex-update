@@ -9,24 +9,23 @@ const About = () => {
   useSEO({
     title: "About",
     description:
-      "Learn about 2 Creative, a Riyadh-focused digital solutions company delivering web development, mobile apps, cloud services, UI/UX design, digital marketing, interior design, and smart IoT solutions.",
+      "Learn about Devola, a Dhaka-based digital solutions company delivering web development, custom software, ecommerce, mobile apps, cloud hosting, VPS, and IT infrastructure services.",
     pathname: "/about-us",
     schema: {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      name: "About 2 Creative",
+      name: "About Devola",
       url: buildCanonicalUrl("/about-us"),
-      description:
-        "Company history and mission of 2 Creative digital solutions agency.",
+      description: "Company history and mission of Devola digital solutions.",
     },
   });
 
   return (
     <div className=" overflow-hidden">
-      <h1 className="sr-only">About 2 Creative</h1>
+      <h1 className="sr-only">About Devola</h1>
       <PageHeader
-        title="About 2 Creative"
-        subtitle="2 Creative is a future-focused digital solutions company helping businesses grow through web development, mobile apps, cloud engineering, digital marketing, UI/UX design, interior design, and smart IoT services."
+        title="About Devola"
+        subtitle="Devola is a future-focused digital solutions company helping businesses grow through web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure services."
       />
       <AboutHero />
       <CompanyHistory />

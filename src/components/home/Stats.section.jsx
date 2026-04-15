@@ -77,7 +77,7 @@ const Stats = () => {
           style={{ transform: "rotate(3deg)" }}
         >
           <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-white">
-            30+ Innovative team members
+            20+ Innovative team members
           </h2>
         </div>
 
@@ -88,7 +88,7 @@ const Stats = () => {
           style={{ transform: "rotate(-3deg)" }}
         >
           <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-2c">
-            50+ Completed projects
+            60+ Completed projects
           </h2>
         </div>
 
@@ -99,7 +99,7 @@ const Stats = () => {
           style={{ transform: "rotate(3deg)" }}
         >
           <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-white">
-            4 Years of experience
+            7 Years of experience
           </h2>
         </div>
       </div>

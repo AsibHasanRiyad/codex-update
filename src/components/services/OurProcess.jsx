@@ -125,9 +125,7 @@ const OurProcess = ({
             text={tagline}
           />
 
-          <p className=" text-base md:text-lg  text-justify">
-            {intro}
-          </p>
+          <p className=" text-base md:text-lg  text-justify">{intro}</p>
           {/* Torus Image (CENTER + ROTATE XY) */}
           <div className="w-full flex justify-center">
             <motion.img
@@ -156,21 +154,21 @@ const OurProcess = ({
       <div className=" relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 lg:gap-20 mt-40 border p-8 rounded-2xl max-w-6xl mx-auto border-gray-700 mb-12 md:mb-16 lg:mb-20">
         <div className=" absolute rounded-2xl border border-gray-500 -top-2.5 left-2.5 w-full h-full inset-0 "></div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">1000+</p>
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">60+</p>
           <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
-            Website Delivered
+            Projects Delivered
           </h3>
         </div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">10000+</p>
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">40+</p>
           <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
-            Happy Client
+            Happy Clients
           </h3>
         </div>
         <div className=" flex items-center  gap-10">
-          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">10+</p>
+          <p className=" text-4xl md:text-3xl lg:text-4xl font-bold">7+</p>
           <h3 className=" text-2xl md:text-xl lg:text-2xl font-semibold">
-            Country Served
+            Years of Experience
           </h3>
         </div>
       </div>

@@ -5,167 +5,149 @@ import Marquee from "./Marquee";
 
 const image1 =
   "https://images.unsplash.com/photo-1670008604236-f5f2b23722ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1441";
-const logo =
-  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png";
 
 const testimonials = [
   {
     id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
+    name: "Tanvir Hossain",
+    title: "Managing Director, ShopFlex BD",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
     rating: 5,
     image: image1,
   },
   {
     id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
+    name: "Nasreen Akter",
+    title: "Founder, EduCore Learning",
     content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
     rating: 5,
     image: image1,
   },
   {
     id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
+    name: "Rafiq Uddin",
+    title: "CTO, SuiteSync Solutions",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Their cloud hosting and VPS setup for our SaaS platform has been rock-solid. 99.9% uptime, fast support response, and they even helped us optimize our database queries. A reliable technology partner.",
     rating: 5,
     image: image1,
   },
   {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
+    id: 4,
+    name: "Shahin Alam",
+    title: "CEO, GaragePro Auto",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },
   {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
+    id: 5,
+    name: "Farhana Yeasmin",
+    title: "Director, DentalCare Pro Clinic",
     content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "From patient records to appointment scheduling and billing, Devola automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
     rating: 5,
     image: image1,
   },
   {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
+    id: 6,
+    name: "Kamrul Islam",
+    title: "IT Manager, BOF Network",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
     rating: 5,
     image: image1,
   },
   {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
+    id: 7,
+    name: "Tanvir Hossain",
+    title: "Managing Director, ShopFlex BD",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
     rating: 5,
     image: image1,
   },
   {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
+    id: 8,
+    name: "Nasreen Akter",
+    title: "Founder, EduCore Learning",
     content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
     rating: 5,
     image: image1,
   },
   {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
+    id: 9,
+    name: "Rafiq Uddin",
+    title: "CTO, SuiteSync Solutions",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Their cloud hosting and VPS setup for our SaaS platform has been rock-solid. 99.9% uptime, fast support response, and they even helped us optimize our database queries. A reliable technology partner.",
     rating: 5,
     image: image1,
   },
   {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
+    id: 10,
+    name: "Shahin Alam",
+    title: "CEO, GaragePro Auto",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },
   {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
+    id: 11,
+    name: "Farhana Yeasmin",
+    title: "Director, DentalCare Pro Clinic",
     content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "From patient records to appointment scheduling and billing, Devola automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
     rating: 5,
     image: image1,
   },
   {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
+    id: 12,
+    name: "Kamrul Islam",
+    title: "IT Manager, BOF Network",
     content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
+      "Devola handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 13,
+    name: "Tanvir Hossain",
+    title: "Managing Director, ShopFlex BD",
+    content:
+      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 14,
+    name: "Nasreen Akter",
+    title: "Founder, EduCore Learning",
+    content:
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 15,
+    name: "Rafiq Uddin",
+    title: "CTO, SuiteSync Solutions",
+    content:
+      "Their cloud hosting and VPS setup for our SaaS platform has been rock-solid. 99.9% uptime, fast support response, and they even helped us optimize our database queries. A reliable technology partner.",
+    rating: 5,
+    image: image1,
+  },
+  {
+    id: 16,
+    name: "Shahin Alam",
+    title: "CEO, GaragePro Auto",
+    content:
+      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },
@@ -178,8 +160,8 @@ function ClientFeedback() {
         <div>
           <div>
             <h1 className=" text-center text-4xl  text-white">
-              A dynamic partner helping <br />
-              businesses achieve sustainable growth
+              A trusted partner helping <br />
+              businesses achieve digital success
             </h1>
           </div>
           <div class=" flex items-center justify-between max-2xl:w-full  max-md:mt-5 md:gap-5">
@@ -211,8 +193,8 @@ function ClientFeedback() {
               </defs>
             </svg>
             <h5 class="px-2 py-2 text-center text-sm font-medium text-white max-md:w-[300%] md:whitespace-nowrap md:px-4 md:text-[17px]">
-              Your trusted choice for building a sustainable &amp; successful
-              business
+              Your trusted choice for innovative digital solutions &amp;
+              reliable IT infrastructure
             </h5>
             <svg
               xmlns="http://www.w3.org/2000/svg"

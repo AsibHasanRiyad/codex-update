@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
-import creativeLogo from "../../assets/2c-logo.png";
 import footerBg from "../../assets/footer.mp4";
 import { navLinks } from "../../constants";
 
 export default function Footer() {
   const companyLinks = navLinks.filter((item) => item.link && !item.children);
-  const serviceLinks = navLinks.find((item) => item.name === "Services")?.children || [];
+  const serviceLinks =
+    navLinks.find((item) => item.name === "Services")?.children || [];
+  const flatServiceLinks = serviceLinks.flatMap((group) =>
+    group.items ? group.items : [group],
+  );
 
   return (
     <div
@@ -22,7 +25,7 @@ export default function Footer() {
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
       />
 
-      <div className="fixed bottom-0 bg-lochmara-900 h-[750px] md:h-[700px] lg:h-[650px] w-full text-white">
+      <div className="fixed bottom-0 bg-[#0a2e14] h-[750px] md:h-[700px] lg:h-[650px] w-full text-white">
         {/* Main Footer Content */}
         <div className="h-full flex flex-col justify-between px-8 py-8 md:px-16 lg:py-20">
           {/* Top Section - CTA */}
@@ -54,28 +57,30 @@ export default function Footer() {
             {/* Company Info */}
             <div className="md:col-span-1">
               <div className="mb-6">
-                <img src={creativeLogo} className="w-60 mb-4" />
+                <span className="text-3xl font-black bg-gradient-to-r from-[#1B6B2A] via-[#43A047] to-[#8BC34A] bg-clip-text text-transparent mb-4 block">
+                  Devola
+                </span>
                 <p className="text-gray-200 text-sm leading-relaxed">
-                  We deliver innovative software solutions that empower
-                  businesses to scale and succeed in the digital age.
+                  We deliver innovative digital solutions that empower
+                  businesses to scale and succeed in the modern world.
                 </p>
               </div>
               <div className="flex gap-4">
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-lochmara duration-300 transition-colors"
+                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-[#1B6B2A] duration-300 transition-colors"
                 >
                   <Facebook size={18} />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-lochmara duration-300 transition-colors"
+                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-[#1B6B2A] duration-300 transition-colors"
                 >
                   <Twitter size={18} />
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-lochmara duration-300 transition-colors"
+                  className="w-10 h-10 rounded-full cursor-pointer border border-gray-300/20 flex items-center justify-center hover:border-none hover:bg-white hover:text-[#1B6B2A] duration-300 transition-colors"
                 >
                   <Linkedin size={18} />
                 </a>
@@ -107,7 +112,7 @@ export default function Footer() {
                 SERVICES
               </h4>
               <ul className="space-y-3">
-                {serviceLinks.map((item) => (
+                {flatServiceLinks.slice(0, 7).map((item) => (
                   <li key={item.name}>
                     <Link
                       to={item.link}
@@ -129,18 +134,18 @@ export default function Footer() {
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Call Us</p>
                   <a
-                    href="tel:+966504183004"
+                    href="tel:+8801703300440"
                     className="text-white hover:text-gray-300 transition-colors font-medium"
                   >
-                    +966 50 418 3004
+                    +880 1703 300440
                   </a>
                 </li>
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Location</p>
                   <p className="text-white text-sm">
-                    Elegant center, Al Jamiah Street,
+                    278/3, Manikdi, Sheikh Tamim Road,
                     <br />
-                    Al Malaz, Riyadh
+                    Dhaka Cantonment, Dhaka - 1206
                   </p>
                 </li>
               </ul>
@@ -150,7 +155,7 @@ export default function Footer() {
           {/* Bottom Section - Copyright */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
             <p className="text-gray-300/80 text-sm">
-              Copyright © 2025 2 Creative. All rights reserved.
+              Copyright © 2025 Devola. All rights reserved.
             </p>
             <Link
               to="/contact"

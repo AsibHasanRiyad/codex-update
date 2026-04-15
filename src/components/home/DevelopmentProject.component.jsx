@@ -40,7 +40,7 @@ const DevelopmentProject = () => {
           }
           
           .development-swiper .swiper-pagination-bullet-active {
-            background: #f47920;
+            background: #43A047;
            
           }
         `}

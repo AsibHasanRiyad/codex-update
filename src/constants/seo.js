@@ -1,5 +1,5 @@
-export const SITE_NAME = "2 Creative";
-export const SITE_URL = "https://2-creative.com";
+export const SITE_NAME = "Devola";
+export const SITE_URL = "https://mydevola.com";
 
 export function buildCanonicalUrl(pathname = "/") {
   const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;

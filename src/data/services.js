@@ -1,10 +1,12 @@
 export const servicesData = [
+  // === Digital Development ===
   {
     slug: "web-development",
+    category: "Digital Development",
     header: {
       title: "Web Development",
       subtitle:
-        "We engineer high-performance, scalable web applications that drive real business outcomes. From elegant landing pages to complex enterprise platforms, our team delivers technical excellence at every level.",
+        "We develop high-performance, responsive, and secure websites built with modern frameworks. From corporate sites to large-scale platforms, our solutions are optimized for speed, SEO, and long-term scalability.",
     },
     heroImage:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=1400&q=80",
@@ -14,1022 +16,786 @@ export const servicesData = [
     processSteps: [
       {
         step: 1,
-        title: "Discover & Plan",
+        title: "Discovery & Planning",
         description:
-          "We kick off every project by deeply understanding your business goals, market context, and technical requirements to build the right foundation.",
-        services: [
-          "Requirements Gathering",
-          "Technical Architecture",
-          "Stack Selection",
-          "Timeline & Milestones",
-        ],
+          "Understanding your goals and defining project scope with clear requirements and technical architecture.",
+        services: ["Requirements Gathering", "Technical Architecture", "Stack Selection", "Timeline Planning"],
       },
       {
         step: 2,
-        title: "Design & Prototype",
+        title: "Design & Prototyping",
         description:
-          "Our designers create intuitive wireframes and high-fidelity mockups that reflect your brand and guide the development process from the start.",
-        services: [
-          "UI/UX Wireframing",
-          "Component Library",
-          "Design System",
-          "Prototype Review",
-        ],
+          "Building wireframes and visual concepts that reflect your brand and guide the development process.",
+        services: ["UI/UX Wireframing", "Component Library", "Design System", "Prototype Review"],
       },
       {
         step: 3,
-        title: "Frontend Development",
+        title: "Development",
         description:
-          "We build fast, responsive, and accessible interfaces using modern frameworks, ensuring pixel-perfect execution across all devices.",
-        services: [
-          "React / Next.js",
-          "Responsive Layouts",
-          "Animations & Interactions",
-          "Accessibility (a11y)",
-        ],
+          "Coding the system using modern frameworks with responsive layouts and optimized performance.",
+        services: ["React / Next.js", "Responsive Layouts", "Animations", "Accessibility"],
       },
       {
         step: 4,
-        title: "Backend & Integration",
+        title: "Testing & Quality Assurance",
         description:
-          "Robust APIs, relational and NoSQL databases, and third-party integrations are engineered to power your platform securely and reliably.",
-        services: [
-          "RESTful APIs",
-          "Database Design",
-          "Auth & Security",
-          "Third-party Integrations",
-        ],
+          "Ensuring reliability, speed, and security through rigorous testing across browsers and devices.",
+        services: ["QA & Bug Testing", "Performance Audits", "Security Testing", "Cross-browser Testing"],
       },
       {
         step: 5,
-        title: "Testing & Launch",
+        title: "Deployment & Support",
         description:
-          "We rigorously test every feature across browsers and devices before deploying to production using CI/CD pipelines for a confident launch.",
-        services: [
-          "QA & Bug Testing",
-          "Performance Audits",
-          "CI/CD Deployment",
-          "Post-launch Support",
-        ],
+          "Smooth rollout on your preferred server or cloud with continuous updates and assistance.",
+        services: ["CI/CD Deployment", "Server Setup", "Post-launch Support", "Performance Monitoring"],
       },
     ],
     projectsSectionTitle: "Web Projects",
     projects: [
       {
-        title: "E-Commerce Platform",
-        desc: "Full-stack shop with real-time inventory and payment gateway.",
-        image:
-          "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=800&q=80",
+        title: "Corporate Website",
+        desc: "High-performance corporate site with modern design and SEO optimization.",
+        image: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=800&q=80",
       },
       {
-        title: "Corporate Dashboard",
-        desc: "Analytics-heavy internal tool built with React and Node.",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        title: "Enterprise Platform",
+        desc: "Large-scale web platform built for scalability and reliability.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       },
       {
-        title: "SaaS Booking System",
-        desc: "Multi-tenant appointment platform with calendar sync.",
-        image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+        title: "SaaS Application",
+        desc: "Multi-tenant SaaS platform with real-time features and analytics.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
       },
       {
-        title: "Real Estate Portal",
-        desc: "Listing site with map integration and advanced filters.",
-        image:
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+        title: "News & Media Portal",
+        desc: "Content-rich media platform with SEO tools and ad management.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
       },
       {
-        title: "EdTech LMS",
-        desc: "Online learning platform with video streaming and progress tracking.",
-        image:
-          "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
+        title: "Portfolio Showcase",
+        desc: "Stunning portfolio site with animations and responsive design.",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80",
       },
       {
-        title: "Healthcare Web App",
-        desc: "Patient portal with appointment booking and medical records.",
-        image:
-          "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+        title: "Educational Platform",
+        desc: "Learning management system with course tracking and assessments.",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
       },
     ],
   },
-
   {
-    slug: "mobile-apps",
+    slug: "custom-software",
+    category: "Digital Development",
     header: {
-      title: "Mobile Applications",
+      title: "Custom Software",
       subtitle:
-        "We design and build powerful, intuitive mobile experiences for iOS and Android. Our apps are engineered for performance, retention, and seamless cross-platform delivery.",
+        "Every business is unique — and so are our systems. We create fully customized software designed to streamline operations, automate tasks, and accelerate growth.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1400&q=80",
-    processTagline: "Design. Build. Deploy.",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1400&q=80",
+    processTagline: "Tailored solutions for your business",
     processIntro:
-      "From concept to App Store, we manage the full mobile development lifecycle with a focus on user delight, technical reliability, and rapid iteration.",
+      "We build software from the ground up to match your exact business processes, ensuring maximum efficiency and scalability.",
     processSteps: [
       {
         step: 1,
-        title: "Research & Discovery",
-        description:
-          "We gather functional requirements, understand your users, and define the app's scope before a single line of code is written.",
-        services: [
-          "Market Research",
-          "User Persona Mapping",
-          "Platform Selection",
-          "Feature Scoping",
-        ],
+        title: "Business Analysis",
+        description: "Deep dive into your operations to identify automation opportunities and system requirements.",
+        services: ["Process Mapping", "Requirements Analysis", "Feasibility Study", "ROI Assessment"],
       },
       {
         step: 2,
-        title: "UX Design & Prototyping",
-        description:
-          "We create intuitive navigation flows and interactive prototypes to validate the experience before development begins.",
-        services: [
-          "User Flow Mapping",
-          "Wireframes",
-          "Hi-Fi Mockups",
-          "Prototype Testing",
-        ],
+        title: "System Architecture",
+        description: "Designing robust, scalable architecture that supports your current and future needs.",
+        services: ["Database Design", "API Architecture", "Security Framework", "Integration Planning"],
       },
       {
         step: 3,
-        title: "App Development",
-        description:
-          "We build high-performance cross-platform and native apps tailored to your product needs and target audience.",
-        services: [
-          "React Native / Flutter",
-          "Native iOS & Android",
-          "Offline Support",
-          "Push Notifications",
-        ],
+        title: "Agile Development",
+        description: "Iterative development with regular demos and feedback loops to ensure alignment.",
+        services: ["Sprint Planning", "Code Reviews", "Feature Demos", "Continuous Integration"],
       },
       {
         step: 4,
         title: "Quality Assurance",
-        description:
-          "Every screen and interaction is tested across devices, OS versions, and edge cases to ensure a flawless experience.",
-        services: [
-          "Device Testing",
-          "Performance Testing",
-          "Crash Monitoring",
-          "Beta Testing",
-        ],
+        description: "Comprehensive testing to ensure your software is reliable, secure, and performant.",
+        services: ["Unit Testing", "Integration Testing", "Load Testing", "Security Audits"],
       },
       {
         step: 5,
-        title: "Launch & Scale",
-        description:
-          "We handle app store submission, then support growth with analytics integration and iterative feature updates.",
-        services: [
-          "App Store Submission",
-          "Play Store Release",
-          "Analytics Setup",
-          "Iterative Updates",
-        ],
+        title: "Deployment & Training",
+        description: "Smooth deployment with thorough training and documentation for your team.",
+        services: ["Server Deployment", "User Training", "Documentation", "Ongoing Support"],
       },
     ],
-    projectsSectionTitle: "Mobile Projects",
+    projectsSectionTitle: "Custom Software Projects",
     projects: [
       {
-        title: "Fitness Tracker App",
-        desc: "Workout planning with wearables sync and progress analytics.",
-        image:
-          "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=800&q=80",
+        title: "HR Management System",
+        desc: "Integrated HRM with attendance, payroll, and project management.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       },
       {
-        title: "Food Delivery App",
-        desc: "Real-time order tracking with in-app payments and ratings.",
-        image:
-          "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&q=80",
+        title: "Inventory System",
+        desc: "Real-time stock tracking with multi-warehouse support.",
+        image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
       },
       {
-        title: "Event Management App",
-        desc: "Ticket booking, venue maps, and live schedule app.",
-        image:
-          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
+        title: "Clinic Management",
+        desc: "Patient scheduling, records, and billing automation.",
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
       },
       {
-        title: "FinTech Wallet",
-        desc: "Secure digital wallet with multi-currency and P2P transfers.",
-        image:
-          "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+        title: "Hotel Operations",
+        desc: "Room booking, guest management, and financial tracking.",
+        image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
       },
       {
-        title: "E-Learning App",
-        desc: "On-demand courses with quizzes, certificates, and offline mode.",
-        image:
-          "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800&q=80",
+        title: "POS System",
+        desc: "Multi-branch point-of-sale with analytics and reporting.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       },
       {
-        title: "Travel Companion App",
-        desc: "Itinerary planner with offline maps and local recommendations.",
-        image:
-          "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=800&q=80",
+        title: "Booking Platform",
+        desc: "Aviation ticket booking with API integration and payment processing.",
+        image: "https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=800&q=80",
       },
     ],
   },
-
   {
-    slug: "cloud-services",
+    slug: "ecommerce-development",
+    category: "Digital Development",
     header: {
-      title: "Cloud Services",
+      title: "Ecommerce Development",
       subtitle:
-        "We architect, migrate, and manage cloud infrastructure that scales with your business. From AWS to Azure, our cloud engineers deliver reliable, cost-efficient, and highly available systems.",
+        "We build feature-rich online stores with payment gateways, shipping modules, SMS, product automation, analytics, and scalable backend architecture.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=80",
-    processTagline: "Reliable. Scalable. Automated.",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80",
+    processTagline: "Commerce that converts",
     processIntro:
-      "Our cloud engineering process is built around minimizing risk and maximizing uptime — so your business can scale confidently without infrastructure bottlenecks.",
+      "We create online stores that drive sales through great UX, robust backend systems, and seamless payment and shipping integrations.",
     processSteps: [
       {
         step: 1,
-        title: "Assessment & Strategy",
-        description:
-          "We audit your current infrastructure and design a cloud strategy that reduces costs, improves reliability, and enables scale.",
-        services: [
-          "Infrastructure Audit",
-          "Cost Analysis",
-          "Provider Selection",
-          "Migration Roadmap",
-        ],
+        title: "Store Planning",
+        description: "Understanding your product catalog, target audience, and business model to plan the perfect store.",
+        services: ["Product Strategy", "Competitor Analysis", "Payment Planning", "Shipping Strategy"],
       },
       {
         step: 2,
-        title: "Architecture Design",
-        description:
-          "Our architects design secure, scalable, and highly available cloud systems using microservices and serverless patterns.",
-        services: [
-          "System Architecture",
-          "Microservices Design",
-          "Serverless Planning",
-          "Security Blueprint",
-        ],
+        title: "UI/UX Design",
+        description: "Creating conversion-optimized designs with intuitive navigation and compelling product displays.",
+        services: ["Store Layout", "Product Pages", "Checkout Flow", "Mobile Design"],
       },
       {
         step: 3,
-        title: "Migration & Setup",
-        description:
-          "We migrate your applications, databases, and workloads to the cloud with zero downtime and minimal disruption.",
-        services: [
-          "Data Migration",
-          "Zero-Downtime Deploy",
-          "Environment Setup",
-          "DNS & Networking",
-        ],
+        title: "Development & Integration",
+        description: "Building the store with robust integrations for payments, shipping, and inventory management.",
+        services: ["Payment Gateways", "Shipping Modules", "Inventory Sync", "SMS & Email Automation"],
       },
       {
         step: 4,
-        title: "Automation & DevOps",
-        description:
-          "We set up CI/CD pipelines, containerization, and infrastructure-as-code so your team ships faster and more reliably.",
-        services: [
-          "CI/CD Pipelines",
-          "Docker & Kubernetes",
-          "Infrastructure as Code",
-          "Auto-Scaling",
-        ],
+        title: "Testing & Optimization",
+        description: "Ensuring flawless checkout, fast loading, and SEO optimization for maximum visibility.",
+        services: ["Checkout Testing", "Speed Optimization", "SEO Setup", "Analytics Integration"],
       },
       {
         step: 5,
-        title: "Monitor & Optimize",
-        description:
-          "Ongoing monitoring, cost optimization, and performance tuning keep your cloud operations efficient and resilient.",
-        services: [
-          "Real-time Monitoring",
-          "Cost Optimization",
-          "Performance Tuning",
-          "Incident Response",
-        ],
+        title: "Launch & Growth",
+        description: "Going live with monitoring, ongoing optimization, and growth strategy support.",
+        services: ["Store Launch", "Performance Monitoring", "A/B Testing", "Growth Strategy"],
       },
     ],
-    projectsSectionTitle: "Cloud Projects",
+    projectsSectionTitle: "E-Commerce Projects",
     projects: [
       {
-        title: "Multi-Region SaaS Migration",
-        desc: "Moved a legacy monolith to distributed AWS microservices.",
-        image:
-          "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+        title: "Multi-Branch E-Commerce",
+        desc: "Unified online and in-store sales platform with POS integration.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       },
       {
-        title: "Auto-Scaling Data Pipeline",
-        desc: "Built real-time ETL pipeline on GCP handling 50M events/day.",
-        image:
-          "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+        title: "Fashion Store",
+        desc: "Responsive fashion e-commerce with size guides and wishlist.",
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
       },
       {
-        title: "DevOps Platform Buildout",
-        desc: "CI/CD, container orchestration, and observability from scratch.",
-        image:
-          "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=800&q=80",
+        title: "Electronics Shop",
+        desc: "Feature-rich electronics store with comparison and reviews.",
+        image: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=800&q=80",
       },
       {
-        title: "Disaster Recovery System",
-        desc: "Automated failover and backup for a financial services firm.",
-        image:
-          "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+        title: "Grocery Delivery",
+        desc: "Online grocery platform with real-time delivery tracking.",
+        image: "https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=800&q=80",
       },
       {
-        title: "Serverless API Platform",
-        desc: "Cost-optimized API layer using Lambda, API Gateway, and DynamoDB.",
-        image:
-          "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80",
+        title: "Marketplace Platform",
+        desc: "Multi-vendor marketplace with vendor dashboards and analytics.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
       },
       {
-        title: "IoT Cloud Backend",
-        desc: "Scalable cloud backend ingesting telemetry from 100k+ devices.",
-        image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+        title: "B2B Commerce",
+        desc: "Wholesale e-commerce with bulk pricing and order management.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      },
+    ],
+  },
+  {
+    slug: "mobile-app-development",
+    category: "Digital Development",
+    header: {
+      title: "Mobile App Development",
+      subtitle:
+        "Using Flutter, we build fast, visually appealing, cross-platform apps with smooth performance, API integration, and user-friendly interfaces for both Android and iOS devices.",
+    },
+    heroImage:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1400&q=80",
+    processTagline: "Cross-platform excellence",
+    processIntro:
+      "We create mobile applications that deliver native-like performance on both platforms using Flutter, ensuring faster development and consistent user experience.",
+    processSteps: [
+      {
+        step: 1,
+        title: "App Strategy",
+        description: "Defining app goals, features, and technical requirements for both Android and iOS.",
+        services: ["Feature Planning", "Platform Strategy", "API Requirements", "User Flow Design"],
+      },
+      {
+        step: 2,
+        title: "UI/UX Design",
+        description: "Creating beautiful, intuitive interfaces optimized for mobile interactions.",
+        services: ["Mobile UI Design", "Interaction Design", "Prototyping", "Design System"],
+      },
+      {
+        step: 3,
+        title: "Flutter Development",
+        description: "Building cross-platform apps with Flutter for consistent performance across devices.",
+        services: ["Flutter Development", "API Integration", "State Management", "Push Notifications"],
+      },
+      {
+        step: 4,
+        title: "Testing & QA",
+        description: "Thorough testing on real devices to ensure smooth performance and bug-free experience.",
+        services: ["Device Testing", "Performance Testing", "Usability Testing", "Beta Testing"],
+      },
+      {
+        step: 5,
+        title: "Store Submission & Support",
+        description: "Publishing to app stores with ongoing maintenance and feature updates.",
+        services: ["App Store Submission", "Play Store Submission", "Version Updates", "Crash Monitoring"],
+      },
+    ],
+    projectsSectionTitle: "Mobile App Projects",
+    projects: [
+      {
+        title: "E-Commerce App",
+        desc: "Full-featured shopping app with payment and delivery tracking.",
+        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+      },
+      {
+        title: "Health & Wellness",
+        desc: "Health tracking app with appointment booking and reminders.",
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+      },
+      {
+        title: "Delivery Platform",
+        desc: "Real-time delivery tracking app with driver management.",
+        image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=800&q=80",
+      },
+      {
+        title: "Social App",
+        desc: "Community platform with messaging and content sharing.",
+        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+      },
+      {
+        title: "Banking App",
+        desc: "Secure mobile banking with transactions and account management.",
+        image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+      },
+      {
+        title: "Education App",
+        desc: "Learning app with courses, quizzes, and progress tracking.",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
       },
     ],
   },
 
+  // === Digital Presence ===
   {
     slug: "digital-marketing",
+    category: "Digital Presence",
     header: {
       title: "Digital Marketing",
       subtitle:
-        "We drive visibility, engagement, and conversions through data-driven marketing strategies. From SEO to paid campaigns, we help your brand reach the right audience at exactly the right moment.",
+        "We help brands grow online through strategic digital marketing — covering SEO, content creation, social media management, paid advertising, analytics, and complete digital brand positioning.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1400&q=80",
-    processTagline: "Data-driven growth & visibility",
+      "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1400&q=80",
+    processTagline: "Growth-driven marketing",
     processIntro:
-      "Our marketing process is rooted in analytics and human insight — we combine creative storytelling with measurable strategy to grow brands that matter.",
+      "Our solutions ensure stronger visibility, increased engagement, and measurable business growth through data-driven digital marketing strategies.",
     processSteps: [
       {
         step: 1,
-        title: "Discovery & Audit",
-        description:
-          "We analyze your current digital presence, competitors, and audience to uncover growth opportunities and set clear KPIs.",
-        services: [
-          "SEO Audit",
-          "Competitor Analysis",
-          "Audience Research",
-          "KPI Definition",
-        ],
+        title: "Audit & Research",
+        description: "Analyzing your current digital presence, competitors, and market opportunities.",
+        services: ["SEO Audit", "Competitor Analysis", "Market Research", "Audience Profiling"],
       },
       {
         step: 2,
-        title: "Strategy & Planning",
-        description:
-          "A tailored marketing plan is built around your goals — covering content, channels, budget, and brand messaging.",
-        services: [
-          "Channel Strategy",
-          "Content Calendar",
-          "Budget Allocation",
-          "Campaign Roadmap",
-        ],
+        title: "Strategy Development",
+        description: "Creating a comprehensive marketing plan aligned with your business objectives.",
+        services: ["Content Strategy", "Channel Planning", "Budget Allocation", "KPI Definition"],
       },
       {
         step: 3,
-        title: "Content Creation",
-        description:
-          "We produce compelling content — blogs, social posts, ads, and videos — designed to attract, engage, and convert.",
-        services: [
-          "Copywriting",
-          "Graphic Design",
-          "Video Production",
-          "Social Media Content",
-        ],
-      },
-      {
-        step: 4,
         title: "Campaign Execution",
-        description:
-          "We launch and manage targeted campaigns across SEO, PPC, social media, and email — optimizing continuously for ROI.",
-        services: [
-          "Google Ads / PPC",
-          "Social Media Ads",
-          "Email Campaigns",
-          "SEO Link Building",
-        ],
+        description: "Launching targeted campaigns across search, social, and content channels.",
+        services: ["SEO Optimization", "Social Media Management", "PPC Campaigns", "Content Creation"],
+      },
+      {
+        step: 4,
+        title: "Analytics & Reporting",
+        description: "Tracking performance metrics and providing actionable insights for optimization.",
+        services: ["Performance Tracking", "ROI Analysis", "Monthly Reports", "Data Insights"],
       },
       {
         step: 5,
-        title: "Analytics & Growth",
-        description:
-          "Data-driven reporting and continuous optimization ensure your marketing investment delivers measurable, compounding results.",
-        services: [
-          "Performance Reports",
-          "Conversion Optimization",
-          "A/B Testing",
-          "Growth Strategy",
-        ],
+        title: "Optimization & Scale",
+        description: "Continuously refining campaigns for better results and scaling successful strategies.",
+        services: ["A/B Testing", "Campaign Refinement", "Growth Scaling", "Brand Development"],
       },
     ],
-    projectsSectionTitle: "Marketing Campaigns",
+    projectsSectionTitle: "Marketing Projects",
     projects: [
       {
-        title: "SEO Overhaul Campaign",
-        desc: "Grew organic traffic 320% in 6 months for an e-commerce brand.",
-        image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+        title: "Brand Launch Campaign",
+        desc: "Complete brand launch with social media and content marketing.",
+        image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&q=80",
       },
       {
-        title: "Social Media Launch",
-        desc: "0 to 50k followers in 90 days for a lifestyle startup.",
-        image:
-          "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
+        title: "SEO Transformation",
+        desc: "Comprehensive SEO overhaul driving 300% organic traffic increase.",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
       },
       {
-        title: "Google Ads Strategy",
-        desc: "3.8x ROAS on paid search for a B2B SaaS company.",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        title: "Social Media Growth",
+        desc: "Strategic social media management building engaged communities.",
+        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
       },
       {
-        title: "Email Funnel Design",
-        desc: "Automated 8-step nurture sequence with 42% open rate.",
-        image:
-          "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
+        title: "E-Commerce Marketing",
+        desc: "Performance marketing driving sales for online stores.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       },
       {
-        title: "Brand Content Strategy",
-        desc: "Built a 12-month content roadmap driving 5x lead generation.",
-        image:
-          "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
+        title: "Content Strategy",
+        desc: "Content marketing plan generating leads and brand authority.",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80",
       },
       {
-        title: "Influencer Campaign",
-        desc: "Coordinated 30+ influencer partnerships across GCC markets.",
-        image:
-          "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&q=80",
+        title: "PPC Campaign",
+        desc: "Google Ads and social media advertising with high ROAS.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      },
+    ],
+  },
+  {
+    slug: "domain-registration",
+    category: "Digital Presence",
+    header: {
+      title: "Domain Registration",
+      subtitle:
+        "We offer seamless domain registration services for all major extensions (.com, .net, .org, etc.) through leading commercial registrars. Additionally, we provide BTCL domain registration for secure and locally compliant domain management.",
+    },
+    heroImage:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+    processTagline: "Your perfect domain, secured",
+    processIntro:
+      "Choose your perfect domain and get started instantly with our seamless registration process and ongoing management support.",
+    processSteps: [
+      {
+        step: 1,
+        title: "Domain Search",
+        description: "Search and check availability for your desired domain name across all extensions.",
+        services: ["Domain Search", "Extension Suggestions", "Brand Name Matching", "Availability Check"],
+      },
+      {
+        step: 2,
+        title: "Registration",
+        description: "Quick and secure domain registration through trusted registrars.",
+        services: ["Domain Registration", "DNS Configuration", "WHOIS Privacy", "Auto-renewal Setup"],
+      },
+      {
+        step: 3,
+        title: "DNS Management",
+        description: "Complete DNS setup and management for your domain's technical needs.",
+        services: ["DNS Setup", "Email Configuration", "Subdomain Management", "SSL Certificate"],
+      },
+      {
+        step: 4,
+        title: "Transfer & Migration",
+        description: "Hassle-free domain transfers and migrations with zero downtime.",
+        services: ["Domain Transfer", "DNS Migration", "Registrar Change", "Technical Support"],
+      },
+      {
+        step: 5,
+        title: "Ongoing Management",
+        description: "Continuous domain monitoring, renewal management, and technical support.",
+        services: ["Renewal Management", "Security Monitoring", "DNS Updates", "Technical Support"],
+      },
+    ],
+    projectsSectionTitle: "Domain Services",
+    projects: [
+      {
+        title: "BTCL Domain Setup",
+        desc: "Local .bd domain registration with BTCL compliance.",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+      },
+      {
+        title: "Enterprise Domains",
+        desc: "Multi-domain management for enterprise organizations.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+      },
+      {
+        title: "Domain Migration",
+        desc: "Seamless domain transfer with zero-downtime migration.",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+      },
+      {
+        title: "DNS Configuration",
+        desc: "Advanced DNS setup with CDN and email integration.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+      },
+      {
+        title: "SSL Certificates",
+        desc: "SSL/TLS certificate provisioning and management.",
+        image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+      },
+      {
+        title: "Brand Protection",
+        desc: "Domain portfolio management to protect your brand online.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+      },
+    ],
+  },
+  {
+    slug: "web-hosting",
+    category: "Digital Presence",
+    header: {
+      title: "Web Hosting",
+      subtitle:
+        "Experience fast and secure cPanel-based hosting with enterprise-grade uptime, powerful servers, automated backups, professional email setup, and complete domain & DNS management.",
+    },
+    heroImage:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+    processTagline: "Reliable hosting infrastructure",
+    processIntro:
+      "Our hosting ensures stability, speed, and robust protection for all your websites and applications with enterprise-grade infrastructure.",
+    processSteps: [
+      {
+        step: 1,
+        title: "Needs Assessment",
+        description: "Understanding your hosting requirements including traffic, storage, and performance needs.",
+        services: ["Traffic Analysis", "Storage Planning", "Performance Requirements", "Security Needs"],
+      },
+      {
+        step: 2,
+        title: "Server Setup",
+        description: "Configuring optimized server environments tailored to your application stack.",
+        services: ["Server Configuration", "cPanel Setup", "Email Setup", "DNS Configuration"],
+      },
+      {
+        step: 3,
+        title: "Migration & Deployment",
+        description: "Seamless migration of existing sites with zero-downtime deployment.",
+        services: ["Site Migration", "Database Transfer", "DNS Propagation", "SSL Installation"],
+      },
+      {
+        step: 4,
+        title: "Optimization",
+        description: "Fine-tuning server performance for maximum speed and reliability.",
+        services: ["Caching Setup", "CDN Integration", "Compression", "Database Optimization"],
+      },
+      {
+        step: 5,
+        title: "Monitoring & Support",
+        description: "24/7 monitoring with automated backups and proactive support.",
+        services: ["Uptime Monitoring", "Automated Backups", "Security Patches", "Technical Support"],
+      },
+    ],
+    projectsSectionTitle: "Hosting Solutions",
+    projects: [
+      {
+        title: "Enterprise Hosting",
+        desc: "High-performance hosting for enterprise web applications.",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+      },
+      {
+        title: "E-Commerce Hosting",
+        desc: "Optimized hosting for online stores with high availability.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+      },
+      {
+        title: "WordPress Hosting",
+        desc: "Managed WordPress hosting with automatic updates and security.",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80",
+      },
+      {
+        title: "Email Hosting",
+        desc: "Professional email hosting with custom domain setup.",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
+      },
+      {
+        title: "Media Hosting",
+        desc: "High-bandwidth hosting for media-rich websites and portals.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+      },
+      {
+        title: "Multi-site Hosting",
+        desc: "Hosting multiple websites under a single managed infrastructure.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       },
     ],
   },
 
+  // === Cloud & Infrastructure ===
   {
-    slug: "ui-ux-design",
+    slug: "cloud-hosting",
+    category: "Cloud & Infrastructure",
     header: {
-      title: "UI/UX Design",
+      title: "Cloud Hosting",
       subtitle:
-        "We create interfaces people love to use. From early-stage research to polished design systems, our UX process puts your users first and your brand at the center of every interaction.",
+        "Our cloud hosting platform delivers fast, secure, and scalable computing resources. With flexible resource allocation and instant scalability, businesses can grow without limitations.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1400&q=80",
-    processTagline: "User-first design thinking",
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=80",
+    processTagline: "Scalable cloud infrastructure",
     processIntro:
-      "Great design is never accidental. We follow a rigorous, research-backed process that transforms complexity into clarity — and clarity into beautiful, converting products.",
+      "Whether you're running web applications, enterprise systems, or data-driven solutions, our cloud infrastructure ensures smooth performance, high availability, and uninterrupted service. Servers hosted at Dhaka Colo with DR at ColoAsia.",
     processSteps: [
       {
         step: 1,
-        title: "Research & Empathy",
-        description:
-          "We understand your users through research, interviews, and behavioral analysis to inform every design decision we make.",
-        services: [
-          "User Interviews",
-          "Empathy Mapping",
-          "Competitive UX Review",
-          "Journey Mapping",
-        ],
+        title: "Cloud Assessment",
+        description: "Evaluating your workload requirements and designing the optimal cloud architecture.",
+        services: ["Workload Analysis", "Resource Planning", "Cost Optimization", "Architecture Design"],
       },
       {
         step: 2,
-        title: "Information Architecture",
-        description:
-          "We structure your product's content and navigation so users always know where they are and where to go next.",
-        services: [
-          "Sitemap Design",
-          "User Flow Diagrams",
-          "Content Hierarchy",
-          "Navigation Patterns",
-        ],
+        title: "Infrastructure Setup",
+        description: "Provisioning cloud resources with security, networking, and storage configurations.",
+        services: ["Server Provisioning", "Network Setup", "Storage Configuration", "Security Groups"],
       },
       {
         step: 3,
-        title: "Wireframing",
-        description:
-          "Low-fidelity wireframes capture the layout and logic of each screen, validated with stakeholders before visual design begins.",
-        services: [
-          "Lo-Fi Wireframes",
-          "Interaction Logic",
-          "Stakeholder Review",
-          "Iteration Cycles",
-        ],
+        title: "Migration",
+        description: "Migrating existing workloads to cloud with minimal disruption.",
+        services: ["Data Migration", "Application Migration", "DNS Transition", "Testing & Validation"],
       },
       {
         step: 4,
-        title: "Visual Design & Prototyping",
-        description:  
-          "We craft stunning high-fidelity designs and interactive prototypes that reflect your brand with precision and elegance.",
-        services: [
-          "Hi-Fi Mockups",
-          "Design Systems",
-          "Component Libraries",
-          "Interactive Prototypes",
-        ],
+        title: "Optimization",
+        description: "Fine-tuning cloud resources for performance, cost, and security.",
+        services: ["Auto-scaling", "Load Balancing", "Cost Monitoring", "Performance Tuning"],
       },
       {
         step: 5,
-        title: "Testing & Handoff",
-        description:
-          "Usability testing and refined developer handoff ensure designs translate perfectly from concept to live product.",
-        services: [
-          "Usability Testing",
-          "A/B Test Designs",
-          "Developer Specs",
-          "Asset Export",
-        ],
+        title: "Management & Support",
+        description: "Ongoing cloud management with monitoring, backups, and 24/7 support.",
+        services: ["24/7 Monitoring", "Automated Backups", "Security Updates", "Disaster Recovery"],
       },
     ],
-    projectsSectionTitle: "Design Projects",
+    projectsSectionTitle: "Cloud Solutions",
     projects: [
       {
-        title: "Banking App Redesign",
-        desc: "Complete UX overhaul increasing app engagement by 67%.",
-        image:
-          "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80",
+        title: "Enterprise Cloud",
+        desc: "Scalable cloud infrastructure for enterprise operations.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
       },
       {
-        title: "SaaS Dashboard Design",
-        desc: "Intuitive analytics dashboard for a logistics management platform.",
-        image:
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        title: "SaaS Platform Hosting",
+        desc: "High-availability cloud hosting for SaaS applications.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       },
       {
-        title: "E-Commerce Redesign",
-        desc: "Conversion-focused redesign boosting checkout rate by 45%.",
-        image:
-          "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=800&q=80",
+        title: "Database Cluster",
+        desc: "Clustered database hosting with failover and replication.",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
       },
       {
-        title: "Healthcare Patient Portal",
-        desc: "Accessible, calm UI designed for elderly and low-literacy users.",
-        image:
-          "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+        title: "Media Streaming",
+        desc: "Cloud infrastructure for media streaming platforms.",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
       },
       {
-        title: "Design System Build",
-        desc: "Full component library and style guide for a fintech brand.",
-        image:
-          "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+        title: "Backup & DR",
+        desc: "Disaster recovery setup with automated backup solutions.",
+        image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
       },
       {
-        title: "Mobile Onboarding Flow",
-        desc: "5-step onboarding redesign reducing drop-off by 38%.",
-        image:
-          "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
+        title: "DevOps Pipeline",
+        desc: "CI/CD pipeline hosting with containerized deployments.",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
       },
     ],
   },
-
   {
-    slug: "interior-design",
+    slug: "vps-solutions",
+    category: "Cloud & Infrastructure",
     header: {
-      title: "Interior Design",
+      title: "VPS Solutions",
       subtitle:
-        "We craft purposeful, beautiful interior spaces for homes, offices, and commercial environments. Our designers blend aesthetics with function to create spaces that inspire and perform.",
+        "Powerful VPS hosting with dedicated resources, ensuring stable performance even under high load. Each VPS includes guaranteed CPU, RAM, and SSD storage with full root access.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1400&q=80",
-    processTagline: "Spaces with purpose & style",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+    processTagline: "Dedicated power, full control",
     processIntro:
-      "Every space tells a story. Our interior design process takes you from initial concept to final installation — with complete transparency, expert curation, and zero compromise on quality.",
+      "Our VPS plans are ideal for e-commerce, SaaS applications, ERP systems, media platforms, financial applications, software development, and any project requiring reliable, isolated compute power.",
     processSteps: [
       {
         step: 1,
-        title: "Consultation & Brief",
-        description:
-          "We meet with you to understand your vision, lifestyle or business needs, budget, and the functional requirements of the space.",
-        services: [
-          "Client Interview",
-          "Space Assessment",
-          "Budget Planning",
-          "Style Mood Board",
-        ],
+        title: "Requirements Analysis",
+        description: "Determining your compute, storage, and bandwidth needs for optimal VPS sizing.",
+        services: ["Resource Assessment", "OS Selection", "Control Panel Choice", "Security Planning"],
       },
       {
         step: 2,
-        title: "Concept Development",
-        description:
-          "Our designers develop a concept board with color palettes, materials, textures, and spatial layouts that bring your vision to life.",
-        services: [
-          "Concept Boards",
-          "Color Schemes",
-          "Material Selection",
-          "Spatial Planning",
-        ],
+        title: "VPS Provisioning",
+        description: "Setting up your VPS with dedicated resources and your preferred configuration.",
+        services: ["VPS Setup", "OS Installation", "Control Panel Setup", "SSH Configuration"],
       },
       {
         step: 3,
-        title: "3D Visualization",
-        description:
-          "Photorealistic 3D renders and virtual walkthroughs let you experience your future space before anything is procured or installed.",
-        services: [
-          "3D Rendering",
-          "Virtual Walkthroughs",
-          "Lighting Simulation",
-          "Client Approval",
-        ],
+        title: "Application Deployment",
+        description: "Installing and configuring your applications on the VPS environment.",
+        services: ["App Installation", "Database Setup", "Web Server Config", "SSL Setup"],
       },
       {
         step: 4,
-        title: "Procurement & Coordination",
-        description:
-          "We source and procure all furniture, fixtures, and fittings — managing vendors and timelines so you don't have to.",
-        services: [
-          "Vendor Sourcing",
-          "Furniture Procurement",
-          "Contractor Coordination",
-          "Timeline Management",
-        ],
+        title: "Security Hardening",
+        description: "Implementing security measures to protect your VPS and data.",
+        services: ["Firewall Setup", "Intrusion Detection", "SSL/TLS", "Access Control"],
       },
       {
         step: 5,
-        title: "Installation & Styling",
-        description:
-          "Our team oversees complete installation and final styling of your space, ensuring every detail is precisely as designed.",
-        services: [
-          "On-site Supervision",
-          "Furniture Placement",
-          "Décor Styling",
-          "Final Walkthrough",
-        ],
+        title: "Management & Support",
+        description: "Ongoing VPS management with monitoring, updates, and technical support.",
+        services: ["Server Monitoring", "OS Updates", "Backup Management", "Technical Support"],
       },
     ],
-    projectsSectionTitle: "Interior Projects",
+    projectsSectionTitle: "VPS Projects",
     projects: [
       {
-        title: "Luxury Villa — Riyadh",
-        desc: "Full interior concept and installation for a 5-bedroom private villa.",
-        image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+        title: "E-Commerce VPS",
+        desc: "High-performance VPS for online store operations.",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
       },
       {
-        title: "Modern Office Space",
-        desc: "Open-plan workspace designed for collaboration and brand identity.",
-        image:
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+        title: "SaaS VPS",
+        desc: "Dedicated VPS for SaaS application hosting.",
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
       },
       {
-        title: "Boutique Café Interior",
-        desc: "Warm, artisan-inspired café concept with custom lighting fixtures.",
-        image:
-          "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80",
+        title: "Development Server",
+        desc: "VPS environment for development and staging.",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
       },
       {
-        title: "Hotel Lobby Redesign",
-        desc: "Grand lobby transformation with bespoke furniture and stone finishes.",
-        image:
-          "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+        title: "ERP Hosting",
+        desc: "Reliable VPS for enterprise resource planning systems.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
       },
       {
-        title: "Executive Apartment",
-        desc: "Contemporary interior for a high-rise apartment in Al Malaz.",
-        image:
-          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+        title: "Media Server",
+        desc: "VPS optimized for media streaming and content delivery.",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
       },
       {
-        title: "Retail Showroom",
-        desc: "Curated showroom space that enhances product display and client flow.",
-        image:
-          "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+        title: "Financial App Server",
+        desc: "Secure VPS for financial applications and data processing.",
+        image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
       },
     ],
   },
-
   {
-    slug: "smart-iot",
+    slug: "network-it-infrastructure",
+    category: "Cloud & Infrastructure",
     header: {
-      title: "Smart IoT Solutions",
+      title: "Network & IT Infrastructure",
       subtitle:
-        "We connect the physical and digital worlds through intelligent IoT ecosystems. From sensor development to cloud dashboards, we deliver real-time visibility and automation for your environment.",
+        "Complete network and IT infrastructure solutions including server setup, CCTV, access control, firewall, Wi-Fi, LAN cabling, software licenses, and full network configuration.",
     },
     heroImage:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80",
-    processTagline: "Connected systems. Real-time intelligence.",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1400&q=80",
+    processTagline: "Infrastructure that works",
     processIntro:
-      "IoT projects succeed when hardware, firmware, and cloud software are engineered as one. Our end-to-end process ensures your connected solution is reliable, secure, and future-proof.",
+      "We provide end-to-end network and IT infrastructure solutions for businesses of all sizes, ensuring secure, reliable, and high-performance connectivity.",
     processSteps: [
       {
         step: 1,
-        title: "Requirements & Scope",
-        description:
-          "We define the problem, identify device needs and data flows, and scope the IoT solution best suited to your environment.",
-        services: [
-          "Use Case Definition",
-          "Device Mapping",
-          "Connectivity Planning",
-          "Compliance Review",
-        ],
+        title: "Site Survey & Assessment",
+        description: "Comprehensive assessment of your location, existing infrastructure, and requirements.",
+        services: ["Site Survey", "Network Audit", "Requirements Analysis", "Capacity Planning"],
       },
       {
         step: 2,
-        title: "Sensor & Hardware Selection",
-        description:
-          "We select the right sensors, microcontrollers, and communication protocols for your specific operating conditions.",
-        services: [
-          "Sensor Selection",
-          "Hardware Prototyping",
-          "Protocol Selection",
-          "Power Planning",
-        ],
+        title: "Design & Planning",
+        description: "Designing network topology, IP planning, and infrastructure layout.",
+        services: ["Network Design", "IP Planning", "Equipment Selection", "Cable Layout"],
       },
       {
         step: 3,
-        title: "Firmware & Cloud Architecture",
-        description:
-          "We develop embedded firmware and cloud pipelines that collect, process, and store sensor data reliably and securely.",
-        services: [
-          "Firmware Development",
-          "Cloud Pipeline",
-          "Data Storage",
-          "Security Implementation",
-        ],
+        title: "Installation & Configuration",
+        description: "Physical installation and configuration of all network and IT equipment.",
+        services: ["Cabling", "Equipment Installation", "Server Setup", "CCTV & Access Control"],
       },
       {
         step: 4,
-        title: "Integration & Dashboard",
-        description:
-          "Real-time dashboards and automated alerts give you full visibility and control over your connected infrastructure.",
-        services: [
-          "Dashboard Development",
-          "Real-time Alerts",
-          "API Integration",
-          "Mobile Monitoring",
-        ],
+        title: "Testing & Commissioning",
+        description: "Thorough testing to ensure all systems work together seamlessly.",
+        services: ["Network Testing", "Performance Validation", "Security Testing", "Documentation"],
       },
       {
         step: 5,
-        title: "Deployment & Maintenance",
-        description:
-          "We deploy devices in the field and provide ongoing remote monitoring, firmware updates, and dedicated technical support.",
-        services: [
-          "Field Deployment",
-          "Remote Monitoring",
-          "OTA Updates",
-          "Ongoing Support",
-        ],
+        title: "Maintenance & Support",
+        description: "Ongoing maintenance, monitoring, and support for your IT infrastructure.",
+        services: ["Preventive Maintenance", "Monitoring", "Troubleshooting", "Capacity Upgrades"],
       },
     ],
-    projectsSectionTitle: "IoT Projects",
+    projectsSectionTitle: "IT Infrastructure Projects",
     projects: [
       {
-        title: "Smart Factory Monitoring",
-        desc: "Real-time machine health monitoring across 200+ production units.",
-        image:
-          "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800&q=80",
+        title: "Enterprise Network",
+        desc: "Complete network setup for large enterprise campus.",
+        image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
       },
       {
-        title: "Building Energy Management",
-        desc: "IoT-driven HVAC and lighting automation reducing energy costs 35%.",
-        image:
-          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80",
+        title: "CCTV Deployment",
+        desc: "IP camera surveillance system with central monitoring.",
+        image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&q=80",
       },
       {
-        title: "Agricultural Sensor Network",
-        desc: "Soil moisture and climate monitoring for smart irrigation.",
-        image:
-          "https://images.unsplash.com/photo-1573671710145-dd93f97ad8c0?w=800&q=80",
+        title: "Server Room Setup",
+        desc: "On-premise server room with power and cooling infrastructure.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
       },
       {
-        title: "Smart Parking System",
-        desc: "Sensor-based occupancy detection and real-time space availability.",
-        image:
-          "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&q=80",
+        title: "Wi-Fi Coverage",
+        desc: "Enterprise Wi-Fi deployment with controller-based management.",
+        image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
       },
       {
-        title: "Fleet Telematics Platform",
-        desc: "GPS, diagnostics, and driver behavior monitoring for 500+ vehicles.",
-        image:
-          "https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=800&q=80",
+        title: "Firewall Implementation",
+        desc: "Advanced firewall setup for secure network perimeter.",
+        image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
       },
       {
-        title: "Cold Chain Monitoring",
-        desc: "Temperature-controlled logistics tracking for pharmaceutical goods.",
-        image:
-          "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?w=800&q=80",
-      },
-    ],
-  },
-
-  {
-    slug: "3d-modeling",
-    header: {
-      title: "3D Modeling",
-      subtitle:
-        "We create photorealistic 3D models, visualizations, and animations that bring your ideas to life. From product design to architectural walkthroughs, our artists deliver precision-crafted visuals that captivate and convert.",
-    },
-    heroImage:
-      "https://images.unsplash.com/photo-1617042375876-a13e36732a04?w=1400&q=80",
-    processTagline: "Concept to photorealistic reality",
-    processIntro:
-      "Our 3D modeling process blends artistic vision with technical rigor — ensuring every deliverable is accurate, visually stunning, and purpose-built for your medium and audience.",
-    processSteps: [
-      {
-        step: 1,
-        title: "Brief & Reference",
-        description:
-          "We begin by understanding your creative goals, target audience, and intended use — collecting reference materials and technical specifications to guide the project.",
-        services: [
-          "Project Brief",
-          "Reference Collection",
-          "Technical Spec Review",
-          "Style Definition",
-        ],
-      },
-      {
-        step: 2,
-        title: "Concept & Blocking",
-        description:
-          "Our artists develop initial concept sketches and low-poly block-outs for layout, proportions, and composition approval before full modeling begins.",
-        services: [
-          "Concept Sketching",
-          "Block-out Modeling",
-          "Proportion Review",
-          "Client Sign-off",
-        ],
-      },
-      {
-        step: 3,
-        title: "High-Detail Modeling",
-        description:
-          "We build precise, production-ready 3D models with clean topology, accurate geometry, and all surface detail optimized for your target platform.",
-        services: [
-          "High-Poly Modeling",
-          "Topology Optimization",
-          "UV Unwrapping",
-          "Surface Detail",
-        ],
-      },
-      {
-        step: 4,
-        title: "Texturing & Lighting",
-        description:
-          "Physically based textures, materials, and lighting setups are applied to achieve photorealism and ensure accurate representation of surfaces and environments.",
-        services: [
-          "PBR Texturing",
-          "Material Setup",
-          "HDRI Lighting",
-          "Environment Design",
-        ],
-      },
-      {
-        step: 5,
-        title: "Rendering & Delivery",
-        description:
-          "Final renders and animations are produced at full resolution and delivered in your required formats — ready for print, web, film, or real-time engines.",
-        services: [
-          "High-Res Rendering",
-          "Animation Output",
-          "Format Export",
-          "Revision & Delivery",
-        ],
-      },
-    ],
-    projectsSectionTitle: "3D Projects",
-    projects: [
-      {
-        title: "Product Visualization",
-        desc: "Photorealistic 3D renders of consumer electronics for a global launch campaign.",
-        image:
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-      },
-      {
-        title: "Architectural Visualization",
-        desc: "Full exterior and interior 3D walkthrough for a luxury residential development.",
-        image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-      },
-      {
-        title: "Character Modeling",
-        desc: "High-detail character models with rigging and facial expressions for a mobile game.",
-        image:
-          "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=800&q=80",
-      },
-      {
-        title: "Animation & VFX",
-        desc: "3D animation sequence and VFX compositing for a broadcast commercial.",
-        image:
-          "https://images.unsplash.com/photo-1626544827763-d516dce335e2?w=800&q=80",
-      },
-      {
-        title: "Game Asset Library",
-        desc: "Full environment and prop asset pack created for a cross-platform RPG title.",
-        image:
-          "https://images.unsplash.com/photo-1535223289429-462dc4d3c9e2?w=800&q=80",
-      },
-      {
-        title: "Medical 3D Illustration",
-        desc: "Anatomically precise 3D models used in a medical training and education platform.",
-        image:
-          "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
-      },
-    ],
-  },
-
-  {
-    slug: "event-management",
-    header: {
-      title: "Event Management",
-      subtitle:
-        "We design, plan, and execute extraordinary events — from high-profile corporate conferences to spectacular brand activations. Every detail is meticulously managed so your event leaves a lasting impression.",
-    },
-    heroImage:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80",
-    processTagline: "Every detail. Every moment. Perfected.",
-    processIntro:
-      "Memorable events are built on precision planning and creative vision. Our end-to-end process ensures everything — from the first brief to the final handshake — is flawlessly delivered.",
-    processSteps: [
-      {
-        step: 1,
-        title: "Discovery & Brief",
-        description:
-          "We start by understanding your event objectives, target audience, budget, and desired experience — turning your vision into a structured creative brief.",
-        services: [
-          "Event Objectives",
-          "Audience Profiling",
-          "Budget Framework",
-          "Creative Brief",
-        ],
-      },
-      {
-        step: 2,
-        title: "Concept & Planning",
-        description:
-          "Our team develops the event theme, experience flow, and full production plan — covering venue, timeline, entertainment, and every logistical element.",
-        services: [
-          "Theme Development",
-          "Run-of-Show Planning",
-          "Vendor Shortlisting",
-          "Risk Assessment",
-        ],
-      },
-      {
-        step: 3,
-        title: "Creative Design",
-        description:
-          "We design the full event aesthetic — stage sets, branding, décor, lighting mood, and all visual touchpoints that shape the atmosphere and guest experience.",
-        services: [
-          "Stage & Set Design",
-          "Event Branding",
-          "Lighting Design",
-          "Décor & Styling",
-        ],
-      },
-      {
-        step: 4,
-        title: "Vendor & Logistics",
-        description:
-          "We procure and coordinate all vendors, equipment, catering, AV, and talent — managing every contract and timeline to ensure seamless execution.",
-        services: [
-          "Vendor Management",
-          "AV & Production",
-          "Catering Coordination",
-          "Talent & Entertainment",
-        ],
-      },
-      {
-        step: 5,
-        title: "Execution & Wrap-up",
-        description:
-          "Our on-site team manages every moment of the event in real time, followed by a thorough post-event debrief, reporting, and guest feedback analysis.",
-        services: [
-          "On-site Management",
-          "Live Coordination",
-          "Post-Event Report",
-          "Guest Feedback",
-        ],
-      },
-    ],
-    projectsSectionTitle: "Event Projects",
-    projects: [
-      {
-        title: "Annual Corporate Summit",
-        desc: "1,200-attendee leadership summit with keynotes, panels, and gala dinner.",
-        image:
-          "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80",
-      },
-      {
-        title: "Product Launch Event",
-        desc: "High-impact brand activation and product reveal for a regional tech launch.",
-        image:
-          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80",
-      },
-      {
-        title: "Awards Gala Night",
-        desc: "Black-tie awards ceremony with bespoke staging and live entertainment.",
-        image:
-          "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
-      },
-      {
-        title: "Music Festival",
-        desc: "3-day open-air music festival with full production and crowd management.",
-        image:
-          "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&q=80",
-      },
-      {
-        title: "Luxury Wedding",
-        desc: "End-to-end wedding production with floral design, catering, and live band.",
-        image:
-          "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
-      },
-      {
-        title: "Trade Exhibition",
-        desc: "Multi-brand trade show with custom booth design and visitor experience zones.",
-        image:
-          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&q=80",
+        title: "Structured Cabling",
+        desc: "Cat6/Cat6A structured cabling for organized networking.",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
       },
     ],
   },

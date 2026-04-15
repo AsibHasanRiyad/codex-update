@@ -8,47 +8,34 @@ export const navLinks = [
     name: "Services",
     children: [
       {
-        name: "Web Development",
-        link: "/services/web-development",
+        group: "Digital Development",
+        items: [
+          { name: "Web Development", link: "/services/web-development" },
+          { name: "Custom Software", link: "/services/custom-software" },
+          { name: "Ecommerce Development", link: "/services/ecommerce-development" },
+          { name: "Mobile App Development", link: "/services/mobile-app-development" },
+        ],
       },
       {
-        name: "Mobile Apps",
-        link: "/services/mobile-apps",
+        group: "Digital Presence",
+        items: [
+          { name: "Digital Marketing", link: "/services/digital-marketing" },
+          { name: "Domain Registration", link: "/services/domain-registration" },
+          { name: "Web Hosting", link: "/services/web-hosting" },
+        ],
       },
       {
-        name: "Cloud Services",
-        link: "/services/cloud-services",
-      },
-      {
-        name: "Digital Marketing",
-        link: "/services/digital-marketing",
-      },
-      {
-        name: "UI/UX Design",
-        link: "/services/ui-ux-design",
-      },
-      {
-        name: "Interior Design",
-        link: "/services/interior-design",
-      },
-      {
-        name: "Smart IoT",
-        link: "/services/smart-iot",
-      },
-      {
-        name: "3D Modeling",
-        link: "/services/3d-modeling",
-      },
-      {
-        name: "Event Management",
-        link: "/services/event-management",
+        group: "Cloud & Infrastructure",
+        items: [
+          { name: "Cloud Hosting", link: "/services/cloud-hosting" },
+          { name: "VPS Solutions", link: "/services/vps-solutions" },
+          { name: "Network & IT Infrastructure", link: "/services/network-it-infrastructure" },
+        ],
       },
     ],
   },
-  // {
-  //   name: "Blog",
-  //   link: "#",
-  //   children: ["Latest Posts", "Company News", "Tips & Guides"],
-  // },
+  { name: "Products", link: "/products", children: null },
+  { name: "Case Studies", link: "/case-studies", children: null },
+  { name: "Blog", link: "/blog", children: null },
   { name: "Contact", link: "/contact", children: null },
 ];

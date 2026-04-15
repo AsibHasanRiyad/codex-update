@@ -20,25 +20,26 @@ export default function Contact() {
   useSEO({
     title: "Contact",
     description:
-      "Contact 2 Creative in Riyadh for web development, mobile apps, cloud services, interior design, and digital growth solutions.",
+      "Contact Devola in Dhaka for web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure solutions.",
     pathname: "/contact",
     schema: {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      name: "Contact 2 Creative",
+      name: "Contact Devola",
       url: buildCanonicalUrl("/contact"),
       description:
-        "Get in touch with 2 Creative at Elegant center, Al Jamiah Street, Al Malaz, Riyadh.",
+        "Get in touch with Devola at 278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka.",
     },
   });
 
   // Dummy Data
-  const phone_one = "+966 50 418 3004";
-  const phone_two = "+966 50 418 3004";
-  const email_one = "info@2creative.com";
-  const email_two = "info@2creative.com";
+  const phone_one = "+880 1703 300440";
+  const phone_two = "+880 1703 300440";
+  const email_one = "hello@mydevola.com";
+  const email_two = "hello@mydevola.com";
   const business_hour = "Sat - Thu: 10am - 6pm";
-  const location = "Elegant center, Al Jamiah Street, Al Malaz, Riyadh";
+  const location =
+    "278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -77,13 +78,13 @@ export default function Contact() {
       icon: Clock,
       label: "Business Hours",
       value: business_hour,
-      secondary: "Weekend by appointment",
+      secondary: "Friday closed",
     },
     {
       icon: MapPin,
       label: "Address",
       value: location,
-      secondary: "Riyadh, Saudi Arabia",
+      secondary: "Dhaka, Bangladesh",
     },
   ];
 
@@ -95,7 +96,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
-      <h1 className="sr-only">Contact 2 Creative</h1>
+      <h1 className="sr-only">Contact Devola</h1>
       <PageHeader />
 
       <section className="py-24 px-4">
@@ -256,17 +257,23 @@ export default function Contact() {
               initial={{ opacity: 0, x: 50 }}
               animate={isFormInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="h-96 md:h-full min-h-[500px] rounded-lg overflow-hidden border border-gray-500 bg-card/40 backdrop-blur-sm shadow-xl"
+              className="h-96 md:h-full min-h-[500px] rounded-lg overflow-hidden border border-gray-500 bg-card/40 backdrop-blur-sm shadow-xl flex flex-col items-center justify-center p-12 text-center"
             >
-              <iframe
-                src="https://maps.app.goo.gl/YCaEKRoGhM4vcxTRA?g_st=com.google.maps.preview.copy"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <MapPin className="w-16 h-16 text-2c mb-6" />
+              <h3 className="text-2xl font-bold text-gray-100 mb-4">
+                Visit Our Office
+              </h3>
+              <p className="text-gray-300 text-lg mb-2">
+                278/3, Manikdi, Sheikh Tamim Road
+              </p>
+              <p className="text-gray-300 text-lg mb-2">
+                Dhaka Cantonment, Dhaka - 1206
+              </p>
+              <p className="text-gray-300 text-lg mb-6">Bangladesh</p>
+              <div className="space-y-2">
+                <p className="text-gray-400 text-sm">Sat - Thu: 10am - 6pm</p>
+                <p className="text-gray-400 text-sm">Friday: Closed</p>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 
-import codexLogoWhite from "../../../assets/codex-white-logo.png";
-import creativeLogo from "../../../assets/2c-logo.png"
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 import { Link } from "react-router-dom";
@@ -45,16 +43,14 @@ const Navbar = () => {
       >
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
           <a className="col-span-6 lg:col-span-2" href={"/"}>
-            <img
-              className="w-60 pl-4 md:pl-8  lg:px-6 "
-              src={creativeLogo || "/placeholder.svg"}
-              alt="2 Creative Logo"
-            />
+            <span className="text-2xl font-black pl-4 md:pl-8 lg:px-6 bg-gradient-to-r from-[#1B6B2A] via-[#43A047] to-[#8BC34A] bg-clip-text text-transparent">
+              Devola
+            </span>
           </a>
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">
               <span>Contact</span> <div className=" w-5 bg-strong h-0.5"></div>{" "}
-              <span>support@2creative.com</span>
+              <span>hello@mydevola.com</span>
             </div>
             <div className="flex justify-start items-center gap-3 ">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, idx) => (

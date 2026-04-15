@@ -4,6 +4,7 @@ import HomeVideo from "../components/home/HomeVideo.component";
 import Stats from "../components/home/Stats.section";
 import FactsSection from "../components/home/FactsSection";
 import ClientFeedback from "../components/home/testimonial/Testimonial";
+import BlogSection from "../components/home/BlogSection";
 import BeamCircle from "../components/ui/BeamCircle";
 import { useSEO } from "../hooks/useSEO";
 import { buildCanonicalUrl } from "../constants/seo";
@@ -12,22 +13,22 @@ const Home = () => {
   useSEO({
     title: "Home",
     description:
-      "2 Creative helps businesses grow with web development, mobile apps, cloud engineering, digital marketing, UX/UI, interior design, and smart IoT solutions.",
+      "Devola helps businesses grow with web development, custom software, ecommerce, mobile apps, digital marketing, cloud hosting, VPS, and IT infrastructure solutions.",
     pathname: "/",
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "2 Creative Home",
+      name: "Devola Home",
       url: buildCanonicalUrl("/"),
       description:
-        "Digital solutions company offering web, app, cloud, design, marketing, and IoT services.",
+        "Digital solutions company offering web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure.",
     },
   });
 
   return (
     <div>
       <div className="relative overflow-hidden h-full w-full">
-        <h1 className="sr-only">2 Creative Digital Solutions Agency</h1>
+        <h1 className="sr-only">Devola Digital Solutions</h1>
         <Hero />
         <BeamCircle />
         <HomeVideo />
@@ -35,6 +36,7 @@ const Home = () => {
         <Stats />
         <FactsSection />
         <ClientFeedback />
+        <BlogSection />
       </div>
     </div>
   );

@@ -8,13 +8,13 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-2xl md:text-3xl lg:text-4xl font-adventure">
-              Global Footprint
+              Expanding Horizons
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            2 Creative expanded its service portfolio to support modern brands
-            with web development, mobile apps, cloud services, UI/UX design,
-            digital marketing, interior design, and smart IoT solutions.
+            Devola expanded its cloud and VPS hosting services with servers at
+            Dhaka Colo and DR at ColoAsia, while growing its product portfolio
+            with ready-to-deploy CRM, HRM, POS, and e-commerce solutions.
           </p>
         </div>
       ),
@@ -25,47 +25,47 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              Scaling Up
+              Infrastructure Mastery
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Our delivery capabilities matured through deeper collaboration
-            across strategy, design, development, and growth disciplines,
-            enabling us to serve more ambitious and complex projects.
+            Successfully deployed enterprise-level IT infrastructure projects
+            including AFIP Wi-Fi (163 APs), DTCA Fiber Network, and BIFCL Zimbra
+            mail server, establishing expertise in large-scale deployments.
           </p>
         </div>
       ),
     },
     {
-      title: "2022",
+      title: "2023",
       content: (
         <div>
           <div className="mb-2 flex items-center uppercase gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider text-xl md:text-2xl lg:text-3xl font-adventure">
-              Commitment to Quality
+              Software Excellence
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            We strengthened our internal processes, design systems, and quality
-            standards to deliver more consistent user experiences and more
-            reliable digital products for clients.
+            Launched flagship software products including Synergy HRM,
+            WorkPulse, and EduCore, serving businesses across HR management,
+            employee monitoring, and education sectors.
           </p>
         </div>
       ),
     },
     {
-      title: "2020",
+      title: "2021",
       content: (
         <div>
           <div className="mb-2 flex items-center uppercase gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider text-xl md:text-2xl lg:text-3xl font-adventure">
-              Broadening Our Reach
+              Growing the Team
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            We began supporting a wider mix of international-facing brands and
-            adopted a more scalable delivery model focused on performance,
-            design clarity, and long-term business value.
+            Built a dedicated team of 20+ professionals across software
+            development, network engineering, cloud infrastructure, and digital
+            marketing, enabling comprehensive service delivery.
           </p>
         </div>
       ),
@@ -76,13 +76,13 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              Growing Stronger
+              Service Expansion
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            With growing demand for creative and technical execution, we
-            expanded our capabilities and refined our service approach around
-            strategy, delivery, and measurable outcomes.
+            Expanded beyond web development into custom software, ecommerce
+            platforms, and IT infrastructure services, positioning Devola as a
+            full-service digital solutions provider.
           </p>
         </div>
       ),
@@ -93,30 +93,14 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              Stronger Industry Presence
+              The Foundation of Devola
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            This phase marked stronger market positioning, deeper client trust,
-            and a clearer commitment to building a recognizable creative and
-            technology brand around lasting business partnerships.
-          </p>
-        </div>
-      ),
-    },
-    {
-      title: "2014",
-      content: (
-        <div>
-          <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
-            <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              The Foundation Of 2 Creative
-            </span>
-          </div>
-          <p className="paragraph text-gray-300 font-medium ">
-            2 Creative began with a simple vision: build meaningful digital and
-            design solutions that help businesses communicate better, operate
-            smarter, and grow faster in a competitive market.
+            Devola was founded with a clear vision: deliver digital solutions
+            that truly work for businesses. Starting from Dhaka, we began
+            building websites and software that help companies operate smarter
+            and grow faster.
           </p>
         </div>
       ),

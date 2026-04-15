@@ -22,11 +22,11 @@ const ServicesDetails = () => {
       name: service.header.title,
       provider: {
         "@type": "Organization",
-        name: "2 Creative",
+        name: "Devola",
       },
       url: buildCanonicalUrl(`/services/${service.slug}`),
       description: service.header.subtitle,
-      areaServed: "Riyadh",
+      areaServed: "Dhaka",
     },
   });
 

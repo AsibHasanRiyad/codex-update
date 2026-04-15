@@ -18,15 +18,15 @@ import ColorBends from "../ui/ColorBends";
 export default function Hero() {
   const services = [
     "Web Development",
+    "Custom Software",
+    "Ecommerce",
     "Mobile Apps",
-    "AI Solutions",
-    "Cloud Services",
     "Digital Marketing",
-    "UX/UI Design",
-    "Interior Design",
-    "DevOps",
-    "Cyber Security",
-    "IoT",
+    "Cloud Hosting",
+    "VPS Solutions",
+    "Domain Registration",
+    "Web Hosting",
+    "IT Infrastructure",
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function Hero() {
       />
 
       {/* <ColorBends
-        colors={["#f47920", "#D9D9D9"]}
+        colors={["#43A047", "#D9D9D9"]}
         rotation={0}
         speed={0.09}
         scale={0.5}
@@ -77,14 +77,14 @@ export default function Hero() {
               splitByWord={true}
               fontSize="text-5xl md:text-7xl 2xl:text-8xl"
               className="font-bold text-white mb-2 uppercase leading-[0.9]"
-              text="Crafting Next-Gen "
+              text="Digital Solutions "
               delayPerItem={0.08}
             />
             <TextMaskReveal
               splitByWord={true}
               fontSize="text-5xl md:text-7xl 2xl:text-8xl"
               className="font-bold text-white  lg:ml-[15%] uppercase leading-[0.9]"
-              text="Digital Excellence"
+              text="that Works for You"
               delayPerItem={0.08}
             />
           </div>
@@ -94,20 +94,20 @@ export default function Hero() {
             {/* Company Name */}
             <div className="md:col-span-2 flex md:hidden lg:flex items-start">
               <h2 className="text-white text-xl md:text-2xl font-semibold uppercase tracking-wide">
-                2 Creative
+                Devola
               </h2>
             </div>
 
             {/* Description & CTA */}
             <div className="md:col-span-6 border-t-2 pt-6 md:pt-8 border-white/20">
               <p className="text-white/75 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
-                Transforming businesses through innovative digital solutions and
-                cutting-edge technology. We deliver excellence in every project,
-                combining creativity with technical expertise to help your
-                business thrive in the digital age.
+                Empowering businesses through innovative digital solutions,
+                reliable IT infrastructure, and cutting-edge software
+                development. We deliver excellence from concept to deployment,
+                helping your business thrive in the digital world.
               </p>
 
-              <button className="group hidden  px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-[#F47920] hover:bg-[#F47920]/10 transition-all duration-300 md:flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-[#F47920]/25 hover:scale-105 active:scale-95">
+              <button className="group hidden  px-8 py-3 border-2 border-white/30 text-white rounded-full hover:border-2c hover:bg-2c/10 transition-all duration-300 md:flex items-center gap-2 text-sm font-medium hover:shadow-lg hover:shadow-2c/25 hover:scale-105 active:scale-95">
                 KNOW MORE
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
@@ -120,7 +120,7 @@ export default function Hero() {
                   splitByWord={true}
                   fontSize="text-4xl md:text-5xl"
                   className="font-bold text-white mb-2 leading-none"
-                  text="100+"
+                  text="60+"
                 />
                 <TextMaskReveal
                   splitByWord={false}
@@ -131,7 +131,7 @@ export default function Hero() {
               </div>
               <div>
                 <button
-                  className="h-12 w-12 md:h-14 md:w-14 flex justify-center items-center bg-white rounded-full hover:bg-[#F47920] hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-45 shadow-lg"
+                  className="h-12 w-12 md:h-14 md:w-14 flex justify-center items-center bg-white rounded-full hover:bg-2c hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-45 shadow-lg"
                   aria-label="View projects"
                 >
                   <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6" />

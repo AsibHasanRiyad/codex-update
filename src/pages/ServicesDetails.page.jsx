@@ -4,6 +4,7 @@ import ClientFeedback from "../components/home/testimonial/Testimonial";
 import Images from "../components/services/Images";
 import OurProcess from "../components/services/OurProcess";
 import ServicesImage from "../components/services/ServicesImage";
+import PackagesSection from "../components/services/packages/PackagesSection";
 import PageHeader from "../components/shared/PageHeader";
 import { useSEO } from "../hooks/useSEO";
 import { buildCanonicalUrl } from "../constants/seo";
@@ -38,6 +39,7 @@ const ServicesDetails = () => {
         subtitle={service.header.subtitle}
       />
       <ServicesImage image={service.heroImage} />
+      <PackagesSection slug={service.slug} />
       <OurProcess
         tagline={service.processTagline}
         intro={service.processIntro}

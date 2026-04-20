@@ -565,10 +565,11 @@ export const servicesData = [
   {
     slug: "cloud-hosting",
     category: "Cloud & Infrastructure",
+    hasPackages: true,
     header: {
-      title: "Cloud Hosting",
+      title: "Shared cPanel Hosting",
       subtitle:
-        "Our cloud hosting platform delivers fast, secure, and scalable computing resources. With flexible resource allocation and instant scalability, businesses can grow without limitations.",
+        "Fast, secure, and reliable shared cPanel hosting across multiple global locations — BDIX, Germany, USA, and Singapore. NVMe SSD storage, free SSL, daily backups, and expert support.",
     },
     heroImage:
       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&q=80",
@@ -644,6 +645,7 @@ export const servicesData = [
   {
     slug: "vps-solutions",
     category: "Cloud & Infrastructure",
+    hasPackages: true,
     header: {
       title: "VPS Solutions",
       subtitle:

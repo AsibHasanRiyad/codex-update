@@ -1,0 +1,279 @@
+{
+  "dataCenter": "Khaja Tower, Dhaka",
+  "location": "BDIX",
+  "tiers": [
+    {
+      "id": "student",
+      "name": "Student",
+      "description": "Affordable VPS for students, learners, and personal projects",
+      "icon": "academic",
+      "packages": [
+        {
+          "id": "student-basic",
+          "name": "Student Basic",
+          "cores": 1,
+          "ram": 1,
+          "ssd": 20,
+          "ips": 1,
+          "priceMonthly": 400,
+          "priceYearly": 4300,
+          "popular": false,
+          "bestFor": "Learning, testing, personal blog hosting",
+          "features": [
+            "1 vCPU Core",
+            "1 GB RAM",
+            "20 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup"
+          ]
+        },
+        {
+          "id": "student-pro",
+          "name": "Student Pro",
+          "cores": 2,
+          "ram": 2,
+          "ssd": 40,
+          "ips": 1,
+          "priceMonthly": 750,
+          "priceYearly": 8200,
+          "popular": true,
+          "bestFor": "University projects, portfolio hosting, small apps",
+          "features": [
+            "2 vCPU Cores",
+            "2 GB RAM",
+            "40 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "Developer",
+      "description": "Optimized VPS for developers, freelancers, and dev/staging environments",
+      "icon": "code",
+      "packages": [
+        {
+          "id": "developer-basic",
+          "name": "Dev Basic",
+          "cores": 2,
+          "ram": 4,
+          "ssd": 60,
+          "ips": 1,
+          "priceMonthly": 1300,
+          "priceYearly": 14500,
+          "popular": false,
+          "bestFor": "Development servers, staging environments, CI/CD",
+          "features": [
+            "2 vCPU Cores",
+            "4 GB RAM",
+            "60 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support"
+          ]
+        },
+        {
+          "id": "developer-pro",
+          "name": "Dev Pro",
+          "cores": 4,
+          "ram": 8,
+          "ssd": 80,
+          "ips": 1,
+          "priceMonthly": 2500,
+          "priceYearly": 27500,
+          "popular": true,
+          "bestFor": "Full-stack apps, Docker containers, multiple projects",
+          "features": [
+            "4 vCPU Cores",
+            "8 GB RAM",
+            "80 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support"
+          ]
+        },
+        {
+          "id": "developer-ultra",
+          "name": "Dev Ultra",
+          "cores": 4,
+          "ram": 16,
+          "ssd": 120,
+          "ips": 1,
+          "priceMonthly": 4800,
+          "priceYearly": 52800,
+          "popular": false,
+          "bestFor": "Heavy development workloads, large databases, team environments",
+          "features": [
+            "4 vCPU Cores",
+            "16 GB RAM",
+            "120 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "Priority Support"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "startup",
+      "name": "Startup",
+      "description": "Production-grade VPS for startups, SaaS, and growing businesses",
+      "icon": "rocket",
+      "packages": [
+        {
+          "id": "startup-basic",
+          "name": "Startup Basic",
+          "cores": 4,
+          "ram": 8,
+          "ssd": 120,
+          "ips": 1,
+          "priceMonthly": 2700,
+          "priceYearly": 29500,
+          "popular": false,
+          "bestFor": "SaaS MVP, small e-commerce, WordPress at scale",
+          "features": [
+            "4 vCPU Cores",
+            "8 GB RAM",
+            "120 GB NVMe SSD",
+            "1 Dedicated IP",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "DDoS Protection"
+          ]
+        },
+        {
+          "id": "startup-pro",
+          "name": "Startup Pro",
+          "cores": 6,
+          "ram": 16,
+          "ssd": 200,
+          "ips": 2,
+          "priceMonthly": 5200,
+          "priceYearly": 57000,
+          "popular": true,
+          "bestFor": "Production SaaS, e-commerce, ERP systems",
+          "features": [
+            "6 vCPU Cores",
+            "16 GB RAM",
+            "200 GB NVMe SSD",
+            "2 Dedicated IPs",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "DDoS Protection",
+            "Priority Support"
+          ]
+        },
+        {
+          "id": "startup-ultra",
+          "name": "Startup Ultra",
+          "cores": 8,
+          "ram": 16,
+          "ssd": 300,
+          "ips": 2,
+          "priceMonthly": 5500,
+          "priceYearly": 60000,
+          "popular": false,
+          "bestFor": "High-traffic apps, media platforms, multi-site hosting",
+          "features": [
+            "8 vCPU Cores",
+            "16 GB RAM",
+            "300 GB NVMe SSD",
+            "2 Dedicated IPs",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "DDoS Protection",
+            "Priority Support"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "description": "High-performance VPS for enterprise workloads and mission-critical applications",
+      "icon": "building",
+      "packages": [
+        {
+          "id": "enterprise-basic",
+          "name": "Enterprise Basic",
+          "cores": 8,
+          "ram": 32,
+          "ssd": 500,
+          "ips": 2,
+          "priceMonthly": 10500,
+          "priceYearly": 115000,
+          "popular": false,
+          "bestFor": "Enterprise applications, large databases, financial systems",
+          "features": [
+            "8 vCPU Cores",
+            "32 GB RAM",
+            "500 GB NVMe SSD",
+            "2 Dedicated IPs",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "DDoS Protection",
+            "Priority Support",
+            "Managed Backups"
+          ]
+        },
+        {
+          "id": "enterprise-pro",
+          "name": "Enterprise Pro",
+          "cores": 16,
+          "ram": 64,
+          "ssd": 1000,
+          "ips": 4,
+          "priceMonthly": 21000,
+          "priceYearly": 230000,
+          "popular": true,
+          "bestFor": "Large-scale SaaS, data processing, high-availability systems",
+          "features": [
+            "16 vCPU Cores",
+            "64 GB RAM",
+            "1 TB NVMe SSD",
+            "4 Dedicated IPs",
+            "Full Root Access",
+            "BDIX Routing",
+            "24/7 Monitoring",
+            "Free Setup",
+            "Snapshot Support",
+            "DDoS Protection",
+            "Priority Support",
+            "Managed Backups",
+            "Dedicated Account Manager"
+          ]
+        }
+      ]
+    }
+  ]
+}

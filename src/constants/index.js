@@ -1,3 +1,5 @@
+export const WHATSAPP_NUMBER = "+8801703300440";
+
 export const navLinks = [
   { name: "Home", link: "/", children: null },
   {
@@ -27,7 +29,7 @@ export const navLinks = [
       {
         group: "Cloud & Infrastructure",
         items: [
-          { name: "Cloud Hosting", link: "/services/cloud-hosting" },
+          { name: "Shared cPanel Hosting", link: "/services/cloud-hosting" },
           { name: "VPS Solutions", link: "/services/vps-solutions" },
           { name: "Network & IT Infrastructure", link: "/services/network-it-infrastructure" },
         ],

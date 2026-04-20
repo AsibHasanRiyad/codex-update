@@ -8,6 +8,7 @@ import BlogSection from "../components/home/BlogSection";
 import BeamCircle from "../components/ui/BeamCircle";
 import { useSEO } from "../hooks/useSEO";
 import { buildCanonicalUrl } from "../constants/seo";
+import HeroInteractive from "../components/ui/HeroInteractive";
 
 const Home = () => {
   useSEO({
@@ -31,6 +32,7 @@ const Home = () => {
         <h1 className="sr-only">Devola Digital Solutions</h1>
         <Hero />
         <BeamCircle />
+        {/* <HeroInteractive /> */}
         <HomeVideo />
         <DevelopmentProject />
         <Stats />

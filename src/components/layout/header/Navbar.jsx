@@ -7,6 +7,7 @@ import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 import { Link } from "react-router-dom";
+import devolaLogo from "../../../assets/devola-logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -43,9 +44,11 @@ const Navbar = () => {
       >
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
           <a className="col-span-6 lg:col-span-2" href={"/"}>
-            <span className="text-2xl font-black pl-4 md:pl-8 lg:px-6 bg-gradient-to-r from-[#1B6B2A] via-[#43A047] to-[#8BC34A] bg-clip-text text-transparent">
-              Devola
-            </span>
+            <img
+              src={devolaLogo}
+              alt="Devola"
+              className="h-8 md:h-10 w-auto pl-4 md:pl-8 lg:px-6"
+            />
           </a>
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">

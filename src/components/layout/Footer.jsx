@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
 import footerBg from "../../assets/footer.mp4";
 import { navLinks } from "../../constants";
+import devolaLogo from "../../assets/devola-logo.png";
 
 export default function Footer() {
   const companyLinks = navLinks.filter((item) => item.link && !item.children);
@@ -57,9 +58,11 @@ export default function Footer() {
             {/* Company Info */}
             <div className="md:col-span-1">
               <div className="mb-6">
-                <span className="text-3xl font-black bg-gradient-to-r from-[#1B6B2A] via-[#43A047] to-[#8BC34A] bg-clip-text text-transparent mb-4 block">
-                  Devola
-                </span>
+                <img
+                  src={devolaLogo}
+                  alt="Devola"
+                  className="h-8 md:h-12 w-auto mb-4"
+                />
                 <p className="text-gray-200 text-sm leading-relaxed">
                   We deliver innovative digital solutions that empower
                   businesses to scale and succeed in the modern world.

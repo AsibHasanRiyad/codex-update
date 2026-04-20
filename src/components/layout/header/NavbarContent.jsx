@@ -16,6 +16,7 @@ import CrossIcon from "./CrossIcon";
 import EmailInput from "./EmailInput";
 import { navLinks } from "../../../constants";
 import ColorBends from "../../ui/ColorBends";
+import devolaLogo from "../../../assets/devola-logo.png";
 
 const NavbarContent = ({ active, handleToggle, setOpen }) => {
   return (
@@ -48,9 +49,9 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
           <a
             href="/"
             onClick={() => setOpen(false)}
-            className="text-3xl font-black bg-gradient-to-r from-[#1B6B2A] via-[#43A047] to-[#8BC34A] bg-clip-text text-transparent"
+            className="flex items-center"
           >
-            Devola
+            <img src={devolaLogo} alt="Devola" className="h-8 md:h-10 w-auto" />
           </a>
           <CrossIcon onClick={() => setOpen(false)} />
         </div>

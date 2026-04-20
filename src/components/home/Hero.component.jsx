@@ -11,7 +11,7 @@ import LightRays from "../ui/LightRays";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import movingSvg from "../../assets/Asterisk.svg";
 import arrow from "../../assets/Arrow.svg";
-import heroVideo from "../../assets/hero_video.mp4";
+// import heroVideo from "../../assets/hero_video.mp4";
 import { useOutletContext } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ColorBends from "../ui/ColorBends";
@@ -32,27 +32,40 @@ export default function Hero() {
   return (
     <div className=" relative w-screen min-h-screen  flex flex-col justify-between overflow-hidden bg-primary">
       {/* <LightRays /> */}
-      <video
+      {/* <video
         className="absolute inset-0 h-full w-full object-cover"
         src={heroVideo}
         autoPlay
         loop
         muted
         playsInline
-      />
+      /> */}
 
-      {/* <ColorBends
-        colors={["#43A047", "#D9D9D9"]}
-        rotation={0}
-        speed={0.09}
+      <ColorBends
+        colors={["#1e293b", "#0f172a"]}
+        rotation={45}
+        speed={0.6}
         scale={0.5}
-        frequency={1.5}
+        frequency={2}
         warpStrength={1.01}
         mouseInfluence={0}
         parallax={0}
-        noise={0.2}
+        noise={0.4}
         transparent
         className={"absolute top-0 h-full w-full"}
+      />
+
+      {/* <ColorBends
+        // A deep, desaturated blue and a very dark grey-blue
+        colors={["#1e293b", "#0f172a"]}
+        rotation={45}
+        speed={0.05} // Slower is usually classier
+        scale={0.8} // Larger scale makes the "bends" smoother
+        frequency={1.2}
+        warpStrength={0.5} // Lower warp prevents "spiky" artifacts
+        noise={0.1}
+        transparent
+        className="absolute top-0 h-full w-full opacity-60" // Lower opacity helps text pop
       /> */}
 
       <div className="absolute  right-[12%] z-20 top-[22%] lg:top-[20%]">

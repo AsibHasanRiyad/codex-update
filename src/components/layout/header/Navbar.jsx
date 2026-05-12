@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="  grid grid-cols-12 py-4 lg:py-0 justify-between items-center">
           <a className="col-span-6 lg:col-span-2" href={"/"}>
             <img
-              className="w-60 pl-4 md:pl-8  lg:px-6 "
+              className="w-76 pl-4 md:pl-8  lg:px-6 "
               src={creativeLogo || "/placeholder.svg"}
               alt="2 Creative Logo"
             />

@@ -88,7 +88,7 @@ const Stats = () => {
           style={{ transform: "rotate(-3deg)" }}
         >
           <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold text-2c">
-            50+ Completed projects
+            350+ Completed projects
           </h2>
         </div>
 

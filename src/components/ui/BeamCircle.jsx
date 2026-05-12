@@ -8,9 +8,12 @@ import {
   Palette,
   Code,
   Megaphone,
+  Box,
+  Calendar,
 } from "lucide-react";
 import { TextMaskReveal } from "../../hooks/TextMaskReveal";
 import { useInView } from "framer-motion";
+import { getViewport, getOrbitConfig } from "./beamCircle.config";
 
 const defaultOrbits = [
   {
@@ -118,28 +121,73 @@ const defaultOrbits = [
     endAngleMd: 250,
     endAngleSm: 265,
   },
+  {
+    id: 8,
+    label: "Event Management",
+    icon: <Calendar className="text-primary" />,
+    radiusFactor: 5.3,
+    speed: 22,
+    orbitColor: "gray",
+    iconSize: 28,
+    orbitThickness: 1.5,
+    startAngle: 0,
+
+    endAngleLg: -140,
+    endAngleMd: -100,
+    endAngleSm: -85,
+  },
+  {
+    id: 9,
+    label: "3D Modeling",
+    icon: <Box className="text-primary" />,
+    radiusFactor: 5.7,
+    speed: 24,
+    orbitColor: "gray",
+    iconSize: 28,
+    orbitThickness: 1.5,
+    startAngle: 180,
+
+    endAngleLg: 305,
+    endAngleMd: 245,
+    endAngleSm: 260,
+  },
 ];
 
-const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+const BeamCircle = ({ size: sizeProp, orbits: customOrbits }) => {
+  const [viewport, setViewport] = useState(getViewport);
+
   useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
+    let rafId = 0;
+    const handleResize = () => {
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => setViewport(getViewport()));
+    };
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
+
+  const { size: derivedSize, bottomOffsetPct, sectionMinHeight } = useMemo(
+    () => getOrbitConfig(viewport.w, viewport.h),
+    [viewport.w, viewport.h]
+  );
+  const size = sizeProp ?? derivedSize;
+
   const orbitsData = useMemo(() => {
     return (customOrbits || defaultOrbits).map((orbit) => {
       let endAngle = orbit.endAngleLg;
 
-      if (screenWidth < 640) {
+      if (viewport.w < 640) {
         endAngle = orbit.endAngleSm;
-      } else if (screenWidth < 1024) {
+      } else if (viewport.w < 1024) {
         endAngle = orbit.endAngleMd;
       }
 
       return { ...orbit, endAngle };
     });
-  }, [customOrbits, screenWidth]);
+  }, [customOrbits, viewport.w]);
 
   const halfSize = size / 2;
   const ref = useRef(null);
@@ -147,6 +195,8 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
 
   const [animate, setAnimate] = useState(false);
 
+  // The orbit keyframes are size/breakpoint-dependent. Resize that changes `size` or crosses a width
+  // breakpoint may restart the entry animation; acceptable since resize during view is rare.
   useEffect(() => {
     if (isInView) {
       setAnimate(true);
@@ -156,7 +206,8 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
   return (
     <div
       ref={ref}
-      className="relative w-screen flex justify-center h-screen bg-primary overflow-hidden"
+      className="relative w-screen flex justify-center min-h-dvh bg-primary overflow-hidden"
+      style={sectionMinHeight ? { minHeight: sectionMinHeight } : undefined}
     >
       <div className="bg-gradient-to-t from-slate-950/80 to-transparent absolute w-screen h-40 bottom-0 left-0"></div>
 
@@ -185,7 +236,11 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
       </div>
 
       {/* --- Orbit Section --- */}
-      <div className="absolute -bottom-[40%] lg:-bottom-1/3 transform -translate-x-1/2 left-1/2 p-4 bg-transparent">
+      {/* `bottom` is derived per viewport; keep `p-4` to match PADDING constant in beamCircle.config.js */}
+      <div
+        className="absolute transform -translate-x-1/2 left-1/2 p-4 bg-transparent"
+        style={{ bottom: `${-bottomOffsetPct * 100}%` }}
+      >
         <div className="relative" style={{ width: size, height: size }}>
           {orbitsData.map((orbit) => {
             const orbitDiameter = size * orbit.radiusFactor;

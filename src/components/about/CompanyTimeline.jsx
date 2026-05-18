@@ -12,7 +12,7 @@ export function CompanyTimeline() {
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Devola expanded its cloud and VPS hosting services with servers at
+            Codex IT expanded its cloud and VPS hosting services with servers at
             Dhaka Colo and DR at ColoAsia, while growing its product portfolio
             with ready-to-deploy CRM, HRM, POS, and e-commerce solutions.
           </p>
@@ -81,7 +81,7 @@ export function CompanyTimeline() {
           </div>
           <p className="paragraph text-gray-300 font-medium ">
             Expanded beyond web development into custom software, ecommerce
-            platforms, and IT infrastructure services, positioning Devola as a
+            platforms, and IT infrastructure services, positioning Codex IT as a
             full-service digital solutions provider.
           </p>
         </div>
@@ -93,11 +93,11 @@ export function CompanyTimeline() {
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm text-gray-100 font-semibold">
             <span className=" tracking-wider uppercase text-xl md:text-2xl lg:text-3xl font-adventure">
-              The Foundation of Devola
+              The Foundation of Codex IT
             </span>
           </div>
           <p className="paragraph text-gray-300 font-medium ">
-            Devola was founded with a clear vision: deliver digital solutions
+            Codex IT was founded with a clear vision: deliver digital solutions
             that truly work for businesses. Starting from Dhaka, we began
             building websites and software that help companies operate smarter
             and grow faster.

@@ -10,20 +10,20 @@ export default function Products() {
   useSEO({
     title: "Products",
     description:
-      "Explore Devola's ready-to-deploy software products including CRM, Inventory Management, E-Commerce, News Portal, POS, and HRM solutions.",
+      "Explore Codex IT's ready-to-deploy software products including CRM, Inventory Management, E-Commerce, News Portal, POS, and HRM solutions.",
     pathname: "/products",
     schema: {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "Devola Products",
+      name: "Codex IT Products",
       url: buildCanonicalUrl("/products"),
-      description: "Ready-to-deploy software products by Devola.",
+      description: "Ready-to-deploy software products by Codex IT.",
     },
   });
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
-      <h1 className="sr-only">Devola Products</h1>
+      <h1 className="sr-only">Codex IT Products</h1>
       <PageHeader
         title="Our Products"
         subtitle="Ready-to-deploy software solutions designed for real business needs. Each product is built with scalability, security, and user experience in mind."

@@ -221,7 +221,7 @@ export default function BlogDetail() {
 
   useSEO({
     title: post ? post.title : "Blog Post",
-    description: post ? post.excerpt : "Devola blog post",
+    description: post ? post.excerpt : "Codex IT blog post",
     pathname: `/blog/${slug}`,
     schema: post
       ? {
@@ -231,8 +231,8 @@ export default function BlogDetail() {
           description: post.excerpt,
           image: post.coverImage,
           datePublished: post.date,
-          author: { "@type": "Organization", name: "Devola" },
-          publisher: { "@type": "Organization", name: "Devola" },
+          author: { "@type": "Organization", name: "Codex IT" },
+          publisher: { "@type": "Organization", name: "Codex IT" },
           url: buildCanonicalUrl(`/blog/${slug}`),
           keywords: post.tags.join(", "),
         }
@@ -381,7 +381,7 @@ export default function BlogDetail() {
             Ready to Build Something Great?
           </h3>
           <p className="text-gray-400 mb-6">
-            Let's discuss how Devola can help bring your digital vision to life.
+            Let's discuss how Codex IT can help bring your digital vision to life.
           </p>
           <Link
             to="/contact"

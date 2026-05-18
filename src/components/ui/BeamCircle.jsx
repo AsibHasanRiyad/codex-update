@@ -177,7 +177,7 @@ const BeamCircle = ({ size = 300, orbits: customOrbits }) => {
           />
         </div>
         <p className="text-center block px-4 md:px-8 max-w-7xl mx-auto text-sm md:text-lg mt-5 lg:text-3xl text-white">
-          At Devola, we build high-performance digital solutions, custom
+          At Codex IT, we build high-performance digital solutions, custom
           software, and reliable IT infrastructure that power real business
           growth — from concept to deployment, helping your brand thrive in the
           digital landscape.

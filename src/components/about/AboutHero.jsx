@@ -59,7 +59,7 @@ export default function AboutHero() {
           />
 
           <p className="text-gray-300 font-medium md:text-lg text-justify -mt-5">
-            Devola was built to help ambitious businesses turn ideas into
+            Codex IT was built to help ambitious businesses turn ideas into
             measurable growth. We combine strategy, technology, and reliable
             infrastructure to deliver custom software, web solutions, mobile
             apps, ecommerce platforms, cloud hosting, and complete IT
@@ -98,7 +98,7 @@ export default function AboutHero() {
           >
             <motion.img
               src={person}
-              alt="Devola team and digital innovation"
+              alt="Codex IT team and digital innovation"
               className="size-[70%] object-contain"
             />
           </motion.div>
@@ -111,7 +111,7 @@ export default function AboutHero() {
             />
 
             <p className="text-gray-300 font-medium text-justify mt-4">
-              Today, Devola partners with growth-focused companies that need
+              Today, Codex IT partners with growth-focused companies that need
               more than execution. Our team builds digital products, custom
               software, and infrastructure systems designed to improve
               operations, increase efficiency, and create long-term competitive

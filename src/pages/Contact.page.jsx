@@ -20,15 +20,15 @@ export default function Contact() {
   useSEO({
     title: "Contact",
     description:
-      "Contact Devola in Dhaka for web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure solutions.",
+      "Contact Codex IT in Dhaka for web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure solutions.",
     pathname: "/contact",
     schema: {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      name: "Contact Devola",
+      name: "Contact Codex IT",
       url: buildCanonicalUrl("/contact"),
       description:
-        "Get in touch with Devola at 278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka.",
+        "Get in touch with Codex IT at 278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka.",
     },
   });
 
@@ -96,7 +96,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
-      <h1 className="sr-only">Contact Devola</h1>
+      <h1 className="sr-only">Contact Codex IT</h1>
       <PageHeader />
 
       <section className="py-24 px-4">

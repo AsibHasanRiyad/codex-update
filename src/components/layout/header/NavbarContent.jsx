@@ -16,7 +16,7 @@ import CrossIcon from "./CrossIcon";
 import EmailInput from "./EmailInput";
 import { navLinks } from "../../../constants";
 import ColorBends from "../../ui/ColorBends";
-import devolaLogo from "../../../assets/devola-logo.png";
+import devolaLogo from "../../../assets/codex-white-logo.png";
 
 const NavbarContent = ({ active, handleToggle, setOpen }) => {
   return (
@@ -51,7 +51,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             onClick={() => setOpen(false)}
             className="flex items-center"
           >
-            <img src={devolaLogo} alt="Devola" className="h-8 md:h-10 w-auto" />
+            <img src={devolaLogo} alt="Codex IT" className="h-8 md:h-10 w-auto" />
           </a>
           <CrossIcon onClick={() => setOpen(false)} />
         </div>

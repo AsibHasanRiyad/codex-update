@@ -7,7 +7,7 @@ export const blogPosts = [
     coverImage:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80",
     category: "Software Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-04-10",
     readTime: "7 min read",
     tags: ["Custom Software", "Business Growth", "Digital Transformation"],
@@ -45,9 +45,9 @@ Your competitors are using the same off-the-shelf tools. Custom software gives y
 - You want features that no existing product provides
 - Data security and compliance are critical to your industry
 
-## How Devola Approaches Custom Software
+## How Codex IT Approaches Custom Software
 
-At Devola, we follow a structured development process: business analysis, system architecture, agile development, rigorous QA, and hands-on deployment with training. We build software that works the way your business works — not the other way around.
+At Codex IT, we follow a structured development process: business analysis, system architecture, agile development, rigorous QA, and hands-on deployment with training. We build software that works the way your business works — not the other way around.
 
 ## Conclusion
 
@@ -62,7 +62,7 @@ Custom software isn't a luxury — it's a strategic investment. If your business
     coverImage:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80",
     category: "Web Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-04-05",
     readTime: "8 min read",
     tags: ["Tech Stack", "Web Development", "React", "Node.js", "Laravel"],
@@ -122,7 +122,7 @@ Consider these factors:
 
 ## Our Recommendation
 
-At Devola, we typically recommend **React + Node.js + PostgreSQL** for modern web applications, and **Next.js** when SEO is critical. For enterprise backends with complex business logic, **Laravel** remains an excellent choice. The best stack is the one that matches your project's specific needs.
+At Codex IT, we typically recommend **React + Node.js + PostgreSQL** for modern web applications, and **Next.js** when SEO is critical. For enterprise backends with complex business logic, **Laravel** remains an excellent choice. The best stack is the one that matches your project's specific needs.
     `,
   },
   {
@@ -133,7 +133,7 @@ At Devola, we typically recommend **React + Node.js + PostgreSQL** for modern we
     coverImage:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
     category: "Ecommerce",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-03-28",
     readTime: "6 min read",
     tags: ["Ecommerce", "Web Development", "Online Store", "Conversion"],
@@ -180,7 +180,7 @@ Advanced features to consider: AI-powered product recommendations, abandoned car
 
 ## Building It Right
 
-At Devola, we build ecommerce platforms with all these features baked in from day one. Our solutions integrate with popular payment gateways in Bangladesh and beyond, handle high-traffic loads, and are optimized for search engines.
+At Codex IT, we build ecommerce platforms with all these features baked in from day one. Our solutions integrate with popular payment gateways in Bangladesh and beyond, handle high-traffic loads, and are optimized for search engines.
     `,
   },
   {
@@ -191,7 +191,7 @@ At Devola, we build ecommerce platforms with all these features baked in from da
     coverImage:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
     category: "Web Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-03-20",
     readTime: "9 min read",
     tags: [
@@ -263,7 +263,7 @@ A reputable development company should include:
 - Promising unrealistic timelines
 - No mention of testing or QA
 
-## How Devola Approaches Pricing
+## How Codex IT Approaches Pricing
 
 We provide transparent, detailed quotes based on your actual requirements. Every project starts with a discovery phase where we define scope, timeline, and deliverables before development begins. No hidden costs, no surprises.
     `,
@@ -276,7 +276,7 @@ We provide transparent, detailed quotes based on your actual requirements. Every
     coverImage:
       "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80",
     category: "Cloud & Infrastructure",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-03-12",
     readTime: "6 min read",
     tags: ["Cloud Hosting", "Shared Hosting", "VPS", "Web Hosting"],
@@ -338,7 +338,7 @@ Cloud hosting is the right choice when:
 
 A Virtual Private Server (VPS) gives you dedicated resources at a lower cost than full cloud infrastructure. It's ideal for businesses that have outgrown shared hosting but don't need auto-scaling cloud features yet.
 
-## Devola's Hosting Solutions
+## Codex IT's Hosting Solutions
 
 We operate cloud servers at Dhaka Colo with disaster recovery at ColoAsia. Our hosting includes automated backups, 24/7 monitoring, firewall protection, and hands-on technical support. Whether you need shared, VPS, or cloud — we help you choose the right fit for your workload and budget.
     `,
@@ -351,7 +351,7 @@ We operate cloud servers at Dhaka Colo with disaster recovery at ColoAsia. Our h
     coverImage:
       "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=1200&q=80",
     category: "Digital Marketing",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-03-05",
     readTime: "10 min read",
     tags: ["SEO", "Digital Marketing", "Google", "Website", "Ranking"],
@@ -428,7 +428,7 @@ Track these metrics monthly:
 - Bounce rate and time on page
 - Indexed pages
 
-## How Devola Helps with SEO
+## How Codex IT Helps with SEO
 
 Every website we build comes with foundational SEO: clean URLs, meta tags, structured data, sitemap, and performance optimization. For ongoing SEO, our digital marketing team provides keyword research, content strategy, link building, and monthly reporting.
     `,
@@ -441,7 +441,7 @@ Every website we build comes with foundational SEO: clean URLs, meta tags, struc
     coverImage:
       "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80",
     category: "Mobile Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-02-25",
     readTime: "7 min read",
     tags: [
@@ -515,7 +515,7 @@ Both frameworks offer hot reload for rapid iteration. React Native has an advant
 - You need extensive third-party library support
 - You're integrating with an existing React web codebase
 
-## Our Choice at Devola
+## Our Choice at Codex IT
 
 We primarily use **Flutter** for cross-platform mobile development. Its performance, consistent UI, and multi-platform capabilities (mobile, web, desktop) make it our preferred choice. However, we evaluate each project individually and recommend React Native when it's a better fit for the team or project requirements.
 
@@ -532,7 +532,7 @@ Both are excellent frameworks. The "best" choice depends on your team's expertis
     coverImage:
       "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=1200&q=80",
     category: "Web Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-02-15",
     readTime: "5 min read",
     tags: [
@@ -594,7 +594,7 @@ Every day without a professional website, you lose potential customers to compet
 
 ## Getting Started
 
-At Devola, we help businesses of all sizes establish their digital presence with professional websites that look great, load fast, and rank well on Google. Whether you need a simple corporate site or a full ecommerce platform, we build solutions that drive real business results.
+At Codex IT, we help businesses of all sizes establish their digital presence with professional websites that look great, load fast, and rank well on Google. Whether you need a simple corporate site or a full ecommerce platform, we build solutions that drive real business results.
     `,
   },
   {
@@ -605,7 +605,7 @@ At Devola, we help businesses of all sizes establish their digital presence with
     coverImage:
       "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&q=80",
     category: "Software Development",
-    author: "Devola Team",
+    author: "Codex IT Team",
     date: "2026-02-05",
     readTime: "8 min read",
     tags: [
@@ -682,7 +682,7 @@ Conduct periodic security assessments, code reviews, and penetration testing. Au
 - Version your APIs
 - Don't expose internal error details
 
-## How Devola Handles Security
+## How Codex IT Handles Security
 
 Security is embedded in our development process. We follow OWASP guidelines, conduct code reviews focused on security, implement automated vulnerability scanning, and perform pre-launch security audits. Our cloud infrastructure includes firewall protection, intrusion detection, and automated security patches.
     `,

@@ -7,7 +7,7 @@ import { Facebook, Instagram, Linkedin, Plus, Twitter } from "lucide-react";
 import NavbarContent from "./NavbarContent";
 import HamburgerIcon from "./HamburgerIcon";
 import { Link } from "react-router-dom";
-import devolaLogo from "../../../assets/devola-logo.png";
+import devolaLogo from "../../../assets/codex-white-logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -46,7 +46,7 @@ const Navbar = () => {
           <a className="col-span-6 lg:col-span-2" href={"/"}>
             <img
               src={devolaLogo}
-              alt="Devola"
+              alt="Codex IT"
               className="h-8 md:h-10 w-auto pl-4 md:pl-8 lg:px-6"
             />
           </a>

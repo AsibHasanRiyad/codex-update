@@ -29,25 +29,25 @@ export default function Blog() {
   useSEO({
     title: "Blog",
     description:
-      "Insights, guides, and resources on software development, web development, cloud hosting, SEO, and digital transformation from the Devola team.",
+      "Insights, guides, and resources on software development, web development, cloud hosting, SEO, and digital transformation from the Codex IT team.",
     pathname: "/blog",
     schema: {
       "@context": "https://schema.org",
       "@type": "Blog",
-      name: "Devola Blog",
+      name: "Codex IT Blog",
       url: buildCanonicalUrl("/blog"),
       description:
         "Expert articles on software development, web development, ecommerce, cloud hosting, and digital marketing.",
       publisher: {
         "@type": "Organization",
-        name: "Devola",
+        name: "Codex IT",
       },
     },
   });
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
-      <h1 className="sr-only">Devola Blog</h1>
+      <h1 className="sr-only">Codex IT Blog</h1>
       <PageHeader
         title="Blog"
         subtitle="Insights, guides, and resources on software development and digital growth."

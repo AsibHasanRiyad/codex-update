@@ -14,12 +14,12 @@ const Home = () => {
   useSEO({
     title: "Home",
     description:
-      "Devola helps businesses grow with web development, custom software, ecommerce, mobile apps, digital marketing, cloud hosting, VPS, and IT infrastructure solutions.",
+      "Codex IT helps businesses grow with web development, custom software, ecommerce, mobile apps, digital marketing, cloud hosting, VPS, and IT infrastructure solutions.",
     pathname: "/",
     schema: {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      name: "Devola Home",
+      name: "Codex IT Home",
       url: buildCanonicalUrl("/"),
       description:
         "Digital solutions company offering web development, custom software, ecommerce, mobile apps, cloud hosting, and IT infrastructure.",
@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div>
       <div className="relative overflow-hidden h-full w-full">
-        <h1 className="sr-only">Devola Digital Solutions</h1>
+        <h1 className="sr-only">Codex IT Digital Solutions</h1>
         <Hero />
         <BeamCircle />
         {/* <HeroInteractive /> */}

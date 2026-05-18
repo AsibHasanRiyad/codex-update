@@ -23,7 +23,7 @@ const ServicesDetails = () => {
       name: service.header.title,
       provider: {
         "@type": "Organization",
-        name: "Devola",
+        name: "Codex IT",
       },
       url: buildCanonicalUrl(`/services/${service.slug}`),
       description: service.header.subtitle,

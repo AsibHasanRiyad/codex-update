@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
 import footerBg from "../../assets/footer.mp4";
 import { navLinks } from "../../constants";
-import devolaLogo from "../../assets/devola-logo.png";
+import devolaLogo from "../../assets/codex-white-logo.png";
 
 export default function Footer() {
   const companyLinks = navLinks.filter((item) => item.link && !item.children);
@@ -26,7 +26,7 @@ export default function Footer() {
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
       />
 
-      <div className="fixed bottom-0 bg-[#0a2e14] h-[750px] md:h-[700px] lg:h-[650px] w-full text-white">
+      <div className="fixed bottom-0 bg-2c h-[750px] md:h-[700px] lg:h-[650px] w-full text-white">
         {/* Main Footer Content */}
         <div className="h-full flex flex-col justify-between px-8 py-8 md:px-16 lg:py-20">
           {/* Top Section - CTA */}
@@ -60,7 +60,7 @@ export default function Footer() {
               <div className="mb-6">
                 <img
                   src={devolaLogo}
-                  alt="Devola"
+                  alt="Codex IT"
                   className="h-8 md:h-12 w-auto mb-4"
                 />
                 <p className="text-gray-200 text-sm leading-relaxed">
@@ -158,7 +158,7 @@ export default function Footer() {
           {/* Bottom Section - Copyright */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
             <p className="text-gray-300/80 text-sm">
-              Copyright © 2025 Devola. All rights reserved.
+              Copyright © 2025 Codex IT. All rights reserved.
             </p>
             <Link
               to="/contact"

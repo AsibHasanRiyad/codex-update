@@ -1,5 +1,5 @@
 export const company = {
-  name: "Devola",
+  name: "Codex IT",
   tagline: "Digital Solutions that Works for You",
   phone: "01703300440",
   email: "hello@mydevola.com",
@@ -14,7 +14,7 @@ export const company = {
     linkedin: "#",
   },
   description:
-    "Devola is a modern digital and IT solutions company dedicated to building technology systems that truly work for businesses and people. We deliver end-to-end solutions that combine software development, digital platforms, and IT infrastructure to support real-world operations.",
+    "Codex IT is a modern digital and IT solutions company dedicated to building technology systems that truly work for businesses and people. We deliver end-to-end solutions that combine software development, digital platforms, and IT infrastructure to support real-world operations.",
   shortDescription:
     "We create technology solutions that work for you — empowering businesses with reliable, efficient, and scalable digital systems.",
   vision:
@@ -28,7 +28,7 @@ export const company = {
     name: "Rajib Ahmed",
     role: "Co-founder",
     message:
-      "Thank you for taking the time to learn about Devola. I started this journey with a simple belief — technology should make business easier, faster, and more reliable. Every solution we build is guided by strategy, care, and a clear understanding of what truly supports long-term growth. My goal is to ensure that you receive the right solution, the right support, and a team committed to standing beside you throughout the entire process. We focus on delivering work that is practical, dependable, and genuinely valuable for your organization. I appreciate your interest in our services, and I look forward to the opportunity to work together. With the experience we bring and the dedication of our team, I am confident we can help your business move forward with clarity and confidence.",
+      "Thank you for taking the time to learn about Codex IT. I started this journey with a simple belief — technology should make business easier, faster, and more reliable. Every solution we build is guided by strategy, care, and a clear understanding of what truly supports long-term growth. My goal is to ensure that you receive the right solution, the right support, and a team committed to standing beside you throughout the entire process. We focus on delivering work that is practical, dependable, and genuinely valuable for your organization. I appreciate your interest in our services, and I look forward to the opportunity to work together. With the experience we bring and the dedication of our team, I am confident we can help your business move forward with clarity and confidence.",
   },
   teamExpertise: [
     "Full-Stack Software Development",

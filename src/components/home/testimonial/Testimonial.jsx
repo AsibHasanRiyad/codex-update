@@ -12,7 +12,7 @@ const testimonials = [
     name: "Tanvir Hossain",
     title: "Managing Director, ShopFlex BD",
     content:
-      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
+      "Codex IT built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
     rating: 5,
     image: image1,
   },
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Nasreen Akter",
     title: "Founder, EduCore Learning",
     content:
-      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Codex IT delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
     rating: 5,
     image: image1,
   },
@@ -39,7 +39,7 @@ const testimonials = [
     name: "Shahin Alam",
     title: "CEO, GaragePro Auto",
     content:
-      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
+      "Codex IT developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },
@@ -48,7 +48,7 @@ const testimonials = [
     name: "Farhana Yeasmin",
     title: "Director, DentalCare Pro Clinic",
     content:
-      "From patient records to appointment scheduling and billing, Devola automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
+      "From patient records to appointment scheduling and billing, Codex IT automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
     rating: 5,
     image: image1,
   },
@@ -57,7 +57,7 @@ const testimonials = [
     name: "Kamrul Islam",
     title: "IT Manager, BOF Network",
     content:
-      "Devola handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
+      "Codex IT handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
     rating: 5,
     image: image1,
   },
@@ -66,7 +66,7 @@ const testimonials = [
     name: "Tanvir Hossain",
     title: "Managing Director, ShopFlex BD",
     content:
-      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
+      "Codex IT built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
     rating: 5,
     image: image1,
   },
@@ -75,7 +75,7 @@ const testimonials = [
     name: "Nasreen Akter",
     title: "Founder, EduCore Learning",
     content:
-      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Codex IT delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
     rating: 5,
     image: image1,
   },
@@ -93,7 +93,7 @@ const testimonials = [
     name: "Shahin Alam",
     title: "CEO, GaragePro Auto",
     content:
-      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
+      "Codex IT developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },
@@ -102,7 +102,7 @@ const testimonials = [
     name: "Farhana Yeasmin",
     title: "Director, DentalCare Pro Clinic",
     content:
-      "From patient records to appointment scheduling and billing, Devola automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
+      "From patient records to appointment scheduling and billing, Codex IT automated our entire clinic workflow. The system is intuitive and our staff picked it up in no time. Highly recommend their custom software services.",
     rating: 5,
     image: image1,
   },
@@ -111,7 +111,7 @@ const testimonials = [
     name: "Kamrul Islam",
     title: "IT Manager, BOF Network",
     content:
-      "Devola handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
+      "Codex IT handled our complete network infrastructure — structured cabling, firewall configuration, server room setup, and CCTV integration. Professional execution and excellent after-sales support.",
     rating: 5,
     image: image1,
   },
@@ -120,7 +120,7 @@ const testimonials = [
     name: "Tanvir Hossain",
     title: "Managing Director, ShopFlex BD",
     content:
-      "Devola built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
+      "Codex IT built our entire ecommerce platform from scratch — product management, payment gateway integration, and inventory sync. The system handles thousands of daily orders without a glitch. Truly impressive engineering.",
     rating: 5,
     image: image1,
   },
@@ -129,7 +129,7 @@ const testimonials = [
     name: "Nasreen Akter",
     title: "Founder, EduCore Learning",
     content:
-      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Devola delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
+      "We needed a custom LMS that could support live classes, quizzes, and progress tracking. Codex IT delivered a polished product on time and within budget. Our student engagement has tripled since launch.",
     rating: 5,
     image: image1,
   },
@@ -147,7 +147,7 @@ const testimonials = [
     name: "Shahin Alam",
     title: "CEO, GaragePro Auto",
     content:
-      "Devola developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
+      "Codex IT developed a complete workshop management system for our chain — scheduling, invoicing, parts inventory, and customer history all in one place. It saved us hours of manual work every single day.",
     rating: 5,
     image: image1,
   },

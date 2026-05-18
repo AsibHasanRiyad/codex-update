@@ -13,7 +13,7 @@ export default function CaseStudyDetail() {
     title: study ? study.title : "Case Study",
     description: study
       ? `${study.subtitle} - ${study.problem.slice(0, 120)}`
-      : "Devola case study detail",
+      : "Codex IT case study detail",
     pathname: `/case-studies/${slug}`,
     schema: study
       ? {
@@ -22,7 +22,7 @@ export default function CaseStudyDetail() {
           name: study.title,
           url: buildCanonicalUrl(`/case-studies/${slug}`),
           description: study.subtitle,
-          author: { "@type": "Organization", name: "Devola" },
+          author: { "@type": "Organization", name: "Codex IT" },
         }
       : undefined,
   });

@@ -10,15 +10,15 @@ export default function CaseStudies() {
   useSEO({
     title: "Case Studies",
     description:
-      "Explore Devola's portfolio of successful software development and IT infrastructure projects across various industries.",
+      "Explore Codex IT's portfolio of successful software development and IT infrastructure projects across various industries.",
     pathname: "/case-studies",
     schema: {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      name: "Devola Case Studies",
+      name: "Codex IT Case Studies",
       url: buildCanonicalUrl("/case-studies"),
       description:
-        "Portfolio of software and IT infrastructure projects by Devola.",
+        "Portfolio of software and IT infrastructure projects by Codex IT.",
     },
   });
 
@@ -26,7 +26,7 @@ export default function CaseStudies() {
 
   return (
     <div className="min-h-screen overflow-hidden bg-background">
-      <h1 className="sr-only">Devola Case Studies</h1>
+      <h1 className="sr-only">Codex IT Case Studies</h1>
       <PageHeader
         title="Case Studies"
         subtitle="Real projects, real results. Explore how we've helped businesses transform through technology and infrastructure."

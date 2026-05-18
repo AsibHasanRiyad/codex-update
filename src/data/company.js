@@ -1,9 +1,9 @@
 export const company = {
   name: "Codex IT",
   tagline: "Digital Solutions that Works for You",
-  phone: "01703300440",
-  email: "hello@mydevola.com",
-  website: "https://mydevola.com",
+  phone: "01326560403",
+  email: "hello@codexit.bd",
+  website: "https://codexitbd.com",
   address: "278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206",
   businessHours: "Sat - Thu: 10am - 6pm",
   country: "Bangladesh",

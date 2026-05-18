@@ -51,7 +51,11 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
             onClick={() => setOpen(false)}
             className="flex items-center"
           >
-            <img src={devolaLogo} alt="Codex IT" className="h-8 md:h-10 w-auto" />
+            <img
+              src={devolaLogo}
+              alt="Codex IT"
+              className="h-8 md:h-10 w-auto"
+            />
           </a>
           <CrossIcon onClick={() => setOpen(false)} />
         </div>
@@ -209,7 +213,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               />
               <TextMaskReveal
                 startDelay={0.1}
-                text="hello@mydevola.com"
+                text="hello@codexit.bd"
                 fontSize="text-base"
                 className="text-gray-300"
                 splitByWord={true}
@@ -227,7 +231,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
               />
               <TextMaskReveal
                 startDelay={0.1}
-                text="+880 1703 300440"
+                text="+880 1326 560403"
                 fontSize="text-base"
                 className="text-gray-300"
                 splitByWord={true}

@@ -33,10 +33,10 @@ export default function Contact() {
   });
 
   // Dummy Data
-  const phone_one = "+880 1703 300440";
-  const phone_two = "+880 1703 300440";
-  const email_one = "hello@mydevola.com";
-  const email_two = "hello@mydevola.com";
+  const phone_one = "+880 1326 560403";
+  const phone_two = "+880 1326 560403";
+  const email_one = "hello@codexit.bd";
+  const email_two = "hello@codexit.bd";
   const business_hour = "Sat - Thu: 10am - 6pm";
   const location =
     "278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206";

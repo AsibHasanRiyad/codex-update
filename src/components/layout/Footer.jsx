@@ -137,10 +137,10 @@ export default function Footer() {
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Call Us</p>
                   <a
-                    href="tel:+8801703300440"
+                    href="tel:+8801326560403"
                     className="text-white hover:text-gray-300 transition-colors font-medium"
                   >
-                    +880 1703 300440
+                    +880 1326 560403
                   </a>
                 </li>
                 <li>

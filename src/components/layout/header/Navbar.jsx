@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className=" lg:col-span-8 hidden lg:flex justify-between px-[10%] items-center border-l border-muted py-7 border-r">
             <div className=" flex justify-center gap-2 text-strong font-semibold items-center">
               <span>Contact</span> <div className=" w-5 bg-strong h-0.5"></div>{" "}
-              <span>hello@mydevola.com</span>
+              <span>hello@codexit.bd</span>
             </div>
             <div className="flex justify-start items-center gap-3 ">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, idx) => (

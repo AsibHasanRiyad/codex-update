@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Core sitemap for search engines and AI crawlers
-Sitemap: https://mydevola.com/sitemap.xml
+Sitemap: https://codexitbd.com/sitemap.xml
 
 # Optional crawl delay for very aggressive bots
 Crawl-delay: 1

@@ -1,175 +1,17 @@
-import { Quote } from "lucide-react";
 import AnimatedDots from "./AnimateDots";
 import Earth from "./Globe";
 import Marquee from "./Marquee";
 
-const image1 =
-  "https://images.unsplash.com/photo-1670008604236-f5f2b23722ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1441";
-const logo =
-  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png";
+const logoModules = import.meta.glob(
+  "/src/assets/client-logo/*.png",
+  { eager: true }
+);
+const clientLogos = Object.entries(logoModules)
+  .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
+  .map(([, mod]) => mod.default);
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
-    content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
-    content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
-    content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 1,
-    name: "Mark Ramirez",
-    logo: logo,
-    title: "Owner of Lotus Spa",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 2,
-    name: "Thomas Gala",
-    logo: logo,
-    title: "Founder, Earthish Wellness",
-    content:
-      "As a fellow creative professional, I have high standards when it comes to design. Kelola not only met but exceeded those standards. Kelola also optimized it for a seamless user experience.",
-    rating: 4,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Sarah Johnson",
-    logo: logo,
-    title: "CEO, Harmony Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-  {
-    id: 3,
-    name: "Steven Sunny",
-    logo: logo,
-    title: "CEO, Charles Health",
-    content:
-      "Their team took our wellness brand and elevated it to new heights with their thoughtful designs and strategic branding, they've helped us create a cohesive and compelling brand identity.",
-    rating: 5,
-    image: image1,
-  },
-];
+const logosRow1 = clientLogos.slice(0, 10);
+const logosRow2 = clientLogos.slice(10);
 
 function ClientFeedback() {
   return (
@@ -252,90 +94,32 @@ function ClientFeedback() {
           <Earth className="max-w-[500px] z-0 " />
         </div>
         <div className="relative z-2 sm:pt-28 pt-24">
-          <Marquee reverse={false} pauseOnHover className="[--duration:20s]">
-            {testimonials?.map((testimonial) => (
-              <>
-                <div
-                  key={testimonial.id}
-                  className={`bg-neutral-950 border border-gray-900 sm:w-md w-[20rem] sm:p-6 p-3 rounded-xl transition-all duration-300`}
-                >
-                  <div className="flex mb-2">
-                    <img
-                      src={testimonial.logo}
-                      alt={testimonial.logo}
-                      className="w-28"
-                    />
-                  </div>
-                  <p
-                    className={`sm:text-sm text-xs mb-4 text-gray-300 flex gap-1 py-2`}
-                  >
-                    <Quote className="fill-gray-300 sm:w-5 sm:h-5 w-4 h-4 shrink-0 rotate-180" />
-                    {testimonial.content}
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                      <img
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p className={`font-medium text-white`}>
-                        {testimonial.name}
-                      </p>
-                      <p className={`text-xs text-gray-400`}>
-                        {testimonial.title}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </>
+          <Marquee reverse={false} pauseOnHover className="[--duration:40s]">
+            {logosRow1.map((logo, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl p-3 flex items-center justify-center w-56 h-32 mx-3 transition-all duration-300 hover:shadow-xl hover:scale-105"
+              >
+                <img
+                  src={logo}
+                  alt={`client-${i + 1}`}
+                  className="w-full h-full object-contain transition-all duration-300"
+                />
+              </div>
             ))}
           </Marquee>
-          <Marquee pauseOnHover reverse={true} className="[--duration:20s]">
-            {testimonials?.map((testimonial) => (
-              <>
-                <div
-                  key={testimonial.id}
-                  className={`bg-neutral-950 border border-gray-900 sm:w-md w-[20rem] sm:p-6 p-3 rounded-xl transition-all duration-300`}
-                >
-                  <div className="flex mb-2">
-                    <img
-                      src={testimonial.logo}
-                      alt={testimonial.logo}
-                      className="w-28"
-                    />
-                  </div>
-                  <p
-                    className={`sm:text-sm text-xs mb-4 text-gray-300 flex gap-1 py-2`}
-                  >
-                    <Quote className="fill-gray-300 sm:w-5 sm:h-5 w-4 h-4 shrink-0 rotate-180" />
-                    {testimonial.content}
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-                      <img
-                        src={testimonial.image || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        width={40}
-                        height={40}
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <p className={`font-medium text-white`}>
-                        {testimonial.name}
-                      </p>
-                      <p className={`text-xs text-gray-400`}>
-                        {testimonial.title}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </>
+          <Marquee pauseOnHover reverse={true} className="[--duration:40s] mt-5">
+            {logosRow2.map((logo, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-xl p-3 flex items-center justify-center w-56 h-32 mx-3 transition-all duration-300 hover:shadow-xl hover:scale-105"
+              >
+                <img
+                  src={logo}
+                  alt={`client-${i + 11}`}
+                  className="w-full h-full object-contain transition-all duration-300"
+                />
+              </div>
             ))}
           </Marquee>
         </div>

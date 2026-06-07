@@ -18,7 +18,7 @@
   } */
 }
 
-/* @theme inline {
+@theme inline {
   --animate-border: border 4s linear infinite;
   --animate-infinite-scroll: infinite-scroll 25s linear infinite;
   --animate-marquee: marquee var(--duration) linear infinite;
@@ -32,7 +32,7 @@
       transform: translateX(0);
     }
     to {
-      transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(-50%);
     }
   }
   @keyframes marquee-vertical {
@@ -40,12 +40,12 @@
       transform: translateY(0);
     }
     to {
-      transform: translateY(calc(-100% - var(--gap)));
+      transform: translateY(-50%);
     }
   }
   @keyframes marquee-reverse {
     from {
-      transform: translateX(calc(-100% - var(--gap)));
+      transform: translateX(-50%);
     }
     to {
       transform: translateX(0);
@@ -53,10 +53,10 @@
   }
   @keyframes marquee-vertical-reverse {
     from {
-      transform: translateY(calc(-100% - var(--gap)));
+      transform: translateY(-50%);
     }
     to {
       transform: translateY(0);
     }
   }
-} */
+}

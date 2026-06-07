@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 const WHATSAPP_LINK =
-  "https://wa.me/966504183004?text=Hello%202%20Creative%2C%20I%20would%20like%20to%20connect.";
+  "https://wa.me/966509115363?text=Hello%202%20Creative%2C%20I%20would%20like%20to%20connect.";
 
 const WhatsAppFloatingButton = () => {
   return (

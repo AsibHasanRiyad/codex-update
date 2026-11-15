@@ -191,7 +191,7 @@ const NavbarContent = ({ active, handleToggle, setOpen }) => {
 
               <TextMaskReveal
                 startDelay={0.1}
-                text="278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206"
+                text="House 8 (1st Floor), Road 8A, Nikunja 1, Dhaka - 1219, Bangladesh"
                 fontSize="text-base"
                 className="text-gray-300 leading-relaxed"
                 splitByWord={false}

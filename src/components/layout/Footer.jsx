@@ -146,9 +146,9 @@ export default function Footer() {
                 <li>
                   <p className="text-gray-200 text-sm mb-1">Location</p>
                   <p className="text-white text-sm">
-                    278/3, Manikdi, Sheikh Tamim Road,
+                    House 8 (1st Floor), Road 8A,
                     <br />
-                    Dhaka Cantonment, Dhaka - 1206
+                    Nikunja 1, Dhaka - 1219, Bangladesh
                   </p>
                 </li>
               </ul>

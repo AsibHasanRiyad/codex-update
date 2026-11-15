@@ -4,7 +4,7 @@ export const company = {
   phone: "01703300440",
   email: "hello@mydevola.com",
   website: "https://mydevola.com",
-  address: "278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206",
+  address: "House 8 (1st Floor), Road 8A, Nikunja 1, Dhaka - 1219, Bangladesh",
   businessHours: "Sat - Thu: 10am - 6pm",
   country: "Bangladesh",
   socialLinks: {

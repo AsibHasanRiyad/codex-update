@@ -28,7 +28,7 @@ export default function Contact() {
       name: "Contact Devola",
       url: buildCanonicalUrl("/contact"),
       description:
-        "Get in touch with Devola at 278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka.",
+        "Get in touch with Devola at House 8 (1st Floor), Road 8A, Nikunja 1, Dhaka.",
     },
   });
 
@@ -39,7 +39,7 @@ export default function Contact() {
   const email_two = "hello@mydevola.com";
   const business_hour = "Sat - Thu: 10am - 6pm";
   const location =
-    "278/3, Manikdi, Sheikh Tamim Road, Dhaka Cantonment, Dhaka - 1206";
+    "House 8 (1st Floor), Road 8A, Nikunja 1, Dhaka - 1219, Bangladesh";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -264,10 +264,10 @@ export default function Contact() {
                 Visit Our Office
               </h3>
               <p className="text-gray-300 text-lg mb-2">
-                278/3, Manikdi, Sheikh Tamim Road
+                House 8 (1st Floor), Road 8A
               </p>
               <p className="text-gray-300 text-lg mb-2">
-                Dhaka Cantonment, Dhaka - 1206
+                Nikunja 1, Dhaka - 1219
               </p>
               <p className="text-gray-300 text-lg mb-6">Bangladesh</p>
               <div className="space-y-2">

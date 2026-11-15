@@ -9,6 +9,7 @@ import BeamCircle from "../components/ui/BeamCircle";
 import { useSEO } from "../hooks/useSEO";
 import { buildCanonicalUrl } from "../constants/seo";
 import HeroInteractive from "../components/ui/HeroInteractive";
+import ShowcaseCanvas from "../components/ShowcaseCanvas";
 
 const Home = () => {
   useSEO({
@@ -28,15 +29,17 @@ const Home = () => {
 
   return (
     <div>
-      <div className="relative overflow-hidden h-full w-full">
+      <div className="relative isolate overflow-hidden h-full w-full">
         <h1 className="sr-only">Codex IT Digital Solutions</h1>
         <Hero />
-        <BeamCircle />
+        
+        {/* <BeamCircle /> */}
         {/* <HeroInteractive /> */}
         <HomeVideo />
         <DevelopmentProject />
         <Stats />
         <FactsSection />
+        <ShowcaseCanvas />
         <ClientFeedback />
         <BlogSection />
       </div>

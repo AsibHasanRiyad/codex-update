@@ -24,7 +24,7 @@ export const developmentProjects = [
     siteLink: "#",
   },
   {
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80",
     siteName: "SkyBook",
     shortDesc: "Aviation Ticket Booking Platform",
     description:

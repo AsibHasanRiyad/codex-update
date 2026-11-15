@@ -159,7 +159,7 @@ export const servicesData = [
       {
         title: "Booking Platform",
         desc: "Aviation ticket booking with API integration and payment processing.",
-        image: "https://images.unsplash.com/photo-1436491865332-7a61a109db56?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?w=800&q=80",
       },
     ],
   },
